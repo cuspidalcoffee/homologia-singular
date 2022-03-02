@@ -1,0 +1,142 @@
+\setchapterpreamble[u]{\margintoc}
+
+\chapter{Cohomología singular}
+
+\section{Grupos de cohomología}
+\begin{definition}
+Un complejo de cocadenas es un par $(C,d)$ donde $C=\{C^j: j \in \mb{Z}\}$ es
+un grupo abeliano graduado y $d\colon C \to C$ es un endomorfismo graduado
+de grado $1$ tal que $d^{p+1}\circ d^p=0$. Es decir, tenemos una sucesión
+exacta
+\[0 \longrightarrow C^0 \xrightarrow{d^0} C^1 \xrightarrow{d^1} C^2
+\xrightarrow{d^2}\dots\]
+donde las flechas van hacia arriba, en lugar de ir hacia abajo.
+\end{definition}
+
+En este capítulo, veremos que muchos términos de homología singular se
+repiten, añadiendo el prefijo \emph{co-}. Ésto se debe a que la teoría de
+cohomología complementa a teoría de homología, dado que estamos utilizando
+los mismos principios, pero aquí le damos la vuelta al sentido de las flechas
+en las sucesiones exactas.
+
+Al igual que hay diferentes teorías de homología (simplicial, singular,
+celular...), existen diferentes teorías de cohomología que están diseñadas
+para diferentes contextos. En este capítulo, cubriremos la teoría de
+cohomología singular, que es la más general y no requiere ningún conocimiento
+preeliminar que no hayamos visto ya.
+
+Los elementos de $C^n$ se denominan \textbf{cocadenas} de orden $n$, y los
+homomorfismos $d^n$ reciben el nombre de \textbf{operadores coborde}.
+
+\marginnote[-2.2cm]{
+\begin{kaobox}[frametitle=Coborde y cobordismo]
+El \emph{coborde} que definimos en este capítulo no está relacionado con
+los \emph{cobordismos}. Sin entrar en detalles, se podría decir que dos
+variedades $X$ e $Y$ de dimensión $n$ son cobordantes si existe una
+homotopía
+\[F\colon X \simeq Y\]
+cuyo grafo es una variedad con bordes de dimensión $n+1$.
+\end{kaobox}
+}
+
+Definimos el grupo de $n$-cociclos como $Z^n(C)=\ker d^n$, y el grupo de $n$-
+cobordes como $B^n(C)=\im d^n$. Dado que $d^{n+1}\circ d^n=0$, $B^n(C)\leq
+Z^n(C)$, por lo que definimos el \textbf{grupo $n$-ésimo de cohomología} como
+\[H^n(C)=\frac{Z^n(C)}{B^n(C)}\]
+Notar que, para diferenciar los grupos usados en teoría de homología de los
+usados en teoría de cohomología, convertimos los subíndices en superíndices.
+
+\begin{definition}
+Dados dos complejos de cocadenas $(C,d)$ y $(D,d')$, una \textbf{aplicación
+de cocadenas} es un homomorfismo graduado $f\colon C \to D$ que conmuta con
+el operador coborde (i.e. $d'\circ f=f\circ d$).
+\end{definition}
+
+Una aplicación de cocadenas $f$ siempre induce un homomorfismo en
+cohomología,
+\begin{diag}
+f^*\colon H^*(C)\arrow[r] &H^*(D)\\[-8mm]
+\left[c\right] \arrow[r,maps to]& \left[f(c)\right]
+\end{diag}
+
+\subsection{Cohomología singular}
+
+\marginnote[-2.2cm]{
+\begin{kaobox}[frametitle=Anillos]
+Tanto la teoría de homología como cohomología se puede construir utilizando
+anillos que no sean $\mb{Z}$; sin embargo, es más común encontrar casos
+donde la cohomología se calcula para diferentes anillos (como nuestra
+principal referencia, \cite{Vick94}).
+\end{kaobox}
+}
+
+Sea $X$ un espacio topológico y $S_*(X)$ el grupo de cadenas singulares de
+$X$. Dado un $n \in \mb{Z}$ y un anillo $R$, definimos el grupo de cocadenas
+singulares $S^n(X;R)$ como el grupo formado por todos los homomorfismos de
+la forma $\phi\colon S_n(X) \to R$.
+
+\begin{theorem}
+Sea $X$ un espacio topológico y $\p$ el operador borde asociado a $S_*(X)$.
+El homomorfismo graduado $d=\{d^n\colon n \in \mb{Z}\}$,
+\begin{diag}
+d^n\colon S^n(X;R)\arrow[r] &S^{n+1}(X;R)\\[-8mm]
+\phi \arrow[r,maps to]& \phi\circ \p_n
+\end{diag}
+define un operador coborde. Por tanto, $(S^*(X;R),d)$ es un complejo de
+cocadenas.
+\end{theorem}
+
+Dada una aplicación continua $f\colon X \to Y$, podemos considerar la
+aplicación inducida en cocadenas,
+\begin{diag}
+f^\#\colon S^n(X;R)\arrow[r] &S^n(Y;R)\\[-8mm]
+\phi \arrow[r,maps to]& \phi\circ f
+\end{diag}
+que induce a su vez un homomorfismo en cohomología, $f^*\colon H^*(Y;R) \to
+H^*(X;R)$. Si bien esta aplicación se asemeja al \emph{pull-back} de
+geometría diferencial, es importante notar que $f^*$ actúa sobre clases y
+no aplicaciones.
+
+\section{Productos en cohomología}
+En ciertos contextos, las teorías de cohomología se consideran más poderosas
+que las teorías de homología. Esto se debe entre otras cosas a que podemos
+dotar a $H^*(X)$ de una estructura de anillo, mediante la cual podemos
+separar espacios topológicos que los grupos de homología no pueden
+distinguir.
+
+Sean $p,q \geq 0$ y $\phi\colon \sigma_{p+q} \to X$ un símplice singular.
+Definimos
+\begin{align*}
+\phi^{(p)}(t_0,\dots,t_p)=\phi(t_0,\dots,t_p,0,\dots,0);\\
+\phi^({q})(t_0,\dots,t_q)=\phi(0,\dots,0,t_0,\dots,t_q)
+\end{align*}
+
+\begin{definition}
+Sean $c \in S^p(X;R)$ y $d \in S^q(X)$. Se define el producto de $c$ y $d$
+como la $(p+q)$-cocadena $c\smile d \in S^{p+q}(X;R)$ dada por
+\[(c\smile d)(\phi):=c(\phi^{(p)})d(\phi_{(q)})\]
+La ley de composición interna $\smile$ recibe el nombre de \textbf{operador
+copa}, e induce una estructura de anillo en $H^*(X;R)$.
+\end{definition}
+
+\subsection{Dualidad de Poincaré}
+\begin{theorem}
+Sea $M$ una variedad sin borde, compacta, conexa y orientable de dimensión
+$n$. Si $s\colon M \to T$ es una orientación y $z$ es la
+clase fundamental asociada a $M$, el homomorfismo
+\begin{diag}
+D\colon H^k(M;R)\arrow[r] &H_{n-k}(M;R)\\[-8mm]
+\left[x\right] \arrow[r,maps to]& \left[x\frown z\right]
+\end{diag}
+es un isomorfismo para todo $k$.
+\end{theorem}
+
+\begin{example}[\cite{MSE}]
+Sean $X=S^2\times S^2$ e $Y$ la suma conexa de dos copias de $\mb{CP}^2$.
+Por un lado, tenemos que $H_*(X)\cong H_*(Y)$. Sin embargo,
+\begin{align*}
+H^*(X;\mb{Z})\cong \frac{\mb{Z}[x,y]}{(x^2,y^2)}; &&
+H^*(Y;\mb{Z})\cong \frac{\mb{Z}[x,y]}{(x^3,y^3,xy)}
+\end{align*}
+que son anillos diferentes.
+\end{example}

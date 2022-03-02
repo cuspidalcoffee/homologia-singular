@@ -1,0 +1,43 @@
+\documentclass[
+	% Base font soze
+	fontsize=10pt,
+	%
+	% Use different layouts for even and odd pages
+	twoside=true,
+	%
+	% If twoside=true, uncomment this to force new chapters to start on any page,
+	% not only on right (odd) pages
+	open=any, 
+	%
+	% Uncomment to use the word "Chapter" before chapter numbers everywhere they
+	% appear
+	chapterprefix=true, 
+	%
+	% Uncomment to output dots from the chapter name to the page number in the
+	% table of contents
+	%chapterentrydots=true,
+	%
+	% Comment to output dots after chapter numbers;
+	% the most common values for this option are: enddot, noenddot and auto
+	% (see the KOMAScript documentation for an in-depth explanation)
+	numbers=noenddot,
+	%
+	% If uncommented, rulers will be added in the header and footer
+	% draft=true, 
+	% 
+	% If uncommented, overly long lines will be marked by a black box; useful for
+	% correcting spacing problems
+	overfullrule=true,
+]{kaobook}
+
+	% Paths in which to look for images
+\graphicspath{{examples/documentation/images/}{images/}} 
+
+	% Make LaTeX produce the files required to compile the index
+\makeindex[columns=3, title=Alphabetical Index, intoc] 
+\makeglossaries % Make LaTeX produce the files required to compile the glossary
+
+\makenomenclature % Make LaTeX produce the files required to compile the nomenclature
+
+	% Reset sidenote counter at chapters
+%\counterwithin*{sidenote}{chapter}

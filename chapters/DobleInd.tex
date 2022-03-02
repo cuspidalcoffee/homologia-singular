@@ -1,0 +1,88 @@
+\chapter{Método de doble inducción}\label{DobleInd}
+El propósito de este apéndice es explicar en detalle cómo funciona la
+\emph{doble inducción} utilizada en la demostración del \refthm{RosaMixta},
+por qué es un método de demostración válido (cuando se usa correctamente) y
+bajo qué condiciones podemos hacer \emph{inducción múltiple}.
+
+\begin{definition}
+Sea $(S,<)$ un conjunto totalmente ordenado. Dado $s \in S$, definimos el
+\textbf{sucesor} de $s$ como el menor $s' \in S$ tal que $s < s'$. El sucesor
+está bien definido porque el orden es total.
+\end{definition}
+
+\marginnote[-2.2cm]{
+\begin{kaobox}[frametitle=Conjunto bien ordenado]
+Un conjunto totalmente ordenado $(S,<)$ está bien ordenado si, dado un
+subconjunto $S' \subset S$, $S'$ tiene un elemento minimal. Por ejemplo,
+$\mb{N}$ está bien ordenado, pero $\mb{Z}$ no.
+
+Un ejemplo de subconjunto que no cumple esta propiedad es el conjunto de los
+enteros negativos.
+\end{kaobox}
+}
+
+Si $P(n)$ es una propiedad que depende de $n \in \mb{N}$, el método de
+inducción matemática se puede representar como un diagrama de la forma
+\begin{diag}
+P(1) \arrow[r] & P(2) \arrow[r] & \dots \arrow[r] & P(n) \arrow[r] & \dots
+\end{diag}
+Este método se basa en el hecho de que $\mb{N}$ es un conjunto bien ordenado
+bajo la relación $\leq$ (i.e. todo conjunto no vacío de números naturales tiene
+un mínimo). En general, podemos plantear un método de inducción sobre cualquier
+conjunto totalmente ordenado.
+
+\begin{definition}
+Sea $(S,<)$ un conjunto totalmente ordenado. Supongamos que, dada una propiedad
+$P(s)$ que depende de $s \in S$, tenemos los siguientes resultados:
+\begin{enumerate}
+\item $P(\min\{s\})$ es cierto;
+\item si $s'$ es el sucesor de $s$, $P(s)$ implica $P(s')$.
+\end{enumerate}
+Diremos que $S$ admite un método de inducción si estas dos propiedades implican
+que $P(s)$ es cierto para todo $s \in S$.
+\end{definition}
+
+\begin{proposition}[\cite{BienOrd}]
+Sea $S$ un conjunto totalmente ordenado. El conjunto $S$ admite un método de
+inducción si y sólo si está bien ordenado.
+\end{proposition}
+
+Consideremos entonces el caso de una propiedad $Q(n,m)$ que depende de $n,m \in
+\mb{N}$. En este caso, nuestro conjunto de partida es $\mb{N}^2$, así que
+necesitamos una relación de orden total para poder probar $Q$ por inducción.
+
+Dados $(n_1,m_1),(n_2,m_2) \in \mb{N}$, definimos el orden lexicográfico
+$\prec$ como
+\[(n_1,m_1) \prec (n_2,m_2) \iff
+\begin{cases}
+n_1 < n_2\\
+n_1 = n_2; & m_1 < m_2
+\end{cases}
+\]
+El orden lexicográfico se puede extender a $\mb{N}^k$, y se utiliza en algunos
+campos del álgebra tales como la teoría de polinomios. Dado que el orden
+lexicográfico es el orden usual de $\mb{N}$ \emph{aplicado dos veces}, es fácil
+ver que induce un buen orden en $\mb{N}^2$, por lo que podemos probar $Q$ de
+forma inductiva.
+
+Para poder probar $Q$, lo que tenemos que hacer es probar primero $P(n)=Q(n,1)$
+por inducción sobre $n$, y después, probar $R(m)=Q(n,m)$ por inducción sobre
+$m$. El diagrama correspondiente toma la forma
+\begin{diag}
+Q(1,1) \arrow[r] \arrow[d, dashed] & Q(2,1) \arrow[r] \arrow[d,dashed] &
+	\dots \arrow[r] \arrow[d,dashed] & Q(n,1) \arrow[r] \arrow[d,dashed] &
+	 \dots \arrow[d,dashed]\\
+Q(1,2) \arrow[r] \arrow[d, dashed] & Q(2,2) \arrow[r] \arrow[d,dashed] &
+	\dots \arrow[r] \arrow[d,dashed] & Q(n,2) \arrow[r] \arrow[d,dashed] &
+	\dots \arrow[d,dashed]\\
+\vdots \arrow[r] \arrow[d, dashed] & \vdots \arrow[r] \arrow[d,dashed] &
+	\ddots \arrow[r] \arrow[d,dashed] & \vdots \arrow[r] \arrow[d,dashed] &
+	\vdots \arrow[d,dashed]\\
+Q(1,m) \arrow[r] \arrow[d, dashed] & Q(2,m) \arrow[r] \arrow[d,dashed] &
+	\dots \arrow[r] \arrow[d,dashed] & Q(n,m) \arrow[r] \arrow[d,dashed] &
+	\dots \arrow[d,dashed]\\
+\vdots \arrow[r] & \vdots \arrow[r] & \vdots \arrow[r] & \vdots \arrow[r] &
+	\dots
+\end{diag}
+donde las líneas sólidas representan $n_1 < n_2$, y las líneas discontinuas,
+$m_1 < m_2$.
