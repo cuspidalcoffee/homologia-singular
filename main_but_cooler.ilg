@@ -1,7 +1,0 @@
-This is makeindex, version 2.15 [TeX Live 2021] (kpathsea + Thai support).
-Scanning input file main_but_cooler.idx...
-!! Input index error (file = main_but_cooler.idx, line = 1):
-   -- Illegal space within numerals in second argument.
-done (0 entries accepted, 1 rejected).
-Nothing written in main_but_cooler.ind.
-Transcript written in main_but_cooler.ilg.

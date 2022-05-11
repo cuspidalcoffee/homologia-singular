@@ -91,11 +91,11 @@
 %Hyperlinks
 \usepackage{hyperref}
 
-%\usepackage{packages/algebra}
-%\usepackage{packages/singtheo}
-%\usepackage{packages/nicetikz}
-%\usepackage{packages/fonts}
-%\usepackage{packages/tables}
+\usepackage{packages/algebra}
+\usepackage{packages/singtheo}
+\usepackage{packages/nicetikz}
+\usepackage{packages/fonts}
+\usepackage{packages/tables}
 
 %----------------------------------------------------------------------------------------
 
@@ -160,42 +160,33 @@
 \mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers
 \setchapterstyle{kao} % Choose the default chapter heading style
 
-%\input{chapters/introduction.tex}
+\input{chapters/introduction}
 
 \pagelayout{wide} % No margins
-\addpart{Deformations of Smooth Mappings}
-%\input{chapters/deformations/introduction}
+\addpart{Homología singular de un espacio topológico}
 \pagelayout{margin} % Restore margins
+\input{chapters/singular_homology}
+\input{chapters/homology_properties}
+\input{chapters/mater_vietoris_sequence}
+
 
 
 \pagelayout{wide} % No margins
-\addpart{Arnol'd-Ishikawa Theory of Legendrian Stability}
-%\input{chapters/legendrian/introduction}
+\addpart{Homología relativa y celular}
 \pagelayout{margin} % Restore margins
-
-%\input{chapters/legendrian/immersions}
-%\input{chapters/legendrian/stability}
-
-\pagelayout{wide} % No margins
-\addpart{Deformations of Corank $1$ Frontals}
-\pagelayout{margin} % Restore margins
-
-%\input{chapters/deformations/mather_gaffney}
-
-\pagelayout{wide} % No margins
-\addpart{Singularities of Frontals Surfaces}
-\pagelayout{margin} % Restore margins
-
-%\input{chapters/surfaces/double_pts}
-%\input{chapters/surfaces/homology}
+\input{chapters/relative_homology}
+\input{chapters/cw_complexes}
+\input{chapters/compact_surfaces}
+\input{chapters/3_tori}
 
 \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
 
 \pagelayout{wide} % No margins
-\addpart{Appendix}
+\addpart{Apéndices}
 \pagelayout{margin} % Restore margins
 
-%\input{chapters/appendix}
+\input{chapters/dobule_induction}
+\input{chapters/complements}
 
 %----------------------------------------------------------------------------------------
 

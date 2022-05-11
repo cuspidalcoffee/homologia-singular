@@ -1,0 +1,17 @@
+% __ AMS fonts ______________________________________________________
+
+\@ifpackageloaded{amsmath}{}{\RequirePackage{amsfonts}}
+% Amsmath already loads amsfonts by default.
+
+\newcommand{\mb}[1]{\mathbb{#1}}			%Blackboard
+\newcommand{\mc}[1]{\mathcal{#1}}			%Calligraphic
+\newcommand{\mf}[1]{\mathfrak{#1}}			%Fraktur
+
+% __ RSFS packages __________________________________________________
+% https://ctan.org/pkg/mathrsfs
+
+\RequirePackage{mathrsfs}
+\newcommand{\ms}[1]{\mathscr{#1}}			%Script
+
+% __ Miscellaneous __________________________________________________
+\newcommand{\eps}{\varepsilon}				%Epsilon
