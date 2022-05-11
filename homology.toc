@@ -1,0 +1,27 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {spanish}{}
+\contentsline {chapter}{\nonumberline \'{I}ndice general}{\es@scroman {i}}{chapter*.1}%
+\contentsline {part}{\nonumberline Homología singular de un espacio topológico}{3}{part*.8}%
+\contentsline {chapter}{\numberline {1}Grupos de homología singular}{4}{chapter.1}%
+\etoc@startlocaltoc {2}
+\etoc@startlocaltoc {3}
+\contentsline {section}{\numberline {1.1}Símplices singulares}{4}{section.1.1}%
+\contentsline {mtocsection}{\numberline {1.1}Símplices singulares}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}Grupos libres}{8}{section.1.2}%
+\contentsline {mtocsection}{\numberline {1.2}Grupos libres}{8}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Grupo libre generado por un conjunto}{8}{subsection.1.2.1}%
+\contentsline {mtocsubsection}{\numberline {1.2.1}Grupo libre generado por un conjunto}{8}{subsection.1.2.1}
+\contentsline {section}{\numberline {1.3}Complejos de cadenas}{9}{section.1.3}%
+\contentsline {mtocsection}{\numberline {1.3}Complejos de cadenas}{9}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Grupo de homología asociado a un complejo de cadenas}{10}{subsection.1.3.1}%
+\contentsline {mtocsubsection}{\numberline {1.3.1}Grupo de homología asociado a un complejo de cadenas}{10}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}El grupo de las cadenas singulares}{11}{subsection.1.3.2}%
+\contentsline {mtocsubsection}{\numberline {1.3.2}El grupo de las cadenas singulares}{11}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Morfismo inducido en homología}{13}{subsection.1.3.3}%
+\contentsline {mtocsubsection}{\numberline {1.3.3}Morfismo inducido en homología}{13}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Interpretación geométrica de los grupos de homología}{14}{section.1.4}%
+\contentsline {mtocsection}{\numberline {1.4}Interpretación geométrica de los grupos de homología}{14}{section.1.4}
+\contentsline {section}{\numberline {1.5}Característica de Euler}{15}{section.1.5}%
+\contentsline {mtocsection}{\numberline {1.5}Característica de Euler}{15}{section.1.5}
+\contentsline {part}{\nonumberline Homología relativa y celular}{16}{part*.15}%
+\contentsline {part}{\nonumberline Apéndices}{17}{part*.17}%

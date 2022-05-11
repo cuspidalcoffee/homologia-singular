@@ -2,49 +2,36 @@
 
 \chapter{Grupos de homología singular}
 \section{Símplices singulares}
-Decimos que una familia de puntos $S=\{x_0, \dots, x_p\} \subset \mb{R}^n$ es
-\textbf{afínmente independiente} si, dados $\lambda_1,\dots,\lambda_n \in
-\mb{R}$, $\mu_1,\dots,\mu_n \in \mb{R}$ tales que
-\begin{align*}
-\sum^p_{i=0}\lambda_ix_i=\sum^p_{i=0}\mu_ix_i;
-&&
-\sum^p_{i=0}\lambda_i=\sum^p_{i=0}\mu_i
-\end {align*}
+Decimos que una familia de puntos $S=\{x_0, \dots, x_p\} \subset \mb{R}^n$ es \textbf{afínmente independiente} si, dados $\lambda_1,\dots,\lambda_n, \mu_1,\dots,\mu_n \in \mb{R}$ tales que
+	\begin{align*}
+		\sum^p_{i=0}\lambda_ix_i=\sum^p_{i=0}\mu_ix_i; && \sum^p_{i=0}\lambda_i=\sum^p_{i=0}\mu_i
+	\end {align*}
 se verifica que $\lambda_i=\mu_i$ para todo $1\leq i \leq n$.
 
 \begin{proposition}
-La familia de puntos $S=\{x_0, \dots, x_p\} \subset \mb{R}^n$ es afínmente
-independiente si y sólo si la familia de vectores
-\[T=\{x_1-x_0,\dots,x_p-x_0\}\]
-es linealmente independiente.
+	La familia de puntos $S=\{x_0, \dots, x_p\} \subset \mb{R}^n$ es afínmente independiente si y sólo si la familia de vectores
+		\[T=\{x_1-x_0,\dots,x_p-x_0\}\]
+	es linealmente independiente.
 \end{proposition}
 
 \begin{proof}
-Supongamos que $S$ es afínmente independiente y sean $\lambda_1,\dots,
-\lambda_p$ tales que
-\begin{equation}
-\label{CombLinNula}
-\sum^p_{i=1}\lambda_i(x_i-x_0)=0 \iff
-\sum^p_{i=1}\lambda_ix_i=x_0\sum^p_{i=1}\lambda_i
-\end{equation}
+	Supongamos que $S$ es afínmente independiente y sean $\lambda_1,\dots, \lambda_p$ tales que
+	\begin{equation}\label{CombLinNula}
+		\sum^p_{i=1}\lambda_i(x_i-x_0)=0 \iff \sum^p_{i=1}\lambda_ix_i=x_0\sum^p_{i=1}\lambda_i
+	\end{equation}
 
-Definimos $\lambda_0=-\lambda_1-\dots-\lambda_p$. Por construcción, se
-verifica que $\lambda_0+\lambda_1+\dots+\lambda_p=\lambda_0-\lambda_0=0$.
+Definimos $\lambda_0=-\lambda_1-\dots-\lambda_p$.
+Por construcción, se verifica que $\lambda_0+\lambda_1+\dots+\lambda_p=\lambda_0-\lambda_0=0$.
 Aplicando \eqref{CombLinNula},
-\[0=\sum^p_{i=1}\lambda_i(x_i-x_0)=
-\sum^p_{i=1}\lambda_i x_i-x_0\sum^p_{i=1}\lambda_i=
-\sum^p_{i=0}\lambda_i x_i\]
+	\[0=\sum^p_{i=1}\lambda_i(x_i-x_0)=\sum^p_{i=1}\lambda_i x_i-x_0\sum^p_{i=1}\lambda_i=\sum^p_{i=0}\lambda_i x_i\]
 
-Por otro lado, también podemos escribir $0=0x_0+\dots+0x_p$. Dado que $S$ es una
-familia afínmente independiente, $\lambda_i=0$ para todo $i=1,\dots,n$.
+Por otro lado, también podemos escribir $0=0x_0+\dots+0x_p$.
+Dado que $S$ es una familia afínmente independiente, $\lambda_i=0$ para todo $i=1,\dots,n$.
 Por tanto, $T$ es linealmente independiente.
 
-Recíprocamente, sean $T$ una familia linealmente independiente y\\
-$\mu_0,\alpha_0,\dots,\mu_p,\alpha_p \in \mb{R}$ tales que
+Recíprocamente, sean $T$ una familia linealmente independiente y $\mu_0,\alpha_0,\dots,\mu_p,\alpha_p \in \mb{R}$ tales que
 \begin{align*}
-\sum_{i=0}^p \mu_ix_i=\sum_{i=0}^p \alpha_ix_i;
-&&
-\sum_{i=0}^p \mu_i=\sum_{i=0}^p \alpha_i
+	\sum_{i=0}^p \mu_ix_i=\sum_{i=0}^p \alpha_ix_i; && \sum_{i=0}^p \mu_i=\sum_{i=0}^p \alpha_i
 \end{align*}
 Combinando ambas igualdades, deducimos que
 \begin{align*}
@@ -56,11 +43,10 @@ Combinando ambas igualdades, deducimos que
 \end{align*}
 
 Dado que $T$ es linealmente independiente, se sigue que
-\[\mu_i-\alpha_i=0 \iff \mu_i=\alpha_i \quad (i=1,\dots, p)\]
+	\[\mu_i-\alpha_i=0 \iff \mu_i=\alpha_i \quad (i=1,\dots, p)\]
 
-Sabiendo que la suma de todos los $\mu_i$ es la misma que la de todos los
-$\alpha_i$, se sigue que $\mu_0=\alpha_0$. Por tanto, $S$ es afínmente
-independiente.
+Sabiendo que la suma de todos los $\mu_i$ es la misma que la de todos los $\alpha_i$, se sigue que $\mu_0=\alpha_0$.
+Por tanto, $S$ es afínmente independiente.
 \end{proof}
 
 \begin{marginfigure}
@@ -86,189 +72,153 @@ independiente.
 \draw[dashed] (1,-1) -- (-4,4);
 \draw (-2,1.5) node {$L_2$};
 \end{tikzpicture}
-\caption[Puntos afínmente independientes]{La independencia afín es una forma de
-definir independencia lineal en conjuntos afines, donde los elementos son puntos
-y no vectores.}
+\caption[Puntos afínmente independientes]{La independencia afín es una forma de definir independencia lineal en conjuntos afines, donde los elementos son puntos y no vectores.}
 \end{marginfigure}
 
-Sea $S \subset \mb{R}^n$ un conjunto afínmente independiente y $(a,b,c)$ una
-terna de elementos de $S$ con $a\neq b \neq c$. Si $S$ es afínmente
-independiente, debe pasar que los vectores $a-b$ y $b-c$ sean linealmente
-independientes.
+Sea $S \subset \mb{R}^n$ un conjunto afínmente independiente y $(a,b,c)$ una terna de elementos de $S$ con $a\neq b \neq c$.
+Si $S$ es afínmente independiente, debe pasar que los vectores $a-b$ y $b-c$ sean linealmente independientes.
 
-Como $a-b\neq 0$, existe una recta afín $L_1 \subset \mb{R}^n$ que tiene a
-$a-b$ como vector director. De la misma forma, existe otra recta afín
-$L_2 \subset \mb{R}^n$ que tiene a $b-c$ como vector director. Por independencia
-lineal, se tiene que $L_1$ no es paralelo a $L_2$, por lo que $a \not\in L_2$ y
-$c \not\in L_1$.
+Como $a-b\neq 0$, existe una recta afín $L_1 \subset \mb{R}^n$ que tiene a $a-b$ como vector director.
+De la misma forma, existe otra recta afín $L_2 \subset \mb{R}^n$ que tiene a $b-c$ como vector director.
+Por independencia lineal, se tiene que $L_1$ no es paralelo a $L_2$, por lo que $a \not\in L_2$ y $c \not\in L_1$.
 
-Por tanto, un conjunto afínmente independiente es aquel en el que no hay tres
-puntos colineales.
+Por tanto, un conjunto afínmente independiente es aquel en el que no hay tres puntos colineales.
 
 \begin{definition}
-Un \textbf{$p$-símplice} es la envoltura convexa de una familia de puntos $\{x_0,
-\dots,x_p\} \subset \mb{R}^n$ afínmente independientes. Dichos puntos reciben el
-nombre de \textbf{vértices} del símplice.
+	Un \textbf{$p$-símplice} es la envoltura convexa de una familia de puntos $\{x_0, \dots,x_p\} \subset \mb{R}^n$ afínmente independientes.
+	Dichos puntos reciben el nombre de \textbf{vértices} del símplice.
 \end{definition}
 
-\marginnote[-2.2cm]{
+\marginnote{
 \begin{kaobox}[frametitle=Envoluta convexa]
-Un $C \subseteq \mb{R}^n$ no vacío es convexo si, dados $x,y \in C$, $C$
-contiene al segmento $[x,y]=\{xt+y(1-t)\colon t \in [0,1]\}$.
-
-Si $A \subset \mb{R}^n$ es no vacío, se define su envoltura convexa como el
-menor subconjunto convexo que contiene a $A$,
-\[\con(A)=\bigcup_{x,y \in A}[x,y]\]
+Un $C \subseteq \mb{R}^n$ no vacío es convexo si, dados $x,y \in C$, $C$ contiene al segmento $[x,y]=\{xt+y(1-t)\colon t \in [0,1]\}$.
+Si $A \subset \mb{R}^n$ es no vacío, se define su envoltura convexa como el menor subconjunto convexo que contiene a $A$,
+	\[\con(A)=\bigcup_{x,y \in A}[x,y]\]
 \end{kaobox}
 }
 
 Sea $A$ una familia de puntos afínmente independientes de $\mb{R}^n$ y
-\[i\colon \mb{R}^n \hookrightarrow \mb{R}^m\]
-la inclusión. Se tiene que $i(A)$ es una familia de puntos afínmente
-independiente de $\mb{R}^m$, por lo que los símplices de $\mb{R}^n$ son también
-símplices en $\mb{R}^m$. Por tanto, no es necesario especificar dónde estamos
-considerando los símplices.
+	\[i\colon \mb{R}^n \hookrightarrow \mb{R}^m\]
+la inclusión.
+Se tiene que $i(A)$ es una familia de puntos afínmente independiente de $\mb{R}^m$, por lo que los símplices de $\mb{R}^n$ son también símplices en $\mb{R}^m$.
+Por tanto, no es necesario especificar dónde estamos considerando los símplices.
 
 \begin{proposition}\labprop{BaseVertices}
-Sea $S\subset \mb{R}^n$ un $p$-símplice y $\{x_0,\dots x_p\}$ una familia
-afínmente independiente de puntos contenidos en $S$. Dado un punto $x \in S$,
-existe una familia única de escalares $t_0,\dots, t_p \in [0,1]$ tales que
-\begin{align*}
-x=\sum^p_{i=0}t_ix_i; && \sum^p_{i=0}t_i=1
-\end{align*}
-Por lo que una familia de vértices de un símplice es el equivalente a una base
-en un espacio vectorial.
+	Sea $S\subset \mb{R}^n$ un $p$-símplice y $\{x_0,\dots x_p\}$ una familia afínmente independiente de puntos contenidos en $S$.
+	Dado un punto $x \in S$, existe una familia única de escalares $t_0,\dots, t_p \in [0,1]$ tales que
+	\begin{align*}
+		x=\sum^p_{i=0}t_ix_i; && \sum^p_{i=0}t_i=1
+	\end{align*}
+	Por lo que una familia de vértices de un símplice es el equivalente a una base en un espacio vectorial.
 \end{proposition}
 
-Decimos que un $p$-símplice está \textbf{ordenado} cuando se aplica una relación
-de orden determinada sobre sus vértices.
+Decimos que un $p$-símplice está \textbf{ordenado} cuando se aplica una relación de orden determinada sobre sus vértices.
 
 \begin{example}
-Sean $a=(1,0,0)$, $b=(0,1,0)$ y $c=(0,0,1)$. La envoltura convexa de $\{a,b,c\}$
-es un 2-símplice, que denotaremos como $\sigma$. Si $e_1=a$, $e_2=b$ y $e_3=c$,
-la relación de orden
-\[e_i \leq e_j \iff i \leq j\]
-hace que $\sigma$ sea un 2-símplice ordenado.
+	Sean $a=(1,0,0)$, $b=(0,1,0)$ y $c=(0,0,1)$.
+	La envoltura convexa de $\{a,b,c\}$ es un 2-símplice, que denotaremos como $\sigma$.
+	Si $e_1=a$, $e_2=b$ y $e_3=c$, la relación de orden
+		\[e_i \leq e_j \iff i \leq j\]
+	hace que $\sigma$ sea un 2-símplice ordenado.
 \end{example}
 
 \begin{marginfigure}
 \centering
-\includegraphics{Figures/2Simplice.pdf}
-\includegraphics{Figures/Simplice.pdf}
+\includegraphics{2Simplice.pdf}
+\includegraphics{Simplice.pdf}
 \caption[Triángulo y tetraedro]{Los triángulos y tetraedros constituyen ejemplos de símplices. Podemos crear una teoría de homología utilizando sólo símplices, pero se limitaría a espacios topológicos contenidos en $\mb{R}^n$.}
 \labfig{123Simplice}
 \end{marginfigure}
 
-Sea $\{e_1, \dots, e_{n+1}\}$ la base canónica de $\mb{R}^{n+1}$. La envoltura
-convexa de los puntos $\{e_1, \dots, e_{n+1}\}$ es un $n$-símplice, que
-denotaremos como $\sigma_n$. Por \refprop{BaseVertices}, los puntos
-de $\sigma_n$ son de la forma
+Sea $\{e_1, \dots, e_{n+1}\}$ la base canónica de $\mb{R}^{n+1}$.
+La envoltura convexa de los puntos $\{e_1, \dots, e_{n+1}\}$ es un $n$-símplice, que denotaremos como $\sigma_n$.
+Por \refprop{BaseVertices}, los puntos de $\sigma_n$ son de la forma
 \begin{align*}
-(t_1,\dots,t_{n+1}) \in \mb{R}^{n+1}; && t_1+\dots+t_{n+1}=1
+	(t_1,\dots,t_{n+1}) \in \mb{R}^{n+1}; && t_1+\dots+t_{n+1}=1
 \end{align*}
 
-Sea $S=\{x_0,\dots,x_n\}\subset \mb{R}^m$ una familia de puntos afínmente
-independientes: la aplicación continua
-\begin{diag}
-f\colon \sigma_n \arrow[r]                   & \con(S)            \\[-8mm]
+Sea $S=\{x_0,\dots,x_n\}\subset \mb{R}^m$ una familia de puntos afínmente independientes: la aplicación continua
+\begin{funcion}
+f\colon \sigma_n \arrow[r]                   & \con(S)            \\
 {(t_0,\dots,t_n)} \arrow[r, maps to] & \displaystyle\sum^n_{i=0}t_ix_i
-\end{diag}
-establece una biyección entre $\sigma_n$ y $\con(S)$. Dado que $\sigma_n$ es
-compacto y $\con(S)$ es un espacio de Hausdorff, $f$ es un homeomorfismo, por lo
-que $\con(S)$ es homeomorfo a $\sigma_n$.
+\end{funcion}
+establece una biyección entre $\sigma_n$ y $\con(S)$.
+Dado que $\sigma_n$ es compacto y $\con(S)$ es un espacio de Hausdorff, $f$ es un homeomorfismo, por lo que $\con(S)$ es homeomorfo a $\sigma_n$.
 
-De la observación anterior, se sigue que todo $p$-símplice de $\mb{R}^{p+1}$ es
-homeomorfo a $\sigma_p$, por lo que podemos considerarlo como el representante
-canónico de todos los $p$-símplices. En consecuencia, $\sigma_p$ recibe el
-nombre de \textbf{$p$-símplice estándar}.
+De la observación anterior, se sigue que todo $p$-símplice de $\mb{R}^{p+1}$ es homeomorfo a $\sigma_p$, por lo que podemos considerarlo como el representante canónico de todos los $p$-símplices.
+En consecuencia, $\sigma_p$ recibe el nombre de \textbf{$p$-símplice estándar}.
 
 \begin{example}
-\labexample{012simp}
-\begin{enumerate}
-\item El conjunto $\sigma_0$ es el singulete formado por el punto $1 \in \mb{R}$.
-\item El conjunto $\sigma_1$ es el segmento que une los puntos $(1,0)$ y $(0,1)$
-de $\mb{R}^2$.
-\item El conjunto $\sigma_2$ es el triángulo de vértices $e_1, e_2, e_3 \in
-\mb{R}^3$. 
-\end{enumerate}
+	\labexample{012simp}
+	\begin{enumerate}
+		\item El conjunto $\sigma_0$ es el singulete formado por el punto $1 \in \mb{R}$.
+		\item El conjunto $\sigma_1$ es el segmento que une los puntos $(1,0)$ y $(0,1)$ de $\mb{R}^2$.
+		\item El conjunto $\sigma_2$ es el triángulo de vértices $e_1, e_2, e_3 \in \mb{R}^3$. 
+	\end{enumerate}
 \end{example}
 
-Si nos limitamos a subespacios topológicos en $\mb{R}^n$, podemos crear una
-teoría de homología utilizando sólo símplices (\cite{Lujan18}). Sin embargo, si
-queremos definir una teoría que cubra todos los espacios topológicos, necesitamos
-transportar el símplice utilizando aplicaciones continuas.
+Si nos limitamos a subespacios topológicos en $\mb{R}^n$, podemos crear una teoría de homología utilizando sólo símplices (\sidecite{Lujan18}).
+Sin embargo, si queremos definir una teoría que cubra todos los espacios topológicos, necesitamos transportar el símplice utilizando aplicaciones continuas.
 
 \begin{definition}
-Sea $X$ un espacio topológico. Un \textbf{$p$-símplice singular} de $X$ es una
-aplicación continua
-\[\phi\colon \sigma_p \to X\]
+Sea $X$ un espacio topológico.
+Un \textbf{$p$-símplice singular} de $X$ es una aplicación continua
+	\[\phi\colon \sigma_p \to X\]
 \end{definition}
 
 \begin{example}\labexample{S1Complejo}
-Sea $\mb{D}=\{z \in \mb{C}: |z|=1\}$. La aplicación
-\begin{diag}
-\phi\colon \sigma_1 \arrow[r]	& \mb{D}\\[-0.8cm]
-(t_0,t_1) \arrow[maps to,r] 	& e^{\pi i t_0}
-\end{diag}
-es un símplice singular, que envía al 1-símplice estándar en la mitad superior
-del 1-símplice mostrado en \reffig{Circunferencia}.
-
-$\phi(\sigma_1)$ no es un segmento desde el punto de vista geométrico porque
-tiene curvatura no nula, pero sí lo es desde un punto de vista topológico,
-ya que $\phi$ es un homeomorfismo y $\sigma_1$ es un segmento.
+Sea $\mb{D}=\{z \in \mb{C}: |z|=1\}$.
+La aplicación
+\begin{funcion}
+	\phi\colon \sigma_1 \arrow[r]	& \mb{D}\\
+	(t_0,t_1) \arrow[maps to,r] 	& e^{\pi i t_0}
+\end{funcion}
+es un símplice singular, que envía al 1-símplice estándar en la mitad superior del 1-símplice mostrado en \reffig{Circunferencia}.
+Notemos que $\phi(\sigma_1)$ no es un segmento desde el punto de vista geométrico porque tiene curvatura no nula, pero sí lo es desde un punto de vista topológico, ya que $\phi$ es un homeomorfismo y $\sigma_1$ es un segmento.
 \end{example}
 
 \begin{marginfigure}
-\input{Figures/S1Simplice}
-\caption[Circunferencia]{La curva $\phi(\sigma_1)$ dada por el símplice singular
-$\phi$ de \refexample{S1Complejo}. Los símplices singulares amoldan el símplice
-estándar al espacio de llegada usando su continuidad.}
-\labfig{Circunferencia}
+	\input{figures/S1_Simplex}
+	\caption[Circunferencia]{La curva $\phi(\sigma_1)$ dada por el símplice singular $\phi$ de \refexample{S1Complejo}.
+	Los símplices singulares amoldan el símplice estándar al espacio de llegada usando su continuidad.}
+	\labfig{Circunferencia}
 \end{marginfigure}
 
-Dado un $p \in X$ y un espacio topológico $Y$, toda aplicación constante
-$\cte_p\colon Y \to X$ se identifica con el 0-símplice singular
-$\phi_p\colon \sigma_0 \to X$ que envía al punto 1 en $p$. De la
-misma forma, si $I$ es un intervalo cerrado de $\mb{R}$, todo camino
-$\alpha\colon I \to X$ se identifica con el 1-símplice singular
-\begin{diag}
-\psi\colon	\sigma_1 \arrow[r]             & X            \\[-0.8cm]
+Dado un $p \in X$ y un espacio topológico $Y$, toda aplicación constante $\cte_p\colon Y \to X$ se identifica con el $0$-símplice singular $\phi_p\colon \sigma_0 \to X$ que envía al punto $1$ en $p$.
+De la misma forma, si $I$ es un intervalo cerrado de $\mb{R}$, todo camino $\alpha\colon I \to X$ se identifica con el $1$-símplice singular
+\begin{funcion}
+\psi\colon	\sigma_1 \arrow[r]             & X            \\
 		{(t_0,t_1)} \arrow[r, maps to] & \alpha(t_0)
-\end{diag}
+\end{funcion}
 
-Sean $X$, $Y$ espacios topológicos. Dada una aplicación continua $f\colon X
-\to Y$ y un $p$-símplice singular $\phi\colon \sigma_p
-\to X$, la aplicación
-\[f_\#(\phi):=f\circ \phi\colon \sigma_p \to Y\]
+Sean $X$, $Y$ espacios topológicos.
+Dada una aplicación continua $f\colon X \to Y$ y un $p$-símplice singular $\phi\colon \sigma_p \to X$, la aplicación
+	\[f_\#(\phi):=f\circ \phi\colon \sigma_p \to Y\]
 es un $p$-símplice singular en $Y$ por ser composición de aplicaciones continuas.
-Esto hace que toda aplicación continua dé lugar a una aplicación que envía
-$p$-símplices singulares de $X$ en $p$-símplices singulares de $Y$.
+Esto hace que toda aplicación continua dé lugar a una aplicación que envía $p$-símplices singulares de $X$ en $p$-símplices singulares de $Y$.
 
 \begin{proposition}\labprop{ComposicionAlmohadilla}
-\begin{enumerate}
-\item Si $\id_X$ es la aplicación identidad, $(\id_X)_\#$ también es la
-aplicación identidad.
-\item Si $f\colon X \to Y$ y $g\colon Y \to Z$ son
-aplicaciones continuas,
-\[(g\circ f)_\#=g_\#\circ f_\#\]
-\end{enumerate}
+	\begin{enumerate}
+	\item Si $\id_X$ es la aplicación identidad, $(\id_X)_\#$ también es la aplicación identidad.
+	\item Si $f\colon X \to Y$ y $g\colon Y \to Z$ son aplicaciones continuas,
+		\[(g\circ f)_\#=g_\#\circ f_\#\]
+	\end{enumerate}
 \end{proposition}
 
-Sea $X$ un espacio topológico, $\phi\colon \sigma_p \to X$ un
-$p$-símplice singular y $0 \leq i \leq p$. Se define la \textbf{cara $i$-ésima
-de $\phi$} como el $(p-1)$-símplice singular
-\begin{diag}
-\p_{(i)}\phi\colon \sigma_{p-1} \arrow[r] & X \\[-0.8cm]
-{(t_0,\dots,t_{p-1})} \arrow[r, maps to] &
-\phi(t_0,\dots,t_{i-1},0,t_{i},\dots,t_{p-1})
-\end{diag}
+Sea $X$ un espacio topológico, $\phi\colon \sigma_p \to X$ un $p$-símplice singular y $0 \leq i \leq p$.
+Se define la \textbf{cara $i$-ésima de $\phi$} como el $(p-1)$-símplice singular
+\begin{funcion}
+	\p_{(i)}\phi\colon \sigma_{p-1} \arrow[r] & X \\
+	{(t_0,\dots,t_{p-1})} \arrow[r, maps to] &
+	\phi(t_0,\dots,t_{i-1},0,t_{i},\dots,t_{p-1})
+\end{funcion}
 
 \begin{example}
 Considérese el 2-símplice singular
-\begin{diag}
-\phi\colon  \sigma_2 \arrow[r] & \mb{R}^3 \\[-0.8cm]
-(x,y,z) \arrow[r, maps to] & (2x+2,2y+2,2z+2)
-\end{diag}
+\begin{funcion}
+	\phi\colon  \sigma_2 \arrow[r] & \mb{R}^3 \\
+	(x,y,z) \arrow[r, maps to] & (2x+2,2y+2,2z+2)
+\end{funcion}
 
 Las caras de $\phi$ son los $1$-símplices singulares
 \begin{align*}
@@ -277,13 +227,12 @@ Las caras de $\phi$ son los $1$-símplices singulares
 \p_{(2)}\phi(u,v)=\phi(u,v,0)=(2u+2,2v+2,2)
 \end{align*}
 
-Desde un punto de vista geométrico, $\p_{(i)}\phi(\sigma_1)$ son las caras del
-tetraedro $\phi(\sigma_2)$ para $i=0,1,2$.
+Desde un punto de vista geométrico, $\p_{(i)}\phi(\sigma_1)$ son las caras del tetraedro $\phi(\sigma_2)$ para $i=0,1,2$.
 \end{example}
 
 \section{Grupos libres}
-Sea $G$ un grupo abeliano y $n \in \mb{Z}$ un entero no nulo. Dado un $g \in G$,
-se define el producto $ng$ como
+Sea $G$ un grupo abeliano y $n \in \mb{Z}$ un entero no nulo.
+Dado un $g \in G$, se define el producto $ng$ como
 \begin{align*}
 ng:=\sum^n_{j=0}g	&& ng:=\sum^{-n}_{j=0}-g\\
 (n>0)				&& (n < 0)
@@ -373,10 +322,10 @@ polinomios sobre $\mb{Z}$.
 \end{example}
 
 Notar que, si $A=\{a_1,\dots,a_n\}$, la aplicación
-\begin{diag}
-\Psi\colon \mc{F}(A) \arrow[r]	& \mb{Z}^n\\[-0.8cm]
+\begin{funcion}
+\Psi\colon \mc{F}(A) \arrow[r]	& \mb{Z}^n\\
 f \arrow[maps to,r]			& (f(a_1),\dots,f(a_n))
-\end{diag}
+\end{funcion}
 es un isomorfismo de grupos.
 
 \section{Complejos de cadenas}
@@ -425,10 +374,10 @@ Diremos que un complejo de cadenas $(C,d)$ es \textbf{abeliano} si lo es $C$.
 Sean $(C,d)$ y $(C',d')$ dos complejos de cadenas. Una \textbf{aplicación de
 cadenas} es un homomorfismo graduado $\Phi\colon C \to C'$ de grado
 $0$ tal que el siguiente diagrama es conmutativo para todo $n$:
-\begin{diag}
+\begin{diagram}
 C_{n+1} \arrow{r}{d_{n+1}} \arrow{d}{\Phi_{n+1}} & C_n \arrow{d}{\Phi_n} \\
 C'_{n+1} \arrow{r}{d'_{n+1}}                     & C'_n                   
-\end{diag}
+\end{diagram}
 \end{definition}
 
 \subsection{Grupo de homología asociado a un complejo de cadenas}
@@ -495,7 +444,6 @@ Dado un espacio topológico $X$, $\im \p \leq \ker \p$. Esto implica que $(S_*(X
 \begin{kaobox}[frametitle=Ejercicio]
 Esta demostración se basa en la cuenta de la vieja, pero la naturaleza de los
 operadores cara pueden hacerlo engorroso de seguir.
-
 Antes de leer la prueba, intenta probarlo para $n=4$. Si puedes hacerlo sin
 ayuda, puedes ignorar la prueba.
 \end{kaobox}
@@ -518,23 +466,23 @@ con $p < q-1$,
 
 \begin{align*}
 \p_{(p)}\p_{(q)}&c(t_0,\dots,t_{n-2})
-	=\p_{(q)}c(t_0,\dots,t_{p-1},\arriba{(p)}{0},t_p,\dots,t_{n-2})=\\
-	&=c(t_0,\dots,t_{p-1},\arriba{(p)}{0},t_p,\dots,t_{q-2},
-	\arriba{(q)}{0},t_{q-1},\dots,t_{n-2})=\\
-	&=\p_{(p)}c(t_0,\dots,t_{q-2},\arriba{(q-1)}{0},t_{q-1},\dots,t_{n-2})=\\[9pt]
+	=\p_{(q)}c(t_0,\dots,t_{p-1},\stackrel{(p)}{0},t_p,\dots,t_{n-2})=\\
+	&=c(t_0,\dots,t_{p-1},\stackrel{(p)}{0},t_p,\dots,t_{q-2},
+	\stackrel{(q)}{0},t_{q-1},\dots,t_{n-2})=\\
+	&=\p_{(p)}c(t_0,\dots,t_{q-2},\stackrel{(q-1)}{0},t_{q-1},\dots,t_{n-2})=\\[9pt]
 	&=\p_{(q-1)}\p_{(p)}c(t_0,\dots,t_{n-2})
 \end{align*}
 
 Combinando ambas expresiones,
 \begin{align*}
 \p^2c
-	&\arriba{\eqref{Borde2c}}{=}
+	&\stackrel{\eqref{Borde2c}}{=}
 	\sum_{q=1}^n\sum_{p < q-1}(-1)^{p+q}\p_{(p)}\p_{(q)}c+
 	\sum^n_{q=0}\sum_{p > q}(-1)^{p+q}\p_{(p)}\p_{(q)}c
 \end{align*}
 
 \begin{marginfigure}
-\input{Figures/GraficaBorde2Cero}
+\input{figures/GraficaBorde2Cero}
 \caption[Gráfica auxiliar que ilustra el cambio de índices.]{Gráfica auxiliar
 para visualizar el cambio de índices descrito en la ecuación
 \eqref{CambioIndices}.}
@@ -571,10 +519,10 @@ $n$ asociado a $X$} como
 
 \begin{example}\labexample{Camino1ciclo}
 Sea $f\colon [0,1] \to X$ un camino. Se define el 1-símplice singular
-\begin{diag}
-\psi\colon \sigma_1 \arrow[r] & X\\[-0.8cm]
+\begin{funcion}
+\psi\colon \sigma_1 \arrow[r] & X\\
 (t_0,t_1) \arrow[r,maps to] & f(t_0)
-\end{diag}
+\end{funcion}
 Se tiene entonces que $\psi$ es un 1-ciclo si y sólo si
 \[\p \psi=0 \iff \psi(0,1)=\p_{(0)}\psi=\p_{(1)}\psi=\psi(1,0)\]
 Dado que $\psi(0,1)=f(0)$ y $\psi(1,0)=f(1)$, un camino es un 1-ciclo si y sólo
@@ -594,10 +542,10 @@ $f$.
 Todo morfismo inducido por una aplicación continua es una aplicación de cadenas.
 Como consecuencia, si $f\colon X \to Y$ es continua, $f_\#$ induce
 una familia de homomorfismos
-\begin{diag}
-f_*: H_n(X) \arrow[r] &H_n(Y)\\[-0.8cm]
+\begin{funcion}
+f_*: H_n(X) \arrow[r] &H_n(Y)\\
 \left[x\right] \arrow[maps to,r]    &\left[f_\#(x)\right]
-\end{diag}
+\end{funcion}
 para $n \geq 0$.
 \end{proposition}
 
@@ -642,7 +590,6 @@ dado por
 \beta(2t-1) & \frac{1}{2} \leq t \leq 1
 \end{cases}\]
 es continuo y $B_1=A_2$.
-
 Por ejemplo, los caminos $\phi$ y $\eta$ de \reffig{MotivHomologia} son compatibles.
 \end{kaobox}
 }
@@ -665,7 +612,7 @@ borde sea $\phi+\mu$. Tomando clases,
 \[\phi+\mu \in B_1(\mb{R}^2) \iff [\phi]=-[\mu]\]
 
 \begin{marginfigure}
-\input{Figures/HomologiaInterpretacion}
+\input{figures/HomologiaInterpretacion}
 \caption{Varios caminos en $\mb{R}^2$.\labfig{MotivHomologia}}
 \end{marginfigure}
 
