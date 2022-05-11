@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.25)  11 MAY 2022 23:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.25)  11 MAY 2022 23:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**main_but_cooler.tex
+(./main_but_cooler.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-05-07> (./headers/configuration.tex
+L3 programming layer <2021-05-07>
 (/home/hannah/texmf/tex/latex/kaobook/kaobook.cls
 Document Class: kaobook 2021/08/23 v0.9.8 kaobook
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -132,6 +132,12 @@ File: scrsize10pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (10pt
 Package: typearea 2021/03/17 v3.33 KOMA-Script package (type area)
 \ta@bcor=\skip48
 \ta@div=\count179
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
 \ta@hblk=\skip49
 \ta@vblk=\skip50
 \ta@temp=\skip51
@@ -645,6 +651,7 @@ File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
+Package hyperref Info: Option `draft' set `true' on input line 4073.
 Package hyperref Info: Hyper figures OFF on input line 4192.
 Package hyperref Info: Link nesting OFF on input line 4197.
 Package hyperref Info: Hyper index ON on input line 4200.
@@ -1770,21 +1777,6 @@ Package tocbasic Info: babel extension for `nls' omitted
 \nom@tempdim=\dimen336
 \nomitemsep=\skip276
 )))
-\main@idxfile=\write19
-\openout4 = `main.idx'.
-
-
-Writing index file main.idx
-\glswrite=\write20
-\glo@main@file=\write21
-\openout4 = `main.glo'.
-
-Package glossaries Info: Writing glossary file main.glo on input line 38.
-\@nomenclaturefile=\write22
-\openout4 = `main.nlo'.
-
-Package nomencl Info: Writing nomenclature file main.nlo on input line 40.
-) (./headers/packages.tex
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2021/04/26 3.58 The Babel package
 
@@ -1827,132 +1819,7 @@ Package csquotes Info: ... configuration file loaded successfully.
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )
-Package csquotes Info: Redefining alias 'english' -> 'english/british'.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2021/04/12 v1.27 mathematical typesetting tools
-
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
-)
-LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count421
-\l_MT_multwidth_dim=\dimen338
-\origjot=\skip277
-\l_MT_shortvdotswithinadjustabove_dim=\dimen339
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen340
-\l_MT_above_intertext_sep=\dimen341
-\l_MT_below_intertext_sep=\dimen342
-\l_MT_above_shortintertext_sep=\dimen343
-\l_MT_below_shortintertext_sep=\dimen344
-\xmathstrut@box=\box147
-\xmathstrut@dim=\dimen345
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
-Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
-
-(/usr/share/texlive/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarymatrix.code.tex
-File: tikzlibrarymatrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryquotes.code.tex
-File: tikzlibraryquotes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
-code.tex
-File: pgflibraryarrows.meta.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfarrowinset=\dimen346
-\pgfarrowlength=\dimen347
-\pgfarrowwidth=\dimen348
-\pgfarrowlinewidth=\dimen349
-))) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
-Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
-
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
-Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
--ends (calc, etex, pgfmath)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
-Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
-
-(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
-Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box148
-)
-\tc@llx=\dimen350
-\tc@lly=\dimen351
-\tc@urx=\dimen352
-\tc@ury=\dimen353
-Package trimclip Info: Using driver 'tc-pdftex.def'.
-
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
-File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
-))
-\adjbox@Width=\dimen354
-\adjbox@Height=\dimen355
-\adjbox@Depth=\dimen356
-\adjbox@Totalheight=\dimen357
-\adjbox@pwidth=\dimen358
-\adjbox@pheight=\dimen359
-\adjbox@pdepth=\dimen360
-\adjbox@ptotalheight=\dimen361
-
-(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
-Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box149
-\sift@deathcycles=\count422
-\@vwid@loff=\dimen362
-\@vwid@roff=\dimen363
-))
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-\c@subfigure=\count423
-\c@subtable=\count424
-)
-(/usr/share/texlive/texmf-dist/tex/latex/contour/contour.sty
-Package: contour 2004/11/18 v2.14 Print contoured text (HH, MH)
-\con@length=\skip278
-
-Loading configuration file `contour.cfg'.
-(/usr/share/texlive/texmf-dist/tex/latex/contour/contour.cfg
-File: contour.cfg 2004/11/18 v2.14 Print contoured text (HH, MH)
-)
-contour: Using driver file `pdftex.cnt'.
-(/usr/share/texlive/texmf-dist/tex/latex/contour/pdftex.cnt
-File: pdftex.cnt 2004/11/18 v2.14 Print contoured text (HH, MH)
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarypatterns.code.tex
-File: tikzlibrarypatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.cod
-e.tex
-File: pgflibrarypatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)) (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-Package: blindtext 2012/01/06 V2.0 blindtext-Package
-\c@blindtext=\count425
-\c@Blindtext=\count426
-\c@blind@countparstart=\count427
-\blind@countxx=\count428
-\blindtext@numBlindtext=\count429
-\blind@countyy=\count430
-\c@blindlist=\count431
-\c@blindlistlevel=\count432
-\c@blindlist@level=\count433
-\blind@listitem=\count434
-\c@blind@listcount=\count435
-\c@blind@levelcount=\count436
-\blind@mathformula=\count437
-\blind@Mathformula=\count438
-\c@blind@randomcount=\count439
-\c@blind@randommax=\count440
-\c@blind@pangramcount=\count441
-\c@blind@pangrammax=\count442
+Package csquotes Info: Redefining alias 'spanish' -> 'spanish/spanish'.
 )
 (/home/hannah/texmf/tex/latex/kaobook/kaobiblio.sty
 Package: kaobiblio 
@@ -1969,67 +1836,67 @@ Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count443
+\lrq@indent=\count421
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count444
-\c@listtotal=\count445
-\c@listcount=\count446
-\c@liststart=\count447
-\c@liststop=\count448
-\c@citecount=\count449
-\c@citetotal=\count450
-\c@multicitecount=\count451
-\c@multicitetotal=\count452
-\c@instcount=\count453
-\c@maxnames=\count454
-\c@minnames=\count455
-\c@maxitems=\count456
-\c@minitems=\count457
-\c@citecounter=\count458
-\c@maxcitecounter=\count459
-\c@savedcitecounter=\count460
-\c@uniquelist=\count461
-\c@uniquename=\count462
-\c@refsection=\count463
-\c@refsegment=\count464
-\c@maxextratitle=\count465
-\c@maxextratitleyear=\count466
-\c@maxextraname=\count467
-\c@maxextradate=\count468
-\c@maxextraalpha=\count469
-\c@abbrvpenalty=\count470
-\c@highnamepenalty=\count471
-\c@lownamepenalty=\count472
-\c@maxparens=\count473
-\c@parenlevel=\count474
-\blx@tempcnta=\count475
-\blx@tempcntb=\count476
-\blx@tempcntc=\count477
-\c@blx@maxsection=\count478
-\c@blx@maxsegment@0=\count479
-\blx@notetype=\count480
-\blx@parenlevel@text=\count481
-\blx@parenlevel@foot=\count482
-\c@blx@sectionciteorder@0=\count483
-\blx@entrysetcounter=\count484
-\blx@biblioinstance=\count485
-\labelnumberwidth=\skip279
-\labelalphawidth=\skip280
-\biblabelsep=\skip281
-\bibitemsep=\skip282
-\bibnamesep=\skip283
-\bibinitsep=\skip284
-\bibparsep=\skip285
-\bibhang=\skip286
+\c@tabx@nest=\count422
+\c@listtotal=\count423
+\c@listcount=\count424
+\c@liststart=\count425
+\c@liststop=\count426
+\c@citecount=\count427
+\c@citetotal=\count428
+\c@multicitecount=\count429
+\c@multicitetotal=\count430
+\c@instcount=\count431
+\c@maxnames=\count432
+\c@minnames=\count433
+\c@maxitems=\count434
+\c@minitems=\count435
+\c@citecounter=\count436
+\c@maxcitecounter=\count437
+\c@savedcitecounter=\count438
+\c@uniquelist=\count439
+\c@uniquename=\count440
+\c@refsection=\count441
+\c@refsegment=\count442
+\c@maxextratitle=\count443
+\c@maxextratitleyear=\count444
+\c@maxextraname=\count445
+\c@maxextradate=\count446
+\c@maxextraalpha=\count447
+\c@abbrvpenalty=\count448
+\c@highnamepenalty=\count449
+\c@lownamepenalty=\count450
+\c@maxparens=\count451
+\c@parenlevel=\count452
+\blx@tempcnta=\count453
+\blx@tempcntb=\count454
+\blx@tempcntc=\count455
+\c@blx@maxsection=\count456
+\c@blx@maxsegment@0=\count457
+\blx@notetype=\count458
+\blx@parenlevel@text=\count459
+\blx@parenlevel@foot=\count460
+\c@blx@sectionciteorder@0=\count461
+\blx@entrysetcounter=\count462
+\blx@biblioinstance=\count463
+\labelnumberwidth=\skip277
+\labelalphawidth=\skip278
+\biblabelsep=\skip279
+\bibitemsep=\skip280
+\bibnamesep=\skip281
+\bibinitsep=\skip282
+\bibparsep=\skip283
+\bibhang=\skip284
 \blx@bcfin=\read6
-\blx@bcfout=\write23
+\blx@bcfout=\write19
 \blx@langwohyphens=\language87
-\c@mincomprange=\count486
-\c@maxcomprange=\count487
-\c@mincompwidth=\count488
+\c@mincomprange=\count464
+\c@maxcomprange=\count465
+\c@mincompwidth=\count466
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -2042,112 +1909,122 @@ Package biblatex Info: Trying to load biblatex bibstyle data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count489
-\c@savedafterword=\count490
-\c@annotator=\count491
-\c@savedannotator=\count492
-\c@author=\count493
-\c@savedauthor=\count494
-\c@bookauthor=\count495
-\c@savedbookauthor=\count496
-\c@commentator=\count497
-\c@savedcommentator=\count498
-\c@editor=\count499
-\c@savededitor=\count500
-\c@editora=\count501
-\c@savededitora=\count502
-\c@editorb=\count503
-\c@savededitorb=\count504
-\c@editorc=\count505
-\c@savededitorc=\count506
-\c@foreword=\count507
-\c@savedforeword=\count508
-\c@holder=\count509
-\c@savedholder=\count510
-\c@introduction=\count511
-\c@savedintroduction=\count512
-\c@namea=\count513
-\c@savednamea=\count514
-\c@nameb=\count515
-\c@savednameb=\count516
-\c@namec=\count517
-\c@savednamec=\count518
-\c@translator=\count519
-\c@savedtranslator=\count520
-\c@shortauthor=\count521
-\c@savedshortauthor=\count522
-\c@shorteditor=\count523
-\c@savedshorteditor=\count524
-\c@labelname=\count525
-\c@savedlabelname=\count526
-\c@institution=\count527
-\c@savedinstitution=\count528
-\c@lista=\count529
-\c@savedlista=\count530
-\c@listb=\count531
-\c@savedlistb=\count532
-\c@listc=\count533
-\c@savedlistc=\count534
-\c@listd=\count535
-\c@savedlistd=\count536
-\c@liste=\count537
-\c@savedliste=\count538
-\c@listf=\count539
-\c@savedlistf=\count540
-\c@location=\count541
-\c@savedlocation=\count542
-\c@organization=\count543
-\c@savedorganization=\count544
-\c@origlocation=\count545
-\c@savedoriglocation=\count546
-\c@origpublisher=\count547
-\c@savedorigpublisher=\count548
-\c@publisher=\count549
-\c@savedpublisher=\count550
-\c@language=\count551
-\c@savedlanguage=\count552
-\c@origlanguage=\count553
-\c@savedoriglanguage=\count554
-\c@pageref=\count555
-\c@savedpageref=\count556
-\shorthandwidth=\skip287
-\shortjournalwidth=\skip288
-\shortserieswidth=\skip289
-\shorttitlewidth=\skip290
-\shortauthorwidth=\skip291
-\shorteditorwidth=\skip292
-\locallabelnumberwidth=\skip293
-\locallabelalphawidth=\skip294
-\localshorthandwidth=\skip295
-\localshortjournalwidth=\skip296
-\localshortserieswidth=\skip297
-\localshorttitlewidth=\skip298
-\localshortauthorwidth=\skip299
-\localshorteditorwidth=\skip300
+\c@afterword=\count467
+\c@savedafterword=\count468
+\c@annotator=\count469
+\c@savedannotator=\count470
+\c@author=\count471
+\c@savedauthor=\count472
+\c@bookauthor=\count473
+\c@savedbookauthor=\count474
+\c@commentator=\count475
+\c@savedcommentator=\count476
+\c@editor=\count477
+\c@savededitor=\count478
+\c@editora=\count479
+\c@savededitora=\count480
+\c@editorb=\count481
+\c@savededitorb=\count482
+\c@editorc=\count483
+\c@savededitorc=\count484
+\c@foreword=\count485
+\c@savedforeword=\count486
+\c@holder=\count487
+\c@savedholder=\count488
+\c@introduction=\count489
+\c@savedintroduction=\count490
+\c@namea=\count491
+\c@savednamea=\count492
+\c@nameb=\count493
+\c@savednameb=\count494
+\c@namec=\count495
+\c@savednamec=\count496
+\c@translator=\count497
+\c@savedtranslator=\count498
+\c@shortauthor=\count499
+\c@savedshortauthor=\count500
+\c@shorteditor=\count501
+\c@savedshorteditor=\count502
+\c@labelname=\count503
+\c@savedlabelname=\count504
+\c@institution=\count505
+\c@savedinstitution=\count506
+\c@lista=\count507
+\c@savedlista=\count508
+\c@listb=\count509
+\c@savedlistb=\count510
+\c@listc=\count511
+\c@savedlistc=\count512
+\c@listd=\count513
+\c@savedlistd=\count514
+\c@liste=\count515
+\c@savedliste=\count516
+\c@listf=\count517
+\c@savedlistf=\count518
+\c@location=\count519
+\c@savedlocation=\count520
+\c@organization=\count521
+\c@savedorganization=\count522
+\c@origlocation=\count523
+\c@savedoriglocation=\count524
+\c@origpublisher=\count525
+\c@savedorigpublisher=\count526
+\c@publisher=\count527
+\c@savedpublisher=\count528
+\c@language=\count529
+\c@savedlanguage=\count530
+\c@origlanguage=\count531
+\c@savedoriglanguage=\count532
+\c@pageref=\count533
+\c@savedpageref=\count534
+\shorthandwidth=\skip285
+\shortjournalwidth=\skip286
+\shortserieswidth=\skip287
+\shorttitlewidth=\skip288
+\shortauthorwidth=\skip289
+\shorteditorwidth=\skip290
+\locallabelnumberwidth=\skip291
+\locallabelalphawidth=\skip292
+\localshorthandwidth=\skip293
+\localshortjournalwidth=\skip294
+\localshortserieswidth=\skip295
+\localshorttitlewidth=\skip296
+\localshortauthorwidth=\skip297
+\localshorteditorwidth=\skip298
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 )
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+File: blx-bibtex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-\c@textcitecount=\count557
-\c@textcitetotal=\count558
-\c@textcitemaxnames=\count559
-\c@biburlbigbreakpenalty=\count560
-\c@biburlbreakpenalty=\count561
-\c@biburlnumpenalty=\count562
-\c@biburlucpenalty=\count563
-\c@biburllcpenalty=\count564
+\c@textcitecount=\count535
+\c@textcitetotal=\count536
+\c@textcitemaxnames=\count537
+\c@biburlbigbreakpenalty=\count538
+\c@biburlbreakpenalty=\count539
+\c@biburlnumpenalty=\count540
+\c@biburlucpenalty=\count541
+\c@biburllcpenalty=\count542
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count565
+\c@smartand=\count543
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -2159,18 +2036,18 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count566
-\c@bbx:relatedtotal=\count567
+\c@bbx:relatedcount=\count544
+\c@bbx:relatedtotal=\count545
 ))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count568
-\c@cbx@tempcntb=\count569
-\c@cbx@tempcntc=\count570
-\c@cbx@tempcntd=\count571
+\c@cbx@tempcnta=\count546
+\c@cbx@tempcntb=\count547
+\c@cbx@tempcntc=\count548
+\c@cbx@tempcntd=\count549
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -2200,29 +2077,1696 @@ Package biblatex Info: ... and expl3
 Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
 ))
 Package biblatex Info: Redefining '\fullcite' on input line 412.
+)
+(/home/hannah/texmf/tex/latex/kaobook/kaotheorems.sty
+Package: kaotheorems 
+
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks69
+\thm@bodyfont=\toks70
+\thm@headfont=\toks71
+\thm@notefont=\toks72
+\thm@headpunct=\toks73
+\thm@preskip=\skip299
+\thm@postskip=\skip300
+\thm@headsep=\skip301
+\dth@everypar=\toks74
+LaTeX Info: Redefining \textsquare on input line 427.
+)
+Class scrbook Info: amsthm's \deferred@thm@head patched.
+
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thmtools.sty
+Package: thmtools 2020/08/01 v0.72
+\thmt@toks=\toks75
+\c@thmt@dummyctr=\count550
+
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-patch.sty
+Package: thm-patch 2020/08/01 v0.72
+
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/parseargs.sty
+Package: parseargs 2020/08/01 v0.72
+\@parsespec=\toks76
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-kv.sty
+Package: thm-kv 2020/08/01 v0.72
+Package thm-kv Info: Theorem names will be uppercased on input line 42.
+Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 158.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+Package: thm-autoref 2020/08/01 v0.72
 
-! LaTeX Error: File `mdftheorems.sty' not found.
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/aliasctr.sty
+Package: aliasctr 2020/08/01 v0.72
+))
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-listof.sty
+Package: thm-listof 2020/08/01 v0.72
+)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-restate.sty
+Package: thm-restate 2020/08/01 v0.72
+)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
+Package: thm-amsthm 2020/08/01 v0.72
+\thmt@style@headstyle=\toks77
+))
+Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line
+ 159.
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thmdef-mdframed.sty
+Package: thmdef-mdframed 2020/08/01 v0.72
+)
+\c@theorem=\count551
+\c@definition=\count552
+\c@assumption=\count553
+\c@remark=\count554
+\c@example=\count555
+\c@exercise=\count556
+)
+(/home/hannah/texmf/tex/latex/kaobook/kaorefs.sty
+Package: kaorefs 
 
-Enter file name: x
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `varioref' support loaded on input line 2605.
+Package cleveref Info: `cleveref' supersedes `varioref's \labelformatcommand on
+ input line 2605.
+LaTeX Info: Redefining \vref on input line 2605.
+LaTeX Info: Redefining \Vref on input line 2605.
+LaTeX Info: Redefining \vrefrange on input line 2605.
+LaTeX Info: Redefining \fullref on input line 2605.
+Package cleveref Info: `amsthm' support loaded on input line 3026.
+Package cleveref Info: `listings' support loaded on input line 3131.
+Package cleveref Info: `algorithm2e' support loaded on input line 3147.
+Package cleveref Info: always capitalise cross-reference names on input line 78
+25.
+Package cleveref Info: include cross-reference names in hyperlinks on input lin
+e 7836.
+Package cleveref Info: always capitalise cross-reference names on input line 78
+52.
+Package cleveref Info: include cross-reference names in hyperlinks on input lin
+e 7852.
+Package cleveref Info: no abbreviation of names on input line 7852.
+))
+\main_but_cooler@idxfile=\write20
+\openout4 = `main_but_cooler.idx'.
 
-! Emergency stop.
-<read *> 
-         
-l.30 \input{headers/packages}
-                             
-*** (cannot \read from terminal in nonstop modes)
 
- 
+Writing index file main_but_cooler.idx
+\@nomenclaturefile=\write21
+\openout4 = `main_but_cooler.nlo'.
+
+Package nomencl Info: Writing nomenclature file main_but_cooler.nlo on input li
+ne 74.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count557
+\c@subtable=\count558
+)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup10
+LaTeX Font Info:    Redeclaring math alphabet \mathscr on input line 9.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrhack.sty
+Package: scrhack 2021/03/17 v3.33 KOMA-Script package (hacking other packages)
+Package scrhack Info: hyperref hack deactivated because of
+(scrhack)             detection of hyperref version, that doesn't
+(scrhack)             need that hack, on input line 162.
+Package scrhack Info: loading float hack on input line 169.
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/float.hak
+File: float.hak 2021/03/17 v3.33 KOMA-Script scrhack part (hacking package floa
+t)
+
+
+Package scrhack Warning: unknown \newfloat definition found!
+(scrhack)                Maybe you are using a unsupported float version.
+
+)
+Package scrhack Info: loading floatrow hack on input line 176.
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/floatrow.hak
+File: floatrow.hak 2021/03/17 v3.33 KOMA-Script scrhack part (hacking package f
+loatrow)
+Package scrhack Info: redefining \DeclareNewFloatType on input line 150.
+Package scrhack Info: redefining \listof on input line 150.
+Package scrhack Info: undefining \float@addtolists on input line 150.
+)
+Package scrhack Info: loading listings hack on input line 183.
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/listings.hak
+File: listings.hak 2021/03/17 v3.33 KOMA-Script scrhack part (hacking package l
+istings)
+Package tocbasic Info: setting babel extension for `lol' on input line 143.
+Package scrhack Info: redefining \lstlistoflistings on input line 143.
+)
+Package scrhack Info: loading nomencl hack on input line 190.
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/nomencl.hak
+File: nomencl.hak 2021/03/17 v3.33 KOMA-Script scrhack part (hacking package no
+mencl)
+Package scrhack Info: only `tocbasic' loaded for `nomencl' on input line 79.
+)
+Package scrhack Info: loading setspace hack on input line 197.
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/setspace.hak
+File: setspace.hak 2021/03/17 v3.33 KOMA-Script scrhack part (hacking package s
+etspace)
+))
+LaTeX Font Info:    Trying to load font information for T1+zpllf on input line 
+102.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/t1zpllf.fd
+File: t1zpllf.fd 2015/01/17 v1.0 font definition file for T1/zpl/lf
+)
+LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
+(Font)              scaled to size 9.70001pt on input line 102.
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'spanish'.
+
+(./main_but_cooler.aux)
+\openout1 = `main_but_cooler.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 102.
+LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
+ 102.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
+File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
+)
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 102.
+LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
+102.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxexa.fd
+File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
+)
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 102.
+LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
+ 102.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
+File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
+)
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 102.
+LaTeX Font Info:    Trying to load font information for LMX+npxexx on input lin
+e 102.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
+File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
+)
+LaTeX Font Info:    ... okay on input line 102.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count559
+\scratchdimen=\dimen338
+\scratchbox=\box147
+\nofMPsegments=\count560
+\nofMParguments=\count561
+\everyMPshowfont=\toks78
+\MPscratchCnt=\count562
+\MPscratchDim=\dimen339
+\MPnumerator=\count563
+\makeMPintoPDFobject=\count564
+\everyMPtoPDFconversion=\toks79
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.7013pt, 418.25148pt, 107.55196pt)
+* v-part:(T,H,B)=(101.4061pt, 591.5271pt, 152.1092pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=418.25148pt
+* \textheight=591.5271pt
+* \oddsidemargin=-0.5687pt
+* \evensidemargin=35.28197pt
+* \topmargin=-3.86389pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=112.03273pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=304.44289pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=150.22939pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=135.71892pt
+* \marginparsep=17.6406pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 102.
+LaTeX Info: Redefining \microtypecontext on input line 102.
+
+
+Package microtype Warning: `draft' option active.
+(microtype)                Disabling all micro-typographic extensions.
+(microtype)                This might lead to different line and page breaks.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen340
+\caption@adjustwidth@linewidth=\dimen341
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: Fixing longtable code of `floatrow' package.
+Package caption Info: rotating package is loaded.
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\@sidenotes@extrawidth=\skip302
+
+
+Package hyperref Warning: Draft mode on.
+
+Package hyperref Info: Link coloring ON on input line 102.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count565
+LaTeX Info: Redefining \Ref on input line 520.
+)
+LaTeX Info: Redefining \ref on input line 102.
+LaTeX Info: Redefining \pageref on input line 102.
+LaTeX Info: Redefining \nameref on input line 102.
+LaTeX Info: Redefining \Ref on input line 102.
+\c@lstlisting=\count566
+
+(/usr/share/texlive/texmf-dist/tex/latex/floatrow/fr-longtable.sty
+Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
+
+\flrow@LT@lasthead=\box148
+\flrow@LT@prelastfoot=\box149
+\c@FBLTpage=\count567
+)
+No file main_but_cooler.toc.
+\c@mv@tabular=\count568
+\c@mv@boldtabular=\count569
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package scrhack Info: loading lscape hack on input line 77.
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/lscape.hak
+File: lscape.hak 2021/03/17 v3.33 KOMA-Script scrhack part (hacking package lsc
+ape)
+Package scrhack Info: \landscape patched to make \textheight change optional on
+ input line 90.
+\scrh@LT@textheight=\skip303
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+Package biblatex Info: Trying to load language 'spanish'...
+Package biblatex Info: ... file 'spanish.lbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
+File: spanish.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout4 = `main_but_cooler-blx.bib'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main_but_cooler.bbl' not found.
+
+No file main_but_cooler.bbl.
+Package biblatex Info: Reference section=0 on input line 102.
+Package biblatex Info: Reference segment=0 on input line 102.
+Package scrhack Info: undefining \float@addtolists on input line 102.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=456.37979pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=-1.70752pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\tf@toc=\write22
+\openout4 = `main_but_cooler.toc'.
+
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 14
+2.
+(/usr/share/texlive/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
+File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
+)
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 9.02084pt on input line 142.
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 9.02084pt on input line 142.
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 18.70923pt on input line 142.
+LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
+(Font)              scaled to size 20.11783pt on input line 142.
+LaTeX Font Info:    Font shape `T1/zpllf/b/n' will be
+(Font)              scaled to size 20.11783pt on input line 142.
+Package tocbasic Info: character protrusion at toc deactivated on input line 14
+2.
+LaTeX Font Info:    Font shape `T1/zpllf/m/sl' will be
+(Font)              scaled to size 9.70001pt on input line 143.
+\openout4 = `main_but_cooler.mw'.
+
+ [1{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): ambiguous entry for `UniClass[letter]': font file present but
+ not included, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pagd8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pagdo8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pagk8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pagko8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pbkd8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pbkdi8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pbkdo8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pbkl8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pbkli8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pbklo8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrb8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrbo8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrr8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrro8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pcrr8rn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvb8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvb8yn' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvbo8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvbo8yn' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvr8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvr8yn' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvro8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvro8yn' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pncb8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pncbi8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pncbo8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pncr8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pncri8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pncro8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pplb8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pplbi8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pplbo8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pplbu8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pplr8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pplr8yn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pplri8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pplro8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pplrr8ye': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `pplru8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmb8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmbi8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmbo8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmr8y' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmr8yn': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmri8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmro8y': SlantFont/ExtendFont can be used
+ only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `ptmrr8ye': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): ambiguous entry for `rpcxbsl': font file present but not incl
+uded, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): ambiguous entry for `rpcxsl': font file present but not inclu
+ded, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): ambiguous entry for `rpxbsl': font file present but not inclu
+ded, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): ambiguous entry for `rpxpplb': font file present but not incl
+uded, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpxpplb' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): ambiguous entry for `rpxpplbi': font file present but not inc
+luded, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpxpplbi' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): ambiguous entry for `rpxpplbo': font file present but not inc
+luded, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpxpplbo' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): ambiguous entry for `rpxpplr': font file present but not incl
+uded, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpxpplr' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): ambiguous entry for `rpxpplri': font file present but not inc
+luded, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpxpplri' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): ambiguous entry for `rpxpplro': font file present but not inc
+luded, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rpxpplro' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): ambiguous entry for `rpxsl': font file present but not includ
+ed, will be treated as font file not present
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pzcmi8y' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pagd8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pagdo8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pagk8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pagko8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pbkd8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pbkdi8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pbkl8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pbkli8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrb8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrbo8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrr8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pcrro8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvb8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvbo8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvr8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `phvro8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pncb8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pncbi8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pncr8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pncri8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pplb8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pplbi8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pplr8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pplri8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `psyr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `psyrgo' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmb8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmbi8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmr8g' already exists, duplicates ignored
+
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `ptmri8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pzcmi8g' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `pzdr' already exists, duplicates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxphvb' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rtxphvbo': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxphvr' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rtxphvro': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxptmb' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxptmbi' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rtxptmbo': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxptmr' already exists, duplicates ignore
+d
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): fontmap entry for `rtxptmri' already exists, duplicates ignor
+ed
+
+
+pdfTeX warning: pdflatex (file /usr/share/texlive/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map): invalid entry for `rtxptmro': SlantFont/ExtendFont can be use
+d only with embedded Type1 fonts
+}
+
+
+
+
+
+
+] (./main_but_cooler.mw)
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+Package tocbasic Info: character protrusion at lof deactivated on input line 14
+3.
+
+No file main_but_cooler.lof.
+\tf@lof=\write23
+\openout4 = `main_but_cooler.lof'.
+
+Package tocbasic Info: character protrusion at lot deactivated on input line 15
+0.
+No file main_but_cooler.lot.
+\tf@lot=\write24
+\openout4 = `main_but_cooler.lot'.
+
+Package tocbasic Info: character protrusion at lol deactivated on input line 15
+2.
+No file main_but_cooler.lol.
+\tf@lol=\write25
+\openout4 = `main_but_cooler.lol'.
+
+\openout4 = `main_but_cooler.mw'.
+
+[2
+
+] (./main_but_cooler.mw)
+\openout4 = `main_but_cooler.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=304.44289pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=150.22939pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=135.71892pt
+* \marginparsep=17.6406pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=456.37979pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=-1.70752pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+part without number
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 22.44386pt on input line 166.
+LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
+(Font)              scaled to size 24.13362pt on input line 166.
+LaTeX Font Info:    Font shape `T1/zpllf/m/sc' will be
+(Font)              scaled to size 24.13362pt on input line 166.
+LaTeX Font Info:    Font shape `T1/zpllf/b/sc' will be
+(Font)              scaled to size 24.13362pt on input line 166.
+\openout4 = `main_but_cooler.mw'.
+
+[1
+
+
+
+
+
+] (./main_but_cooler.mw)
+\openout4 = `main_but_cooler.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=304.44289pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=150.22939pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=135.71892pt
+* \marginparsep=17.6406pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=456.37979pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=-1.70752pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+part without number
+\openout4 = `main_but_cooler.mw'.
+
+[2
+
+
+
+] (./main_but_cooler.mw)
+\openout4 = `main_but_cooler.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=304.44289pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=150.22939pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=135.71892pt
+* \marginparsep=17.6406pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=456.37979pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=-1.70752pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+part without number
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 180.
+
+LaTeX Font Info:    Trying to load font information for OT1+zpltlf on input lin
+e 180.
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/ot1zpltlf.fd
+File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
+)
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 24.13362pt on input line 180.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 17.654pt on input line 180.
+LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
+(Font)              scaled to size 13.289pt on input line 180.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 180
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 180
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+npxmia on input line 
+180.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxmia.fd
+File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
+)
+LaTeX Font Info:    Trying to load font information for U+npxsym on input line 
+180.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsym.fd
+File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
+)
+LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 
+180.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsyc.fd
+File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18
+0.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <18.2> not available
+(Font)              size <17.28> substituted on input line 180.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13.7> not available
+(Font)              size <14.4> substituted on input line 180.
+
+\openout4 = `main_but_cooler.mw'.
+
+[3
+
+
+
+] (./main_but_cooler.mw)
+\openout4 = `main_but_cooler.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=304.44289pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=150.22939pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=135.71892pt
+* \marginparsep=17.6406pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=456.37979pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=-1.70752pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+part without number
+\openout4 = `main_but_cooler.mw'.
+
+[4
+
+
+
+] (./main_but_cooler.mw)
+\openout4 = `main_but_cooler.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=304.44289pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=150.22939pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=135.71892pt
+* \marginparsep=17.6406pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=456.37979pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=-1.70752pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+part without number
+\openout4 = `main_but_cooler.mw'.
+
+[5
+
+
+
+] (./main_but_cooler.mw)
+\openout4 = `main_but_cooler.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=304.44289pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=150.22939pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=135.71892pt
+* \marginparsep=17.6406pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=456.37979pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=-1.70752pt
+* \topmargin=-40.60774pt
+* \headheight=15.0pt
+* \headsep=31.29787pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+
+LaTeX Warning: Empty bibliography on input line 212.
+
+\openout4 = `main_but_cooler.idx'.
+
+runsystem(makeindex main_but_cooler.idx)...executed safely (allowed).
+
+(./main_but_cooler.ind)
+
+Package caption Warning: Unused \captionsetup[sub] on input line 86.
+See the caption package documentation for explanation.
+
+(./main_but_cooler.aux
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+LaTeX Info: Redefining \sptext on input line 37.
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+\openout4 = `main_but_cooler.mw'.
+
+)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.92pt have occurred.
+
+\openout4 = `main_but_cooler-blx.bib'.
+
+Package logreq Info: Writing requests to 'main_but_cooler.run.xml'.
+\openout1 = `main_but_cooler.run.xml'.
+
+\openout4 = `main_but_cooler.nlo'.
+
+\openout4 = `main_but_cooler.toc'.
+
+\openout4 = `main_but_cooler.lof'.
+
+\openout4 = `main_but_cooler.lot'.
+
+\openout4 = `main_but_cooler.lol'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 51936 strings out of 478862
- 1001308 string characters out of 5858944
- 1765271 words of memory out of 6000000
- 68712 multiletter control sequences out of 15000+600000
- 407223 words of font info for 29 fonts, out of 8000000 for 9000
+ 54186 strings out of 478862
+ 1036870 string characters out of 5858944
+ 2152141 words of memory out of 6000000
+ 70825 multiletter control sequences out of 15000+600000
+ 453474 words of font info for 73 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 138i,1n,162p,10630b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 133i,21n,159p,10611b,1820s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{part*.14} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{part*.12} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{part*.10} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{part*.8} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{part*.6} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{chapter*.1} has been referenced but does not exist,
+ replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/shar
+e/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-lf-sc.enc}{/usr/share/texlive
+/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-lf.enc}</usr/share/texlive/texmf-dist/
+fonts/type1/public/newpx/zplb.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/newpx/zplr.pfb>
+Output written on main_but_cooler.pdf (7 pages, 107839 bytes).
+PDF statistics:
+ 73 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+

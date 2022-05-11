@@ -1,0 +1,235 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% kaobook
+% LaTeX Class
+% Version 0.9.8 (2021/08/23)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% For the latest template development version and to make contributions:
+% https://github.com/fmarotta/kaobook
+%
+% Authors:
+% Federico Marotta (federicomarotta@mail.com)
+% Based on the doctoral thesis of Ken Arroyo Ohori (https://3d.bk.tudelft.nl/ken/en)
+% and on the Tufte-LaTeX class.
+% Modified for LaTeX Templates by Vel (vel@latextemplates.com)
+%
+% License:
+% LPPL (see included MANIFEST.md file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE AND DOCUMENTATION OF THE KAOBOOK CLASS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+    a4paper,
+    fontsize=10pt,
+    draft,
+    twoside=true, 			% Use different layouts for even and odd pages (in particular, if twoside=true, the margin column will be always on the outside)
+	open=any, 				% If twoside=true, uncomment this to force new chapters to start on any page, not only on right (odd) pages
+	%chapterentrydots=true, % Uncomment to output dots from the chapter name to the page number in the table of contents
+	numbers=noenddot,	 	% Comment to output dots after chapter numbers; the most common values for this option are: enddot, noenddot and auto (see the KOMAScript documentation for an in-depth explanation)
+]{kaobook}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Choose the language
+\ifxetexorluatex
+	\usepackage{polyglossia}
+	\setmainlanguage{spanish}
+\else
+	\usepackage[spanish]{babel} % Load characters and hyphenation
+\fi
+\usepackage[spanish=spanish]{csquotes}	% English quotes
+
+% Load packages for testing
+%\usepackage{blindtext} 	% Print text without any meaning for testing purposes
+%\usepackage{showframe} 	% Uncomment to show boxes around the text area, margin, header and footer
+%\usepackage{showlabels} 	% Uncomment to output the content of \label commands to the document where they are used
+
+% Load the bibliography package
+\usepackage[backend=bibtex]{kaobiblio}
+\addbibresource{chapters/references} % Bibliography file
+
+% Load mathematical packages for theorems and related environments
+\usepackage[framed=true]{kaotheorems}
+
+% Load the package for hyperreferences
+\usepackage{kaorefs}
+
+% Paths in which to look for images
+\graphicspath{{figures/}}
+
+% Make LaTeX produce the files required to compile the index
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+
+%\makeglossaries % Make LaTeX produce the files required to compile the glossary
+%\input{chapters/glossary.tex} % Include the glossary definitions
+
+\makenomenclature % Make LaTeX produce the files required to compile the nomenclature
+
+% Reset sidenote counter at chapters
+%\counterwithin*{sidenote}{chapter}
+
+% Split figure into subfigures
+\usepackage{subcaption}
+
+\usepackage{amsmath,amssymb}
+\usepackage{mathrsfs}
+
+\usepackage{subcaption}
+
+% Index of terms
+\usepackage{imakeidx}
+\newcommand{\define}[1]{\textbf{#1}\index{#1}}
+
+%Hyperlinks
+\usepackage{hyperref}
+
+%\usepackage{packages/algebra}
+%\usepackage{packages/singtheo}
+%\usepackage{packages/nicetikz}
+%\usepackage{packages/fonts}
+%\usepackage{packages/tables}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%\input{title}
+\frontmatter % Denotes the start of the pre-document content, uses roman numerals
+
+\makeatletter
+%\input{frontmatter/opening}
+\makeatother
+
+\makeatletter
+%\input{frontmatter/copyright}
+\makeatother
+
+%\input{frontmatter/dedication}
+
+%\maketitle
+
+%----------------------------------------------------------------------------------------
+%	PREFACE
+%----------------------------------------------------------------------------------------
+
+%\input{chapters/preface.tex}
+\index{preface}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS & LIST OF FIGURES/TABLES
+%----------------------------------------------------------------------------------------
+
+\begingroup % Local scope for the following commands
+
+% Define the style for the TOC, LOF, and LOT
+%\setstretch{1} % Uncomment to modify line spacing in the ToC
+%\hypersetup{linkcolor=blue} % Uncomment to set the colour of links in the ToC
+\setlength{\textheight}{230\hscale} % Manually adjust the height of the ToC pages
+
+% Turn on compatibility mode for the etoc package
+\etocstandarddisplaystyle % "toc display" as if etoc was not loaded
+\etocstandardlines % "toc lines as if etoc was not loaded
+
+\tableofcontents % Output the table of contents
+
+\listoffigures % Output the list of figures
+
+% Comment both of the following lines to have the LOF and the LOT on 
+% different pages
+\let\cleardoublepage\bigskip
+\let\clearpage\bigskip
+
+\listoftables % Output the list of tables
+
+\listoflstlistings % Output the list of listings
+
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers
+\setchapterstyle{kao} % Choose the default chapter heading style
+
+%\input{chapters/introduction.tex}
+
+\pagelayout{wide} % No margins
+\addpart{Deformations of Smooth Mappings}
+%\input{chapters/deformations/introduction}
+\pagelayout{margin} % Restore margins
+
+
+\pagelayout{wide} % No margins
+\addpart{Arnol'd-Ishikawa Theory of Legendrian Stability}
+%\input{chapters/legendrian/introduction}
+\pagelayout{margin} % Restore margins
+
+%\input{chapters/legendrian/immersions}
+%\input{chapters/legendrian/stability}
+
+\pagelayout{wide} % No margins
+\addpart{Deformations of Corank $1$ Frontals}
+\pagelayout{margin} % Restore margins
+
+%\input{chapters/deformations/mather_gaffney}
+
+\pagelayout{wide} % No margins
+\addpart{Singularities of Frontals Surfaces}
+\pagelayout{margin} % Restore margins
+
+%\input{chapters/surfaces/double_pts}
+%\input{chapters/surfaces/homology}
+
+\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
+
+\pagelayout{wide} % No margins
+\addpart{Appendix}
+\pagelayout{margin} % Restore margins
+
+%\input{chapters/appendix}
+
+%----------------------------------------------------------------------------------------
+
+\backmatter % Denotes the end of the main document content
+\setchapterstyle{plain} % Output plain chapters from this point onwards
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+% The bibliography needs to be compiled with biber using your LaTeX editor, or on the command line with 'biber main' from the template directory
+
+\defbibnote{bibnote}{Here are the references in citation order.\par\bigskip} % Prepend this text to the bibliography
+\printbibliography[heading=bibintoc, title=Bibliography, prenote=bibnote] % Add the bibliography heading to the ToC, set the title of the bibliography and output the bibliography note
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+% The index needs to be compiled on the command line with 'makeindex main' from the template directory
+\printindex % Output the index
+
+%----------------------------------------------------------------------------------------
+%	BACK COVER
+%----------------------------------------------------------------------------------------
+
+% If you have a PDF/image file that you want to use as a back cover, uncomment the following lines
+
+%\clearpage
+%\thispagestyle{empty}
+%\null%
+%\clearpage
+%\includepdf{cover-back.pdf}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
