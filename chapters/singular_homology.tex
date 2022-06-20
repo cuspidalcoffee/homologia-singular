@@ -222,9 +222,9 @@ Considérese el 2-símplice singular
 
 Las caras de $\phi$ son los $1$-símplices singulares
 \begin{align*}
-\p_{(0)}\phi(u,v)=\phi(0,u,v)=(2,2u+2,2v+2)\\
-\p_{(1)}\phi(u,v)=\phi(u,0,v)=(2u+2,2,2v+2)\\
-\p_{(2)}\phi(u,v)=\phi(u,v,0)=(2u+2,2v+2,2)
+	\p_{(0)}\phi(u,v)&=\phi(0,u,v)=(2,2u+2,2v+2)\\
+	\p_{(1)}\phi(u,v)&=\phi(u,0,v)=(2u+2,2,2v+2)\\
+	\p_{(2)}\phi(u,v)&=\phi(u,v,0)=(2u+2,2v+2,2)
 \end{align*}
 
 Desde un punto de vista geométrico, $\p_{(i)}\phi(\sigma_1)$ son las caras del tetraedro $\phi(\sigma_2)$ para $i=0,1,2$.
@@ -234,8 +234,8 @@ Desde un punto de vista geométrico, $\p_{(i)}\phi(\sigma_1)$ son las caras del 
 Sea $G$ un grupo abeliano y $n \in \mb{Z}$ un entero no nulo.
 Dado un $g \in G$, se define el producto $ng$ como
 \begin{align*}
-ng:=\sum^n_{j=0}g	&& ng:=\sum^{-n}_{j=0}-g\\
-(n>0)				&& (n < 0)
+	ng:=\sum^n_{j=0}g	&& ng:=\sum^{-n}_{j=0}-g\\
+	(n>0)				&& (n < 0)
 \end{align*}
 Si $n=0$, se considera que $0g=0$ para todo $g \in G$.
 
@@ -248,39 +248,38 @@ $\mu_1,\dots,\mu_n$ tales que
 Sea $G$ un grupo abeliano. Un sistema generador $B$ de $G$ es una \textbf{base}
 si, dados $b_1,\dots,b_n \in B$ y enteros $\lambda_1,\dots,\lambda_n$,
 \begin{align}
-\label{SisLibre} \sum^n_{i=1}\lambda_ib_i=0 \implies \lambda_i=0
+	\label{SisLibre} \sum^n_{i=1}\lambda_ib_i=0 \implies \lambda_i=0
 \end{align}
 Decimos que $G$ es un \textbf{grupo libre} si admite una base.
 \end{definition}
 
 \begin{example}
-Supongamos que $\mb{Q}^+=(\mb{Q},+)$ es un grupo libre generado por un cierto
-conjunto $B \subseteq \mb{Q}$. Dados $\frac{a}{b}, \frac{c}{d} \in B$, se tiene
-que
-\[cb\frac{a}{b}-ad\frac{c}{d}=0\]
-por lo que $B$ está formado por un único elemento.
+	Supongamos que $\mb{Q}^+=(\mb{Q},+)$ es un grupo libre generado por un cierto
+	conjunto $B \subseteq \mb{Q}$. Dados $\frac{a}{b}, \frac{c}{d} \in B$, se tiene
+	que
+		\[cb\frac{a}{b}-ad\frac{c}{d}=0\]
+	por lo que $B$ está formado por un único elemento.
 
-Sea $p$ un número primo coprimo con $b$. Por ser $\mb{Q}^+$ libre, existirá un
-entero $\alpha$ tal que
-\[\frac{1}{p}=\alpha\frac{a}{b}\]
-pero esto implica que $b=\alpha pa$, en contradicción con la premisa de que $p$
-es coprimo con $b$. Por tanto, $\mb{Q}^+$ no es un grupo libre.
+	Sea $p$ un número primo coprimo con $b$. Por ser $\mb{Q}^+$ libre, existirá un
+	entero $\alpha$ tal que
+		\[\frac{1}{p}=\alpha\frac{a}{b}\]
+	pero esto implica que $b=\alpha pa$, en contradicción con la premisa de que $p$
+	es coprimo con $b$. Por tanto, $\mb{Q}^+$ no es un grupo libre.
 \end{example}
 
-\subsection{Grupo libre generado por un conjunto}
 \marginnote[-2.2cm]{
 \begin{kaobox}[frametitle=Aplicaciones nulas casi por todas partes]
-Sea $A$ un conjunto no vacío. Decimos que una aplicación $f\colon A
-\to \mb{Z}$ es \textbf{nula casi por todas partes} si podemos hallar un
-subconjunto $B \subseteq A$ finito tal que $f(x)=0$ para todo
-$x \in A\backslash B$.
+	Sea $A$ un conjunto no vacío. Decimos que una aplicación $f\colon A
+	\to \mb{Z}$ es \textbf{nula casi por todas partes} si podemos hallar un
+	subconjunto $B \subseteq A$ finito tal que $f(x)=0$ para todo
+	$x \in A\backslash B$.
 \end{kaobox}
 }
+
 \begin{proposition}
-Sea $A \neq\emptyset$. Se define el grupo libre generado por $A$ como la familia
-$\mc{F}(A)$ de todas las aplicaciones $f\colon A \to \mb{Z}$ que se
-hacen cero casi por todas partes. Entonces, $\mc{F}(A)$ es un grupo libre dotado
-con la suma elemento a elemento.
+	Sea $A \neq\emptyset$.
+	Se define el grupo libre generado por $A$ como la familia $\mc{F}(A)$ de todas las aplicaciones $f\colon A \to \mb{Z}$ que se hacen cero casi por todas partes.
+	Entonces, $\mc{F}(A)$ es un grupo libre dotado con la suma elemento a elemento.
 \end{proposition}
 
 \begin{proof}
@@ -380,7 +379,6 @@ C'_{n+1} \arrow{r}{d'_{n+1}}                     & C'_n
 \end{diagram}
 \end{definition}
 
-\subsection{Grupo de homología asociado a un complejo de cadenas}
 Sea $(C,d)$ un complejo de cadenas. Se definen los grupos graduados
 \begin{align*}
 Z_*(C)&:=\ker d=\{\ker d_n: n \in \mb{Z}\};	& Z_n(C)&:=\ker d_n\\[0.2cm]
@@ -409,7 +407,7 @@ Análogamente, $f_n(B_n(C)) \leq B_n(D)$. Por tanto, $f$ induce un homomorfismo
 entre grupos de homología,
 \[f_*\colon H_*(C) \to H_*(D)\]
 
-\subsection{El grupo de las cadenas singulares}
+\subsection{Grupos de homología}
 \begin{definition}
 Se define el grupo de \textbf{$n$-cadenas
 singulares} $S_n(X)$ como el grupo libre generado por todos los símplices
@@ -512,9 +510,9 @@ Z_n(X):=Z_n(S_*(X)); && B_n(X):=B_n(S_*(X))
 \end{align*}
 
 \begin{definition}
-Sea $X$ un espacio topológico. Se define el \textbf{grupo de homología de orden
-$n$ asociado a $X$} como
-\[H_n(X):=H_n(S_*(X))=\frac{Z_n(X)}{B_n(X)}\]
+Sea $X$ un espacio topológico.
+Se define el \textbf{grupo de homología de orden $n$ asociado a $X$} como
+	\[H_n(X):=H_n(S_*(X))=\frac{Z_n(X)}{B_n(X)}\]
 \end{definition}
 
 \begin{example}\labexample{Camino1ciclo}
@@ -529,37 +527,34 @@ Dado que $\psi(0,1)=f(0)$ y $\psi(1,0)=f(1)$, un camino es un 1-ciclo si y sólo
 si $f$ es un lazo.
 \end{example}
 
-\subsection{Morfismo inducido en homología}
-Sea $f\colon X \to Y$ una aplicación continua. Habíamos definido una
-aplicación $f_\#$ que convierte símplices de $X$ en símplices de $Y$, al igual
-que el operador cara convertía $n$-símplices en $(n-1)$-símplices. Podemos extender $f_\#$ a todo el grupo de cadenas singulares de forma que la
-aplicación resultante sea un homomorfismo:
-\[f_\#\left(\sum^k_{j=1}n_j\phi_j\right)=\sum^k_{j=1}n_jf_\#(\phi_j)\]
-Esta aplicación recibe el nombre de \textbf{morfismo inducido en homología} por
-$f$.
+Sea $f\colon X \to Y$ una aplicación continua.
+Habíamos definido una aplicación $f_\#$ que convierte símplices de $X$ en símplices de $Y$, al igual que el operador cara convertía $n$-símplices en $(n-1)$-símplices.
+Podemos extender $f_\#$ a todo el grupo de cadenas singulares de forma que la aplicación resultante sea un homomorfismo:
+	\[f_\#\left(\sum^k_{j=1}n_j\phi_j\right)=\sum^k_{j=1}n_jf_\#(\phi_j)\]
+Esta aplicación recibe el nombre de \textbf{morfismo inducido en homología} por $f$.
 
 \begin{proposition}
-Todo morfismo inducido por una aplicación continua es una aplicación de cadenas.
-Como consecuencia, si $f\colon X \to Y$ es continua, $f_\#$ induce
-una familia de homomorfismos
-\begin{funcion}
-f_*: H_n(X) \arrow[r] &H_n(Y)\\
-\left[x\right] \arrow[maps to,r]    &\left[f_\#(x)\right]
-\end{funcion}
-para $n \geq 0$.
+	Todo morfismo inducido por una aplicación continua es una aplicación de cadenas.
+	Como consecuencia, si $f\colon X \to Y$ es continua, $f_\#$ induce una familia de homomorfismos
+	\begin{funcion}
+		f_*: H_n(X) \arrow[r] &H_n(Y)\\
+		\left[x\right] \arrow[maps to,r]    &\left[f_\#(x)\right]
+	\end{funcion}
+	para $n \geq 0$.
 \end{proposition}
 
 Dadas $f\colon X \to Y$ y
 $g\colon Y \to Z$ continuas, deducimos de \refprop{ComposicionAlmohadilla} y de este resultado que
-\[(g\circ f)_*=g_*\circ f_*\]
+	\[(g\circ f)_*=g_*\circ f_*\]
 Por tanto, deducimos que los grupos de homología son invariantes topológicos:
 
 \begin{theorem}
-Sean $X,Y$ espacios topológicos. Si $f\colon X \to Y$ es un homeomorfismo, $f_*\colon H_k(X) \to H_k(Y)$ es un isomorfismo para todo $k \geq 0$. Por tanto, el
-grupo de homología es un invariante topológico.
+	Sean $X,Y$ espacios topológicos.
+	Si $f\colon X \to Y$ es un homeomorfismo, $f_*\colon H_k(X) \to H_k(Y)$ es un isomorfismo para todo $k \geq 0$.
+	Por tanto, el grupo de homología es un invariante topológico.
 \end{theorem}
 
-\section{Interpretación geométrica de los grupos de homología}
+\subsection{Interpretación geométrica}
 Sea $X=\mb{R}^2\backslash\{(0,0)\}$ con la topología inducida por $\mb{R}^2$. El
 espacio $\mb{R}^2$ no es homeomorfo a $X$; sin embargo, no es posible probar
 este resultado utilizando sólo topología conjuntista. En esta sección, veremos
@@ -626,7 +621,7 @@ punto que hemos quitado.
 Dado que el grupo de homología es un invariante topológico, concluimos que
 $\mb{R}^2$ no es homeomorfo a $X$.
 
-\section{Característica de Euler}
+\subsection{Característica de Euler}
 \begin{definition}
 Sea $A$ un grupo abeliano. Se denomina \textbf{subgrupo de torsión} de $A$ al
 subgrupo $T$ formado por todos los elementos de orden finito de $A$. Decimos que

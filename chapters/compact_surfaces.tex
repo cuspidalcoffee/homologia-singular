@@ -20,7 +20,6 @@ orientables, que es más breve.
 Sea $X$ un espacio topológico Hausdorff y 2AN. Decimos que $X$ es una
 $n$-variedad si, dado $p \in X$, existe un entorno abierto $U \subset X$ de
 $p$ que sea homeomorfo a una bola abierta de $\mb{R}^n$.
-
 Dadas dos $n$-variedades $X$ e $Y$, la suma conexa se define como
 \[X\#Y=(X\backslash U)\cup_f (Y\backslash V)\]
 siendo $U\subset X$, $V \subset Y$ abiertos y $f\colon \p U \to \p V$ continua.
@@ -66,8 +65,8 @@ Dado que $H_2(B^1_{2n})=0$, se tiene por exactitud que
 \[H_2(T_n) \cong \tilde{H}_1(S^1) \cong \mb{Z}\]
 
 \begin{marginfigure}
-\input{Figures/Bitoro}
-\input{Figures/SumaConexaToros}
+\input{figures/Bitoro}
+\input{figures/SumaConexaToros}
 \caption[Bitoro llano.]{\labfig{Bitoro} Bitoro llano. Los lados con el mismo
 número de cabezas de flecha se identifican entre sí. La línea discontinua
 separa los dos toros que lo conforman.}
@@ -112,18 +111,18 @@ Sea $B^n$ la bola abierta unidad de $\mb{R}^n$. La aplicación $f\colon
 \mb{R}^n \to B^n$ dada por
 \[f(x)=\frac{x}{1+\|x\|}\]
 es un homeomorfismo. Por otro lado,
-\begin{diag}
+\begin{diagram}
 g\colon B^n \arrow[r] & S^n\\[-8mm]
 x \arrow[r, maps to] & \left(x,\sqrt{1-\|x\|^2}\right)
-\end{diag}
+\end{diagram}
 es un homeomorfismo que envía a $B^n$ en el hemisferio norte de $S^n$ (menos
 el ecuador). Si $E^n_+=g(B^n)$, $\pi|_{E^n_+}$ es un homeomorfismo (observa
 que $S^n$ es compacto y $\mb{R}P^n$ es Hausdorff). Si conectamos todas estas
 aplicaciones, obtenemos
-\begin{diag}
+\begin{diagram}
 h\colon \mb{R}^n \arrow{r}{f} & B^n \arrow{r}{g} & E^n_+ \arrow{r}{\pi}
 	&\mb{R}P^n
-\end{diag}
+\end{diagram}
 Una consecuencia de nuestro proceso es que $h$ es un homeomorfismo sobre su
 imagen; sin embargo, no es sobreyectiva, por lo que su imagen es un
 subespacio de $\mb{R}P^n$. Ya que $\mb{R}^n$ es homeomorfo a $h(\mb{R}^n)$,
@@ -176,10 +175,10 @@ Usando la \refprop{HomoCW}, vemos que $H_p(\mb{R}P^2)=0$ para $p > 2$ y
 \[H_1(\mb{R}P^2) \cong \frac{H_1(S^1)}{\im \pi_*}
 				\cong \frac{\mb{Z}}{2\mb{Z}}=\mb{Z}_2\]
 Para $n=2$, usaremos la exactitud del diagrama
-\begin{diag}
+\begin{diagram}
 0 \arrow[r]& H_2(S^1) \arrow[r]& H_2(\mb{R}P^2) \arrow[r]&
 \ker \pi_* \arrow[r]& 0
-\end{diag}
+\end{diagram}
 que es equivalente a
 %La respuesta es 0
 

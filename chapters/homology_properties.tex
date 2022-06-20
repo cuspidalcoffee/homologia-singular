@@ -1,120 +1,86 @@
 \setchapterpreamble[u]{\margintoc}
 
-\chapter{Propiedades de los grupos de homología}
-En este capítulo, introducimos algunas de las propiedades de los grupos de
-homología. Estas propiedades son suficientes para calcular la homología de muchos
-espacios, utilizando una secuencia exacta conocida como la \textbf{secuencia de
-Mayer-Vietoris}, que presentaremos en el \refch{MVTema}.
-
-\section{Axioma de la dimensión}
-Sea $X=\{\star\}$. Dado un $n \geq 0$, existirá un único $n$-símplice singular
-$\phi_n\colon\sigma_n \to X$, que envía a todos los puntos de
-$\sigma_n$ en $\star$. Las caras de un $n$-símplice singular son $(n-1)$-símplice
-singulares; sin embargo, acabamos de ver que el único $(n-1)$-símplice singular
-es la aplicación constante, por lo que las caras de $\phi_n$ son $\phi_{n-1}$.
-Por tanto,
-\begin{align*}
-\p\phi_n=\sum^n_{i=0}(-1)^i\p_{(i)}\phi_{n}=\sum^n_{i=0}(-1)^i\phi_{n-1}=
-\begin{cases}
-\phi_{n-1}	&\mbox{ si }n\mbox{ es par}\\
-0          	&\mbox{ si }n\mbox{ es impar}
-\end{cases}
-\end{align*}
-
-Dado que $S_n(X)=\la \phi_n\ra$, el operador borde $\p_n\colon S_n(X)
-\to S_{n-1}(X)$ es un isomorfismo si $n$ es par y cero si $n$ es impar. Por tanto, para
-$n > 0$,
-\[\begin{array}{rcl}
-Z_{2n+1}(X)\cong B_{2n+1}(X)&\implies& H_{2n+1}(X)=0\\[4pt]
-Z_{2n}(X)=0=B_{2n}(X) &\implies& H_{2n}(X)=0
-\end{array}\]
-Para $n=0$, $Z_0(X)=S_0(X)$ y $B_0(X)=0$, de forma que
-\[H_0(X)=\la \phi_0\ra \cong \mb{Z}\]
-
-\begin{lemma}
-Los grupos de homología de $X$ son
-\begin{align*}
-H_0(X)=\la\phi_0\ra; && H_n(X)=0 \quad (n\neq 0)
-\end{align*}
-\end{lemma}
-
 \section{Homología de un espacio arcoconexo}
-Sea $X$ un espacio topológico arcoconexo. Dados dos puntos $x,y \in X$, existe un
-camino $L_{x,y}\colon [0,1] \to X$ tal que $L_{x,y}(0)=x$ y $L_{x,y}(1)=y$. Como
-vimos en \refexample{Camino1ciclo}, $L_{x,y}$ induce un $1$-símplice singular
-$\phi\colon \sigma_1 \to X$. En particular, $L_{x,x}=\cte_x$ es una aplicación
-constante que queda totalmente determinada por $x$, por lo que podemos identificar
-$x$ con $L_{x,y}$.
+Sea $X$ un espacio topológico arcoconexo.
+Dados dos puntos $x,y \in X$, existe un camino $L_{x,y}\colon [0,1] \to X$ tal que $L_{x,y}(0)=x$ y $L_{x,y}(1)=y$.
+Como vimos en \refexample{Camino1ciclo}, $L_{x,y}$ induce un $1$-símplice singular $\phi\colon \sigma_1 \to X$.
+En particular, $L_{x,x}=\cte_x$ es una aplicación constante que queda totalmente determinada por $x$, por lo que podemos identificar $x$ con $L_{x,y}$.
 
-Dado que $\cte_x \in S_0(X)$, existirán $x_1,\dots,x_n \in X$ y enteros $\mu_1,
-\dots,\mu_n$ tales que
+Dado que $\cte_x \in S_0(X)$, existirán $x_1,\dots,x_n \in X$ y enteros $\mu_1,\dots,\mu_n$ tales que
 \[x \equiv \cte_x=\sum^n_{i=1}\mu_i\cte_{x_i} \equiv \sum^n_{i=1}\mu_ix_i\]
 
 Consideremos el último tramo del complejo de cadenas $S_*(X)$:
-\begin{diag}
-S_1(X) \arrow{r}{\p_1} & S_0(X) \arrow{r}{\p_0=0} & 0
-\end{diag}
-Dado que $\p_0=0$, $S_0(X)=Z_0(X)$. Podemos construir el siguiente homomorfismo
-entre $S_0(X)$ y $\mb{Z}$:
-\begin{diag}
-\beta\colon S_0(X) \arrow{r}           & \mb{Z}          \\[-8mm]
-n_1x_1+\dots+n_px_p \arrow[r, maps to] & n_1+\dots+n_p
-\end{diag}
-Como $X$ es no vacío, $\beta$ es un epimorfismo, ya que podemos escribir $p=
-\beta(px)$ tomando cualquier $x \in X$.
+\begin{diagram}
+	S_1(X) \arrow{r}{\p_1} & S_0(X) \arrow{r}{\p_0} & 0
+\end{diagram}
+Dado que $\p_0=0$, $S_0(X)=Z_0(X)$ y podemos construir el siguiente homomorfismo entre $S_0(X)$ y $\mb{Z}$:
+\begin{funcion}
+	\beta\colon S_0(X) \arrow{r}           & \mb{Z}          \\
+	n_1x_1+\dots+n_px_p \arrow[r, maps to] & n_1+\dots+n_p
+\end{funcion}
+Como $X\neq\emptyset$, $\beta$ es epimorfismo, ya que $p=\beta(px)$ para todo $x \in X$.
 
-Sea $\phi \in S_1(X)$. Como $\p$ es un homomorfismo de grado -1, $\p\phi \in
-S_0(X)$. En particular, $\phi$ es una aplicación continua que depende de dos
-variables no negativas, $t_0$ y $t_1$, cuya suma siempre es 1. Si computamos el
-operador borde,
+Sea $\phi \in S_1(X)$: como $\p$ es un homomorfismo de grado $-1$, $\p\phi \in S_0(X)$.
+En particular, $\phi$ es una aplicación continua que depende de dos variables no negativas, $t_0$ y $t_1$, cuya suma siempre es 1.
+Si computamos el operador borde,
 \begin{align*}
-\p\phi		&=\phi(0,t_0)-\phi(t_0,0)=\phi(0,1)-\phi(1,0)\\
-\beta(\p\phi)	&=\beta(\phi(0,1)-\phi(1,0))=1-1=0
+	\p\phi			&=\phi(0,t_0)-\phi(t_0,0)=\phi(0,1)-\phi(1,0);\\
+	\beta(\p\phi)	&=\beta(\phi(0,1)-\phi(1,0))=1-1=0,
 \end{align*}
-por lo que $\p\phi \in \ker\beta$. Si $c=n_1\phi_1+\dots+n_p\phi_p$,
-\[\beta(\p c)=
-\beta\left(\sum^p_{i=1}n_i\p\phi_i\right)=
-\sum^p_{i=1}n_i\beta(\p\phi_i)=0\]
-Pero $\p c$ son los elementos de $B_0(X)$, por lo que $B_0(X) \subseteq
-\ker \beta$.
+por lo que $\p\phi \in \ker\beta$.
+Si $c=n_1\phi_1+\dots+n_p\phi_p$,
+	\[\beta(\p c)=
+		\beta(n_1\p\phi_1+\dots+n_p\phi_p)=
+		n_1\beta(\p\phi_1)+\dots+n_p\beta(\p\phi_p)=0\]
+Pero $\p c$ son los elementos de $B_0(X)$, por lo que $B_0(X) \subseteq\ker \beta$.
 
-Recíprocamente, sea $c \in \ker \beta$. Bajo la identificación $x \equiv \cte_x$,
-existirán $x_1,\dots,x_k \in X$ tales que
-\[c=\sum^p_{i=1}n_ix_i\]
-Como $X$ es arcoconexo, dado un $x \in X$, podemos construir la cadena singular
-$d=n_1L_{x,x_1}+\dots+n_kL_{x,x_k}$. Calculando el borde de $d$,
-\[\p d=
-\sum^p_{i=1}n_i(L_{x,x_i}(1)-L_{x,x_i}(0))=
-\sum^k_{i=1}n_ix_i-x\sum^k_{i=1}n_i\]
-Como $c \in \ker \beta$,
-\[\sum^p_{i=1}n_i=\beta(c)=0 \implies \p d=\sum^p_{i=1}n_ix_i=c\]
+Recíprocamente, sea $c \in \ker \beta$: identificando cada punto con la aplicación constante que lleva a todo el espacio en ese punto, existirán $x_1,\dots,x_k \in X$ tales que $c=n_1x_1+\dots+n_kx_k$.
+Como $X$ es arcoconexo, dado un $x \in X$, podemos construir la cadena singular $d=n_1L_{x,x_1}+\dots+n_kL_{x,x_k}$ y
+	\[\p d=
+		\sum^p_{i=1}n_i(L_{x,x_i}(1)-L_{x,x_i}(0))=
+		\sum^k_{i=1}n_ix_i-x\sum^k_{i=1}n_i.\]
+Como $c \in \ker \beta$, se sigue que
+	\[\sum^p_{i=1}n_i=\beta(c)=0 \implies \p d=\sum^p_{i=1}n_ix_i=c.\]
 
 \marginnote[-2.2cm]{
-\begin{kaobox}[frametitle=Primer teorema de isomorfía]
-Dado un homomorfismo $f\colon G \to H$,
-\[\im f\cong \frac{G}{\ker f}\]
-\end{kaobox}
+	\begin{kaobox}[frametitle=Teorema de isomorfía]
+		Dado un homomorfismo $f\colon G \to H$,
+			\[\im f\cong \frac{G}{\ker f}\]
+	\end{kaobox}
 }
 
-Por tanto, $c \in B_0(X)$ y $B_0(X)=\ker \beta$. Aplicando el primer teorema de
-isomorfía,
-\[H_0(X)=\frac{Z_0(X)}{B_0(X)}=\frac{S_0(X)}{\ker \beta} \cong \mb{Z}\]
+Por tanto, $c \in B_0(X)$ y $B_0(X)=\ker \beta$.
+Aplicando el teorema de isomorfía,
+	\[H_0(X)=\frac{Z_0(X)}{B_0(X)}=\frac{S_0(X)}{\ker \beta} \cong \mb{Z}\]
 
 \begin{proposition}
-Sea $X$ un espacio topológico arcoconexo. El grupo $H_0(X)$ tiene un único
-generador.
+	Sea $X$ un espacio topológico arcoconexo.
+	El grupo $H_0(X)$ tiene un único generador.
 \end{proposition}
 
+\begin{example}
+Sea $X=\{\star\}$.
+Dado un $n \geq 0$, existe un único $n$-símplice singular $\phi_n\colon\sigma_n \to X$, que es la aplicación constante.
+Las caras de la aplicación constante son la aplicación constante, por lo que
+\begin{align*}
+\p\phi_n=
+	\begin{cases}
+	\phi_{n-1}	&\mbox{ si }n\mbox{ es par}\\
+	0          	&\mbox{ si }n\mbox{ es impar}
+	\end{cases}
+\end{align*}
+
+Dado que $S_n(X)=\la \phi_n\ra$, el operador borde $\p_n\colon S_n(X) \to S_{n-1}(X)$ es un isomorfismo si $n$ es par y cero si $n$ es impar.
+Por tanto, $H_n(X)=0$ para todo $n > 0$ y $H_0(X)\cong \mb{Z}$.
+\end{example}
+
 \subsection{Sumas directas en homología}
-Sea $\{G_\alpha\}_{\alpha \in A}$ una familia de grupos abelianos. Se define el
-\textbf{producto directo} de los grupos $G_\alpha$ como el grupo
-\[G=
-\prod_{\alpha \in A} G_\alpha:=
-\left\{\left.f\colon A \to \bigcup_{\alpha \in A}G_\alpha\,\right|
-f(\alpha) \in G_\alpha \quad \forall \alpha \in A\right\}\]
-Denotaremos a las aplicaciones $f \in G$ como tuplas de la forma
-$f=(f_\alpha)_{\alpha \in A}=\{f(\alpha)\}_{\alpha \in A}$ Los elementos
-$f_\alpha$ reciben el nombre de \textbf{componentes} de $f$.
+Sea $\{G_\alpha\}_{\alpha \in A}$ una familia de grupos abelianos.
+Se define el \textbf{producto directo} de los grupos $G_\alpha$ como el grupo
+\[G=\prod_{\alpha \in A} G_\alpha:=
+	\left\{\left.f\colon A \to \bigcup_{\alpha \in A}G_\alpha\,\right|f(\alpha) \in G_\alpha \quad \forall \alpha \in A\right\}\]
+Denotaremos a las aplicaciones $f \in G$ como tuplas de la forma $f=(f_\alpha)_{\alpha \in A}=\{f(\alpha)\}_{\alpha \in A}$
+Los elementos $f_\alpha$ reciben el nombre de \textbf{componentes} de $f$.
 
 \begin{example}\labexample{SumaDirectaZ}
 Sea $A=\{0,\dots, n\}$. El producto directo
@@ -174,11 +140,11 @@ de $C^{\alpha_j}$ como $\p^{\alpha_j}$,
 \[\left(\p^{\alpha_1}_pc^{\alpha_1},\dots,\p^{\alpha_n}_pc^{\alpha_n}\right) \in
 C^{\alpha_1}_{p-1}\oplus\dots\oplus C^{\alpha_n}_{p-1}\]
 Por tanto, definimos la siguiente aplicación:
-\begin{diag}
+\begin{diagram}
 \p_p\colon C_p \arrow[r]             & C_{p-1}                   \\[-8mm]
 c \arrow[r, maps to] &
 (\p^{\alpha_1}_pc^{\alpha_1}_p,\dots,\p^{\alpha_n}c^{\alpha_n}_p)
-\end{diag}
+\end{diagram}
 Dado que $\p_p$ actúa componente a componente, es inmediato que esta construcción
 da lugar a un operador borde.
 
@@ -197,7 +163,7 @@ en $H_p(\Omega_2)$; es decir,
 \[H_p(\Omega)\cong H_p(\Omega_1)\oplus H_p(\Omega_2)\]
 
 \begin{marginfigure}
-\input{Figures/HomologiaArcoconexo}
+\input{figures/HomologiaArcoconexo}
 \caption[Dos espacios arcoconexos, cada uno conteniendo la imagen de un
 símplice singular, junto con una línea discontinua que sale de uno de ellos
 para entrar en el otro.]{\labfig{FigPentaHexa}Los arcos de circunferencia son
@@ -213,10 +179,10 @@ lo es, ya que se sale del espacio.}
 
 \begin{proof}
 Considérese la aplicación
-\begin{diag}
+\begin{diagram}
 \Psi_k\colon\sum_\alpha S_k(X_\alpha) \arrow[r] & S_k(X)          \\[-0.8cm]
 (g_\alpha)_\alpha \arrow[r, maps to]            & \sum_\alpha g_\alpha
-\end{diag}
+\end{diagram}
 
 Toda cadena singular $g \in S_k(X)$ admite una descomposición única como
 combinación lineal de $k$-símplices singulares. Dado que cada símplice va a parar
@@ -374,15 +340,15 @@ $X$, de forma que $X$ es arcoconexo.
 Sea $A \subseteq \mb{R}^n$ un conjunto convexo. Por ser convexo, dado un $a \in
 A$, el segmento $[0,a]$ está contenido en $A$. Eso nos permite definir la
 aplicación continua
-\begin{diag}
+\begin{diagram}
 F\colon A\times I \arrow[r] & A                      \\[-0.8cm]
 (a,t) \arrow[r, maps to]      & (1-t)a
-\end{diag}
+\end{diagram}
 por lo que $F\colon \id_A \simeq \cte_0$
 \end{example}
 
 \begin{marginfigure}
-\input{Figures/PeineTopologo}
+\input{figures/PeineTopologo}
 \caption[Peine del topólogo.]{\labfig{Peine} Primeras $15$ iteraciones del
 peine del topólogo. La iteración $w$ añade el segmento correspondiente a
 $x=1/w$.}
@@ -391,10 +357,10 @@ $x=1/w$.}
 \begin{example}
 Sea $\Sh$ (pronunciado \emph{sh}) el peine del topólogo. Consideremos la
 aplicación continua
-\begin{diag}
+\begin{diagram}
 F\colon \Sh\times I \arrow[r]             & \Sh                   \\[-8mm]
 (x,y,t) \arrow[r, maps to] & (x,(1-t)y)
-\end{diag}
+\end{diagram}
 y la proyección sobre el eje de abscisas, $\pi\colon \mb{R}^2 \to \mb{R}$. La
 aplicación $F$ es una homotopía que baja las púas de $\Sh$:
 \[F: \id_\Sh \simeq (\pi\times \cte_0)\]
@@ -416,10 +382,10 @@ por lo que $r_*$ es sobreyectiva e $i_*$ es inyectiva.
 \begin{example}
 Sea $D^2$ la bola de centro $p=(0,0)$ y radio 1 de $\mb{R}^2$. Se considera la
 aplicación
-\begin{diag}
+\begin{diagram}
 r\colon D^2-\{p\} \arrow[r]             & S^1                   \\[-8mm]
 x \arrow[r, maps to] & \frac{x}{\|x\|}
-\end{diag}
+\end{diagram}
 La aplicación $r$ es continua por ser cociente de funciones continuas. Además,
 $r|_{S^1}=\id_{S^1}$. Se sigue que $S^1$ es un retracto de $D^2-\{p\}$.
 \end{example}
@@ -643,19 +609,19 @@ De esta forma,
 Observamos que los diagramas
 \begin{center}
 \begin{minipage}{0.4\textwidth}
-\begin{diag}
+\begin{diagram}
 \sigma_n \arrow{d}{\phi} \arrow{r}{\alpha} &
 \sigma_n\times I \arrow{d}{\phi\times \id_I}\\
 X \arrow{r}{\alpha}& X\times I&
-\end{diag}
+\end{diagram}
 \end{minipage}
 %
 \begin{minipage}{0.4\textwidth}
-\begin{diag}
+\begin{diagram}
 \sigma_n \arrow{d}{\phi} \arrow{r}{\beta} &
 \sigma_n\times I \arrow{d}{\phi\times \id_I}\\
 X \arrow{r}{\beta}& X\times I&
-\end{diag}
+\end{diagram}
 \end{minipage}
 \end{center}
 son conmutativos, por lo que también conmutan cuando los
@@ -819,11 +785,12 @@ De aquí se sigue que $g_*([d])=[g(d)]=[z]$.
 
 Sea $[c] \in \im \Delta$. Existe un $z \in Z_n(E)$ tal que $[c]=\Delta([z])$, luego
 existirá un $d \in D_n$ de forma que $f(c)=d$ y $g(d)=z$. Ahora bien,
-\[f(c)= \p d \implies f(c) \in B_n(D) \iff [f(c)]=0\]
+	\[f(c)= \p d \implies f(c) \in B_n(D) \iff [f(c)]=0\]
 Pero $[f(c)]=f_*([c])$, luego $[c] \in \ker f_*$.
 
-Sea $[c] \in \ker f_*$. Sabemos que $f(c) \in B_n(D)$, luego existirá un
-$d \in D_n$ tal que $f(c)=\p d$. Sea $z=g(d) \in E_n$. Como $\ker g=\im f$,
-$\p z=g(\p d)=(g\circ f)(c)=0$. De aquí se tiene que $z \in Z_n(E)$ y que
+Sea $[c] \in \ker f_*$.
+Sabemos que $f(c) \in B_n(D)$, luego existirá un $d \in D_n$ tal que $f(c)=\p d$. Sea $z=g(d) \in E_n$.
+Como $\ker g=\im f$, $\p z=g(\p d)=(g\circ f)(c)=0$.
+	De aquí se tiene que $z \in Z_n(E)$ y
 \[\Delta([z])=[c] \implies [c] \in \im \Delta\]
 \end{proof}

@@ -30,13 +30,9 @@ de $X\cup_f Y$.
 
 \marginnote[-2.2cm]{
 \begin{kaobox}[frametitle=Aplicaciones abiertas y cerradas]
-Una aplicación $f\colon X \to Y$ es abierta (resp. cerrada) si la imagen de
-un abierto (resp. cerrado) en $X$ es abierto (resp. cerrado) en $Y$. Si $f$ es
-biyectiva, su inversa será continua si y sólo si $f$ es abierta o cerrada.
-
-Un ejemplo de aplicación abierta (y cerrada) son las proyecciones.
-\end{kaobox}
-}
+Una aplicación $f\colon X \to Y$ es abierta (resp. cerrada) si la imagen de un abierto (resp. cerrado) en $X$ es abierto (resp. cerrado) en $Y$.
+Si $f$ es biyectiva, su inversa será continua si y sólo si $f$ es abierta o cerrada.
+\end{kaobox}}
 
 \begin{proof}
 Como $X\sqcup Y$ es una unión disjunta de espacios topológicos, $Y$ es un
@@ -87,18 +83,13 @@ $p(U)$ es abierto en el espacio de adjunción. Ésto concluye la demostración.
 
 \marginnote[-2.2cm]{
 \begin{kaobox}[frametitle=Primer axioma de numerabilidad]
-Un espacio topológico $X$ verifica el primer axioma de numerabilidad (1AN)
-si, dado $p \in X$, existe una base de entornos numberable de $X$.
-
-Una base de entornos de $p$ es una familia de entornos $\{V_\alpha\colon
-\alpha \in A\}$ tal que, dado un entorno $U \subseteq X$ de $p$, $U$
-contiene al menos a un $V_\alpha$.
+Un espacio topológico $X$ verifica el primer axioma de numerabilidad si, dado $p \in X$, existe una base de entornos numberable de $X$.
+Una base de entornos de $p$ es una familia de entornos $\{V_\alpha\colon \alpha \in A\}$ tal que, dado un entorno $U \subseteq X$ de $p$, $U$ contiene al menos a un $V_\alpha$.
 \end{kaobox}
 }
 
 \begin{lemma}
-\label{AdjC2} Sean $X$, $Y$ espacios de tipo $C_2$. Si $X$ e $Y$ son 1AN,
-$X\cup_f Y$ es de tipo $C_2$.
+\label{AdjC2} Sean $X$, $Y$ espacios de tipo $C_2$. Si $X$ e $Y$ cumplen el primer axioma de numerabilidad, $X\cup_f Y$ es de tipo $C_2$.
 \end{lemma}
 
 \begin{proof}
@@ -150,10 +141,10 @@ Entonces, $g$ induce un homeomorfismo entre $W$ y $X \cup_f Y$.
 \begin{proof}
 Sea $\p\colon X\sqcup Y \to X \cup_f Y$ la proyección canónica. Se define la
 aplicación
-\begin{diag}
+\begin{diagram}
 \overline g\colon X\cup_f Y \arrow[r]& W\\[-8mm]
 \left[x\right] \arrow[maps to, r] & g(x)
-\end{diag}
+\end{diagram}
 
 \marginnote[-2.2cm]{
 \begin{kaobox}[frametitle=Continuidad de la inversa]
@@ -202,11 +193,11 @@ es homeomorfo a $X/A$. Por el \reflemma{RepAdj}, se tiene que
 Sea $h\colon D^n\backslash S^{n-1} \to \mb{R}^n$ un homeomorfismo, $\mc{N}=
 (0,0,\dots,0,1)$ y $S^n_+=S^n\backslash\mc{N}$. La \textbf{proyección
 estereográfica}, dada por
-\begin{diag}
+\begin{diagram}
 \Phi\colon S^n_+ \arrow[r] & \mb{R}^n\\[-8mm]
 (x_1,\dots,x_{n+1}) \arrow[maps to, r] &
 	\displaystyle\left(\frac{x_1}{1-x_{n+1}},\dots,\frac{x_n}{1-x_{n+1}}\right)
-\end{diag}
+\end{diagram}
 es un homeomorfismo. Una posible parametrización de $h$ es
 \[h(z)=\frac{z}{1-\|z\|}\]
 Se define la aplicación $g\colon D^n \to S^n$ dada por
@@ -225,11 +216,11 @@ que es la adjunción de $D^n$ a un espacio puntual.
 \end{example}
 
 \begin{marginfigure}
-\input{Figures/CWS1}
+\input{figures/CWS1}
 \caption{\labfig{CWS1} Conjunto $S^1$ construido como espacio de adjunción.}
 \end{marginfigure}
 \begin{marginfigure}
-\input{Figures/CWS1Extra}
+\input{figures/CWS1Extra}
 \caption[Espacio $S^1$ con dos segmentos adicionales, creando una figura
 ocho.]{Podemos adjuntar nuevas células a las células preexistentes para
 recrear espacios más complejos.}
@@ -280,18 +271,18 @@ Si $p\colon D^n \sqcup Y \to Y_f$ denota a la proyección canónica, se define
 $U_f$ como la imagen de $U$ mediante $p$. Queremos ver que $Y$ es un retracto
 por deformación fuerte de $U_f$ en $Y_f$. Para ello, considérese la
 homotopía
-\begin{diag}
+\begin{diagram}
 G\colon U_f\times I \arrow[r] & U_f\\[-8mm]
 (\left[x\right],t)\arrow[maps to,r] & F(x,t)
-\end{diag}
+\end{diagram}
 
 Es fácil ver que $G$ está bien definida. Para ver que es continua, considérese
 el diagrama conmutativo
-\begin{diag}
+\begin{diagram}
 (U\sqcup Y)\times I \arrow{r}{F} \arrow{d}{p\times \id_I}&
 	U\sqcup Y \arrow{d}{p}\\
 U_f\times I \arrow{r}{G} & U_f
-\end{diag}
+\end{diagram}
 
 Dado que $F$ y $p$ son continuas, $G\times (p\times \id_I)=p\circ F$ es
 continua, por lo que $G$ es continua. De aquí se sigue que $Y$ es un retracto
@@ -337,10 +328,10 @@ continua. Si $f_*\colon \tilde{H}_{n-1}(S^{n-1}) \to H_{n-1}(Y)$,
 \item $H_p(Y_f)\cong H_p(Y)$ para todo $p$ distinto a $n$ y $n-1$;
 \item $H_{n-1}(Y_f)\cong H_{n-1}(Y)/\im f_*$;
 \item la sucesión
-\begin{diag}
+\begin{diagram}
 0 \arrow[r]& H_n(Y) \arrow[r]& H_n(Y_f) \arrow[r]&
 \ker f_* \arrow[r]& 0
-\end{diag}
+\end{diagram}
 es exacta.
 \end{enumerate}
 \end{proposition}
@@ -396,12 +387,12 @@ homeomorfo a $Y_{f_1,\dots,f_p}$.
 \begin{marginfigure}
 \centering
 \begin{subfigure}[b]{\textwidth}
-\input{Figures/CWPiruleta1}
+\input{figures/CWPiruleta1}
 \caption{Usando $1$-células, podemos construir un complejo de dimensión
 $1$...}
 \end{subfigure}
 \begin{subfigure}[b]{\textwidth}
-\input{Figures/CWPiruleta2}
+\input{figures/CWPiruleta2}
 \caption{...y después añadir células de orden superior, creando figuras más
 complejas como una piruleta.}
 \end{subfigure}
@@ -445,7 +436,7 @@ tendríamos que el 0-esqueleto son dos puntos, dado que
 \end{example}
 
 \begin{marginfigure}
-\includegraphics{Figures/S2CW.pdf}
+\includegraphics{S2CW.pdf}
 \caption{Espacio $S^2$ construido utilizando el \refexample{S2CW}.}
 \end{marginfigure}
 
@@ -504,10 +495,8 @@ D^2_1	&=g([0,1]\times(]0,3/4[\cup]3/4,1[));\\
 D^1 	&=g([0,1]\times\{0\});	&
 D^2_2	&=g([0,1]\times(]1/4,3/4[]));
 \end{align*}
-\item El segmento $I$ admite una estructura de CW-complejo dada por la
-descomposición celular $\{\{0\},\{1\},]0,1[\}$. En general, toda línea
-poligonal formada por una cantidad finita de segmentos admite una estructura
-trivial de CW-complejo.
+\item El segmento $I$ admite una estructura de CW-complejo dada por la descomposición celular $\{\{0\},\{1\},]0,1[\}$.
+En general, toda línea poligonal formada por una cantidad finita de segmentos admite una estructura trivial de CW-complejo.
 \end{enumerate}
 \end{example}
 
@@ -532,7 +521,7 @@ cada uno tendría que ser una 1-célula independiente.
 \end{example}
 
 \begin{marginfigure}
-\input{Figures/Pendiente}
+\input{figures/Pendiente}
 \caption{Primeras $16$ iteraciones del pendiente hawaiiano.}
 \end{marginfigure}
 
@@ -637,13 +626,13 @@ Estas estructuras inducen la siguiente descomposición celular sobre el toro:
 \end{example}
 
 \begin{marginfigure}
-\input{Figures/CWCilindro}
+\input{figures/CWCilindro}
 \caption[1-esqueleto del cilindro.]{1-esqueleto del cilindro. Observar que se
 puede retraer en una figura ocho.}
 \end{marginfigure}
 
 \begin{marginfigure}
-\includegraphics{Figures/ToroGeneradoresOrden1.pdf}
+\includegraphics{figures/ToroGeneradoresOrden1.pdf}
 \caption{1-esqueleto del toro.}
 \end{marginfigure}
 
@@ -705,10 +694,10 @@ Podemos hallar un homeomorfismo relativo
 que extienda a $f$ de forma continua. Como $U_1$ es compacto en $Y$ y $\phi$
 es un homeomorfismo, $\phi^{-1}(U_1)$ es un compacto de $S^{m-1} \subset D^m$.
 Si
-\begin{diag}
+\begin{diagram}
 r\colon D^m\backslash\{0\} \arrow[r] & S^{m-1}\\[-8mm]
 x \arrow[maps to,r]& \frac{x}{\|x\|}
-\end{diag}
+\end{diagram}
 es la retracción radial, el conjunto
 \[V=\{\phi(x): x \in D^m,\; \|x\| \geq 1/2,\; r(x) \in \phi^{-1}(U_1)\}\]
 también es compacto.
@@ -730,18 +719,17 @@ deformación de $U_1 \cup V$ (ver \reffig{ECompacto2}).
 
 \begin{marginfigure}
 \begin{subfigure}[b]{\textwidth}
-\input{Figures/PhiMenos1V}
+\input{figures/PhiMenos1V}
 \caption{\labfig{PhiMenos1V} El conjunto $\phi^{-1}(V)$ corresponde a la
 región coloreada. $\phi^{-1}(U_1)$ son los puntos de la región coloreada que
 recaen sobre la esfera de radio $1$.}
 \end{subfigure}
 \begin{subfigure}[b]{\textwidth}
-\input{Figures/ECompacto1}
-\caption{Representación de los conjuntos $A$, $U_1$ y la bola $\phi(D^m)$ en
-	$Y$.}
+%\input{figures/ECompacto1}
+\caption{Representación de los conjuntos $A$, $U_1$ y la bola $\phi(D^m)$ en $Y$.}
 \end{subfigure}
 \begin{subfigure}[b]{\textwidth}
-\includegraphics{Figures/ECompacto2.pdf}
+\includegraphics{figures/ECompacto2.pdf}
 \caption{\labfig{ECompacto2} Podemos retraer $V$ (superficies arqueadas) en
 $U_1$ (banda plana) y $U_1$ en $A$ (línea discontinua).}
 \end{subfigure}
@@ -847,7 +835,7 @@ Sea $\alpha=(\alpha_1,\dots,\alpha_n) \in \mb{N}^n$. Si $f\colon \{\star\} \to
 siendo $B^k_0=\{\star\}$.
 
 \begin{marginfigure}
-\includegraphics{Figures/B22.png}
+\includegraphics{figures/B22.png}
 \caption{Ejemplo de rosa mixta $B_{(2,2)}$.}
 \end{marginfigure}
 
@@ -873,7 +861,6 @@ dimensión $1$, $k_2$ pétalos de dimensión $2$, y así hasta dimensión $n-1$.
 \item Probamos que, como consecuencia, la tesis se cumple cuando añadimos $k_n$
 pétalos de dimensión $n$.
 \end{itemize}
-
 Esta prueba puede ser conceptualmente engorrosa, así que es recomendable tratar
 de hacer primero ejemplos para $n=2,3,4$.
 \end{kaobox}
