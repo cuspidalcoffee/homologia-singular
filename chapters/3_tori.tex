@@ -1,14 +1,10 @@
 \chapter{Dos generaliazciones del toro}
-Todos los ejemplos que hemos visto en el capítulo anterior admitían una descomposición como CW-complejos de dimensión 2, por lo que era fácil hallar las aplicaciones de pegamiento y construir una familia de $k$-esqueletos. No obstante, este proceso se complica cuando trabajamos con CW-complejos de dimensiones superiores, ya que no podemos visualizarlos.
-\\
-
-Lo que siempre podemos utilizar son las \textbf{sucesiones de Mayer-Vietoris}, dado que muchos espacios topológicos se pueden expresar como cocientes y productos de espacios conocidos. En este capítulo, aplicaremos las sucesiones de Mayer-Vietoris a dos 3-variedades que derivan del toro de Clifford.
-
 \section{$W=S^2\times S^1$}
-El toro de Clifford se define como $S^1\times S^1$, pero podemos reemplazar una de las dos copias de $S^1$ por $S^2$ para obtener una 3-variedad. Como veremos, esta variedad tiene característica de Euler 0, pero no es homeomorfa a $S^3$ porque sus grupos de homología no son los mismos.
-\\
+El toro de Clifford se define como $S^1\times S^1$, pero podemos reemplazar una de las dos copias de $S^1$ por $S^2$ para obtener una 3-variedad.
+Como veremos, esta variedad tiene característica de Euler 0, pero no es homeomorfa a $S^3$ porque sus grupos de homología no son los mismos.
 
-Considérese la aplicación \[\funcio{f}{\mbR}{\mb{C}}{t}{e^{2\pi i t}}\] Se define el siguiente recubrimiento de $W$: \[U=S^2\times f([0,3/4]); \quad V=S^2 \times f([1/2,5/4])\] $S^2$ es un retracto por deformación de $U$ y de $V$, por lo que $H_*(U)\cong H_*(S^2)\cong H_*(V)$ Además, $S^2\sqcup S^2$ es un retracto por deformación fuerte de $U\cap V$, por lo que $$H_*(U\cap V)\cong H_*(S^2)^2$$
+Considérese la aplicación
+\[\funcio{f}{\mbR}{\mb{C}}{t}{e^{2\pi i t}}\] Se define el siguiente recubrimiento de $W$: \[U=S^2\times f([0,3/4]); \quad V=S^2 \times f([1/2,5/4])\] $S^2$ es un retracto por deformación de $U$ y de $V$, por lo que $H_*(U)\cong H_*(S^2)\cong H_*(V)$ Además, $S^2\sqcup S^2$ es un retracto por deformación fuerte de $U\cap V$, por lo que $$H_*(U\cap V)\cong H_*(S^2)^2$$
 
 Consideremos la sucesión de Mayer-Vietoris asociada al par $\{U,V\}$: dado un $n > 3$,
 \[\begin{array}{ccccccc}
@@ -64,10 +60,8 @@ Dado que $\im g_1=\ker h_1\cong \mb{Z}$, $\im \Delta_2=\ker g_1\cong \mb{Z}$. Ta
 Concluimos que \[H_n(W)\cong\begin{cases}\mb{Z} & \mbox{ si }n < 4\\0 & \mbox{ si no}\end{cases} \implies\chi(W)=1-1+1-1=0\] Es decir, que la característica de Euler del espacio $W$ coincide con la de $S^3$, pero sus grupos de homología no son isomorfos. Dado que el grupo de homología es un invariante topológico, se tiene que $S_3$ no es homeomorfo a $W$.
 
 \section{$T^3=S^1\times S^1 \times S^1$}
-El ejemplo introductorio a este trabajo decía que $T^3$ no es homeomorfo a $S^3$, pero tienen la misma característica de Euler. Ha llegado la hora de probarlo utilizando la sucesión de Mayer-Vietoris.
-\\
-
-Considérese la siguiente descomposición de $T^3$, siendo $f$ la aplicación del ejemplo anterior: \[U=T\times f([0,3/4]); \quad V=T \times f([1/2,5/4])\] Se tiene que $T$ es un retracto por deformación de $U$ y de $V$, por lo que $H_*(U)\cong H_*(T) \cong H_*(V)$. Por otro lado, $U\cap V=T\sqcup T$, por lo que \[H_*(U\cap V)\cong H_*(T_2)^2\]
+Considérese la siguiente descomposición de $T^3$, siendo $f$ la aplicación del ejemplo anterior: \[U=T\times f([0,3/4]); \quad V=T \times f([1/2,5/4])\] Se tiene que $T$ es un retracto por deformación de $U$ y de $V$, por lo que $H_*(U)\cong H_*(T) \cong H_*(V)$.
+Por otro lado, $U\cap V=T\sqcup T$, por lo que \[H_*(U\cap V)\cong H_*(T_2)^2\]
 
 Para $n > 3$, la sucesión de Mayer-Vietoris asociada al par $\{U,V\}$ da lugar a la siguiente sucesión exacta corta: \[\begin{array}{ccccccc}
 H_n(U\cap V)&\xrightarrow{g_n}&H_n(U)\oplus H_n(V)	&\xrightarrow{h_n}	&H_n(T^3)		&\xrightarrow{\Delta_n}&H_{n-1}(U \cap V)\\

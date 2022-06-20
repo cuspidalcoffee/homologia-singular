@@ -87,14 +87,21 @@
 \usepackage{imakeidx}
 \newcommand{\define}[1]{\textbf{#1}\index{#1}}
 
-%Hyperlinks
+% Hyperlinks
 \usepackage{hyperref}
 
+
+% Topologist's comb symbol
+\newcommand{\Sh}{\coprod\hspace{-1.4ex}\coprod}
+
 \usepackage{algebra}
-\usepackage{singtheo}
-\usepackage{nicetikz}
+\usepackage{topology}
+
 \usepackage{fonts}
 \usepackage{tables}
+
+\usepackage{nicetikz}
+\usepackage[outline]{contour}
 
 %----------------------------------------------------------------------------------------
 
@@ -165,18 +172,18 @@
 \addpart{Homología singular de un espacio topológico}
 \pagelayout{margin} % Restore margins
 \input{chapters/singular_homology}
-%\input{chapters/homology_properties}
-%\input{chapters/mater_vietoris_sequence}
+\input{chapters/homology_properties}
+\input{chapters/mayer_vietoris}
 
 
 
 \pagelayout{wide} % No margins
 \addpart{Homología relativa y celular}
 \pagelayout{margin} % Restore margins
-%\input{chapters/relative_homology}
-%\input{chapters/cw_complexes}
-%\input{chapters/compact_surfaces}
-%\input{chapters/3_tori}
+\input{chapters/relative_homology}
+\input{chapters/cw_complexes}
+\input{chapters/compact_surfaces}
+\input{chapters/3_tori}
 
 \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
 

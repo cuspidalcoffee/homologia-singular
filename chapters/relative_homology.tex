@@ -26,10 +26,10 @@ será un \textit{ciclo módulo $A$} si su borde está contenido en $A$.
 Sea $(C,\partial)$ un complejo de cadenas y $(D,\partial')$ un subcomplejo de
 cadenas, con $D$ subgrupo normal de $C$. Se define el \textbf{complejo
 cociente} como el grupo graduado $C/D$ dotado del operador borde
-\begin{diag}
+\begin{diagram}
 \frac{C_p}{D_p} \arrow[r]& \frac{C_{p-1}}{D_{p-1}}\\[-8mm]
 \overline c \arrow[r, maps to] & \overline{\p c}
-\end{diag}
+\end{diagram}
 \end{definition}
 
 Si $\pi\colon C \to C/D$ es el epimorfismo canónico e $i\colon D
@@ -120,7 +120,7 @@ una sucesión exacta corta
 que induce una sucesión exacta larga en homología similar a
 \eqref{SECociente2}. Dado que $g$ es una aplicación de cadenas, podemos
 conectar ambas sucesiones exactas usando $g_*$:
-\begin{diag}
+\begin{diagram}
 H_n(D/E) \arrow{r}{i_*} \arrow{d}{g_*} &
 H_n(C/E) \arrow{r}{\Pi_*} \arrow{d}{g_*} &
 H_n(C/D) \arrow{r}{\Delta'} \arrow{d}{g_*} &
@@ -129,7 +129,7 @@ H_n(D'/E') \arrow{r}{\tilde i_*} &
 H_n(C'/E') \arrow{r}{\tilde\Pi_*} &
 H_n(C'/D') \arrow{r}{\tilde\Delta'} &
 H_{n-1}(D'/E')
-\end{diag}
+\end{diagram}
 
 Por cómo está construida \eqref{SECociente2}, se puede probar que cada uno
 de los cuadrados del diagrama anterior es conmutativo. Se dice entonces que
@@ -208,8 +208,8 @@ $(X,\tilde{A})$. No obstante, sí es un ciclo en $(X,\tilde{A}\cup c)$.
 \end{example}
 
 \begin{marginfigure}
-\includegraphics{Figures/Cilindro.pdf}
-\includegraphics{Figures/Esfera.pdf}
+\includegraphics{Cilindro.pdf}
+\includegraphics{Esfera.pdf}
 \caption{Esfera y cilindro del \refexample{CilindroEsfera}. \labfig{Esfera}}
 \end{marginfigure}
 
@@ -239,10 +239,10 @@ inclusiones $i\colon S_*(A) \hookrightarrow S_*(X)$ y $j\colon S_*(B)
 Recordemos que el grupo libre generado por el vacío es el grupo trivial, de
 forma que $S_*(\emptyset)=0$. Esto nos permite establecer un isomorfismo
 natural entre $S_*(X)$ y $S_*(X,\emptyset)$:
-\begin{diag}
-S_*(X) \arrow[r] & S_*(X,\emptyset)\\[-8mm]
+\begin{funcion}
+S_*(X) \arrow[r] & S_*(X,\emptyset)\\
 c \arrow[r, maps to] & \overline c
-\end{diag}
+\end{funcion}
 De la misma forma, se tiene que $S_*(X,A,\emptyset) \cong S_*(X,A)$ y
 $S_*(X)\cong S_*(X,\emptyset,\emptyset)$.
 
@@ -263,15 +263,15 @@ $\phi$ es arbitraria y los $p$-símplices singulares conforman una base de
 $S_*(A)$,
 \[f_\#(S_*(A)) \subseteq S_*(B)\]
 por lo que $f$ induce una aplicación de cadenas
-\begin{diag}
-f_\#\colon S_*(X,A) \arrow[r] & S_*(Y,B)\\[-8mm]
+\begin{funcion}
+f_\#\colon S_*(X,A) \arrow[r] & S_*(Y,B)\\
 \overline c \arrow[r, maps to] & \overline{f(c)}
-\end{diag}
+\end{funcion}
 que induce a su vez un homomorfismo entre los grupos de homología relativa,
-\begin{diag}
-f_*\colon H_*(X,A) \arrow[r] & H_*(Y,B)\\[-8mm]
+\begin{funcion}
+f_*\colon H_*(X,A) \arrow[r] & H_*(Y,B)\\
 \left[\overline c\right] \arrow[r, maps to] & \left[\overline{f(c)}\right]
-\end{diag}
+\end{funcion}
 
 Sean $f,g\colon (X,A) \to (Y,B)$ aplicaciones entre pares de espacios.
 Decimos que $f$ es \textbf{homotópica} a $g$ si existe una aplicación entre
@@ -313,12 +313,12 @@ e $(Y,B)$.
 \begin{lemma}[Lema de los cinco, \cite{FiveLemma}]
 Sean $A_1,B_1,\dots,A_5,B_5$ grupos abelianos. Considérese el diagrama
 conmutativo
-\begin{diag}
+\begin{diagram}
 A_1 \arrow{r} \arrow{d}{\alpha} & A_2 \arrow{r} \arrow{d}{\beta_1} &
 A_3 \arrow{r} \arrow{d}{\gamma} & A_4 \arrow{r} \arrow{d}{\beta_2} &
 A_5 \arrow{d}{\delta}\\
 B_1 \arrow{r} & B_2 \arrow{r} & B_3 \arrow{r} & B_4 \arrow{r} & B_5
-\end{diag}
+\end{diagram}
 cuyas filas forman sucesiones exactas. Si $\alpha$ es un epimorfismo,
 $\beta_1$, $\beta_2$ son isomorfismos y $\delta$ es un monomorfismo,
 $\gamma$ es un isomorfismo.
@@ -332,7 +332,7 @@ Sea $(X,A)$ un par de espacios y $U \subset A$ tal que $\overline{U}
 \end{theorem}
 
 \begin{marginfigure}
-\includegraphics{Figures/HoleHoleHole.png}
+\includegraphics{HoleHoleHole.png}
 \caption[Agujero en un agujero en un agujero]{El teorema de escisión nos dice
 que la homología relativa de $X$ módulo $A$ sólo concierne a la frontera de
 $A$. La estructura global del espacio no es relevante. Imagen: \cite{Hole}.}
@@ -355,13 +355,13 @@ $S_*^{\mc{U}'}(A) \leq S_*^\mc{U}(X)$, la aplicación inclusión
 \[j\colon S_*^{\mc{U},\mc{U}'}(X,A)=\frac{S_*^\mc{U}(X)}{S_*^{\mc{U}'}(A)}
 \hookrightarrow \frac{S_*(X)}{S_*(A)}=S_*(X,A)\]
 forma una aplicación de cadenas que da lugar al diagrama conmutativo
-\begin{diag}
+\begin{diagram}
 H_*(S_*^{\mc{U}'}(A)) \arrow{r} \arrow{d}{i'_*} &
 H_*(S_*^\mc{U}) \arrow{r} \arrow{d}{i_*} &
 H_*(S_*^{\mc{U},\mc{U}'}(X,A)) \arrow{r} \arrow{d}{j_*} &
 H_*(S_*^{\mc{U}'}(A)) \arrow{d}{i_*}\\
 H_*(A) \arrow{r} & H_*(X) \arrow{r} & H_*(X,A) \arrow{r} & H_*(A)
-\end{diag}
+\end{diagram}
 
 \marginnote[-2.2cm]{
 \begin{kaobox}[frametitle=Un detalle importante]
@@ -400,7 +400,7 @@ anillas sean tangentes, formando una figura ocho.
 \end{example}
 
 \begin{marginfigure}
-\includegraphics{Figures/ToroGeneradoresOrden1.pdf}
+\includegraphics{ToroGeneradoresOrden1.pdf}
 \caption{Generadores del grupo de homología de primer orden del toro.}
 \end{marginfigure}
 
@@ -731,20 +731,20 @@ Sean $\pi\colon X \to X/A$ y $\pi'\colon Y \to Y/B$ aplicaciones cociente. Se
 define la aplicación $f'\colon X/A \to Y/B$ como $f([x])=\pi'(f(x))$.
 Es fácil ver que $f'$ está bien definida y es continua, por lo que da lugar
 al siguiente diagrama conmutativo:
-\begin{diag}
+\begin{diagram}
 X \arrow{r}{f} \arrow{d}{\pi} & Y \arrow{d}{\pi'}\\
 X/A \arrow{r}{f'} & Y/B
-\end{diag}
+\end{diagram}
 
 Dado que $f$ es un homeomorfismo relativo, $f'$ es una biyección entre $X/A$
 e $Y/B$. Como ambos son espacios $C_2$, $f'$ es un homeomorfismo, por lo que
 induce un isomorfismo entre $H_*(X/A)$ y $H_*(Y/B)$.
 
 Tenemos entonces el diagrama conmutativo
-\begin{diag}
+\begin{diagram}
 H_*(X,A) \arrow{r}{f_*} \arrow{d}{\pi_*} & H_*(Y,B) \arrow{d}{\pi'_*}\\
 H_*(X/A,\pi(A)) \arrow{r}{f'_*} & H_*(Y/B,\pi'(B))
-\end{diag}
+\end{diagram}
 
 Sabemos por el \refthm{Retracto} que $\pi'_*$ y $\pi_*$ son isomorfismos;
 además, acabamos de probar que $f_*'$ es un isomorfismo. Como consecuencia,
