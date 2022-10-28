@@ -1,0 +1,13 @@
+*.aux
+*-blx.bib
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lol
+*.lot
+*.mw
+*.nlo
+*.run.xml
+*.toc
