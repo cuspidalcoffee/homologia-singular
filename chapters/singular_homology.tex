@@ -172,6 +172,7 @@ Se define la cara $i$-ésima de $\phi$ como el $(p-1)$-símplice singular
 \end{funcion*}
 
 \begin{example}
+<<<<<<< HEAD
 	El 2-símplice singular
 	\begin{funcion*}
 		\phi\colon  \sigma_2 \arrow[r] & \mb{R}^3 \\
@@ -184,18 +185,40 @@ Se define la cara $i$-ésima de $\phi$ como el $(p-1)$-símplice singular
 		\p_{(2)}\phi(u,v)&=\phi(u,v,0)=(2u+2,2v+2,2)
 	\end{align*}
 	Desde un punto de vista geométrico, $\p_{(i)}\phi(\sigma_1)$ es una cara del tetraedro $\phi(\sigma_2)$.
+=======
+Considérese el 2-símplice singular
+\begin{funcion}
+	\phi\colon  \sigma_2 \arrow[r] & \mb{R}^3 \\
+	(x,y,z) \arrow[r, maps to] & (2x+2,2y+2,2z+2)
+\end{funcion}
+
+Las caras de $\phi$ son los $1$-símplices singulares
+\begin{align*}
+	\p_{(0)}\phi(u,v)&=\phi(0,u,v)=(2,2u+2,2v+2)\\
+	\p_{(1)}\phi(u,v)&=\phi(u,0,v)=(2u+2,2,2v+2)\\
+	\p_{(2)}\phi(u,v)&=\phi(u,v,0)=(2u+2,2v+2,2)
+\end{align*}
+
+Desde un punto de vista geométrico, $\p_{(i)}\phi(\sigma_1)$ son las caras del tetraedro $\phi(\sigma_2)$ para $i=0,1,2$.
+>>>>>>> f4da141 (removing conflicts 2)
 \end{example}
 
 \section{Grupos de homología}
 Dado un grupo abeliano $G$, consideramos la acción $\rho\colon G\times \mb{Z} \to G$ dada por
 \begin{align*}
+<<<<<<< HEAD
 	ng:=g+\stackrel{(n)}{\dots}+g	&& ng:=-g-\stackrel{(n)}{\dots}-g\\
 	(n > 0)							&& (n < 0)
+=======
+	ng:=\sum^n_{j=0}g	&& ng:=\sum^{-n}_{j=0}-g\\
+	(n>0)				&& (n < 0)
+>>>>>>> f4da141 (removing conflicts 2)
 \end{align*}
 Decimos que un subconjunto $S \subset G$ es un \textbf{sistema generador} de $G$ si, dado un $g \in G$, podemos hallar $b_1,\dots,b_n \in S$ y enteros $\mu_1,\dots,\mu_n$ tales que
 \[g=\mu_1b_1+\mu_2b_2+\dots+\mu_nb_n\]
 
 \begin{definition}
+<<<<<<< HEAD
 	Sea $G$ un grupo abeliano.
 	Un sistema generador $B$ de $G$ es una \textbf{base} si, dados $b_1,\dots,b_n \in B$ y enteros $\lambda_1,\dots,\lambda_n$,
 	\begin{equation}
@@ -226,6 +249,43 @@ Se define el \textbf{grupo libre} generado por $A$ como la familia $\mc{F}(A)$ d
 
 \begin{proposition}
 	El grupo $\mc{F}(A)$ es libre.
+=======
+Sea $G$ un grupo abeliano. Un sistema generador $B$ de $G$ es una \textbf{base}
+si, dados $b_1,\dots,b_n \in B$ y enteros $\lambda_1,\dots,\lambda_n$,
+\begin{align}
+	\label{SisLibre} \sum^n_{i=1}\lambda_ib_i=0 \implies \lambda_i=0
+\end{align}
+Decimos que $G$ es un \textbf{grupo libre} si admite una base.
+\end{definition}
+
+\begin{example}
+	Supongamos que $\mb{Q}^+=(\mb{Q},+)$ es un grupo libre generado por un cierto
+	conjunto $B \subseteq \mb{Q}$. Dados $\frac{a}{b}, \frac{c}{d} \in B$, se tiene
+	que
+		\[cb\frac{a}{b}-ad\frac{c}{d}=0\]
+	por lo que $B$ está formado por un único elemento.
+
+	Sea $p$ un número primo coprimo con $b$. Por ser $\mb{Q}^+$ libre, existirá un
+	entero $\alpha$ tal que
+		\[\frac{1}{p}=\alpha\frac{a}{b}\]
+	pero esto implica que $b=\alpha pa$, en contradicción con la premisa de que $p$
+	es coprimo con $b$. Por tanto, $\mb{Q}^+$ no es un grupo libre.
+\end{example}
+
+\marginnote[-2.2cm]{
+\begin{kaobox}[frametitle=Aplicaciones nulas casi por todas partes]
+	Sea $A$ un conjunto no vacío. Decimos que una aplicación $f\colon A
+	\to \mb{Z}$ es \textbf{nula casi por todas partes} si podemos hallar un
+	subconjunto $B \subseteq A$ finito tal que $f(x)=0$ para todo
+	$x \in A\backslash B$.
+\end{kaobox}
+}
+
+\begin{proposition}
+	Sea $A \neq\emptyset$.
+	Se define el grupo libre generado por $A$ como la familia $\mc{F}(A)$ de todas las aplicaciones $f\colon A \to \mb{Z}$ que se hacen cero casi por todas partes.
+	Entonces, $\mc{F}(A)$ es un grupo libre dotado con la suma elemento a elemento.
+>>>>>>> f4da141 (removing conflicts 2)
 \end{proposition}
 
 \begin{proof}
@@ -289,6 +349,7 @@ Diremos que dos elementos $p,q \in Z_n(C)$ son \textbf{homólogos} si $p-q \in B
 	Diremos que dos complejos de cadenas tienen el mismo \textbf{tipo de homología} si sus grupos de homología son isomorfos.
 \end{definition}
 
+<<<<<<< HEAD
 Sea $f\colon (C,d) \to (D,\p)$ una aplicación de cadenas.
 Dado un $c \in Z_n(C)$,
 	\[d_n(c)=0 \implies \p_n[f_n(c)]=f_{n-1}[d_n(c)]=f_{n-1}(0)\]
@@ -296,11 +357,48 @@ Como $f_{n-1}$ es un homomorfismo de grupos, $f_{n-1}(0)=0$, por lo que $f_n(c)\
 Análogamente, $f_n(B_n(C)) \leq B_n(D)$.
 Por tanto, $f$ induce un homomorfismo entre grupos de homología,
 	\[f_*\colon H_*(C) \to H_*(D)\]
+=======
+Sea $(C,d)$ un complejo de cadenas. Se definen los grupos graduados
+\begin{align*}
+Z_*(C)&:=\ker d=\{\ker d_n: n \in \mb{Z}\};	& Z_n(C)&:=\ker d_n\\[0.2cm]
+B_*(C)&:=\im d=\{\im d_n: n \in \mb{Z}\}; 	& B_n(C)&:=\im d_n
+\end{align*}
+Diremos que dos elementos $p,q \in Z_n(C)$ son \textbf{homólogos} si
+$p-q \in B_n(C)$.
+>>>>>>> f4da141 (removing conflicts 2)
 
 \subsection{Homología de un espacio topológico}
 \begin{definition}
+<<<<<<< HEAD
 	Se define el grupo de \textbf{$n$-cadenas singulares} $S_n(X)$ como el grupo libre generado por todos los símplices singulares $\phi\colon \sigma_n \to X$.
 	Los elementos de $S_n(X)$ reciben el nombre de $n$-\emph{cadenas singulares} de $X$.
+=======
+Sea $C$ un complejo de cadenas. Se definen el \textbf{grupo graduado de
+homología} y el \textbf{grupo de homología} de orden $n$ de $C$ como 
+\begin{align*}
+H_*(C):=\frac{Z_*(C)}{B_*(C)}; && H_n(C)=\frac{Z_n(C)}{B_n(C)}
+\end{align*}
+Diremos que dos complejos de cadenas tienen el mismo \textbf{tipo de homología}
+si sus grupos de homología son isomorfos.
+\end{definition}
+
+Sea $f\colon (C,d) \to (D,\p)$ una aplicación de cadenas. Dado un
+$c \in Z_n(C)$,
+\[d_n(c)=0 \implies \p_n[f_n(c)]=f_{n-1}[d_n(c)]=f_{n-1}(0)\]
+Como $f_{n-1}$ es un homomorfismo de grupos, $f_{n-1}(0)=0$, por lo que
+$f_n(c)\in Z_n(D)$ y $f_n[Z_n(C)]\leq Z_n(D)$.
+
+Análogamente, $f_n(B_n(C)) \leq B_n(D)$. Por tanto, $f$ induce un homomorfismo
+entre grupos de homología,
+\[f_*\colon H_*(C) \to H_*(D)\]
+
+\subsection{Grupos de homología}
+\begin{definition}
+Se define el grupo de \textbf{$n$-cadenas
+singulares} $S_n(X)$ como el grupo libre generado por todos los símplices
+singulares $\phi\colon \sigma_n \to X$. Los elementos de $S_n(X)$
+reciben el nombre de $n$-\emph{cadenas singulares} de $X$.
+>>>>>>> f4da141 (removing conflicts 2)
 \end{definition}
 
 A partir los grupos de cadenas singulares, podemos definir el grupo graduado
@@ -386,6 +484,7 @@ Dado que $\psi(0,1)=f(0)$ y $\psi(1,0)=f(1)$, un camino es un 1-ciclo si y sólo
 Sea $f\colon X \to Y$ una aplicación continua.
 Habíamos definido una aplicación $f_\#$ que convierte símplices de $X$ en símplices de $Y$, al igual que el operador cara convertía $n$-símplices en $(n-1)$-símplices.
 Podemos extender $f_\#$ a todo el grupo de cadenas singulares de forma que la aplicación resultante sea un homomorfismo:
+<<<<<<< HEAD
 	\[f_\#(n_1\phi_1+\dots+n_k\phi_k)=n_1f_\#(\phi_1)+\dots+n_kf_\#(\phi_k)\]
 Esta aplicación recibe el nombre de \textbf{morfismo inducido en homología} por $f$.
 
@@ -407,6 +506,38 @@ Dadas $f\colon X \to Y$ y $g\colon Y \to Z$ continuas, deducimos de las proposic
 \subsection{Interpretación geométrica}
 Sea $X=\mb{R}^2\backslash\{(0,0)\}$ con la topología inducida por $\mb{R}^2$.
 El espacio $\mb{R}^2$ no es homeomorfo a $X$; sin embargo, no es posible probar este resultado utilizando sólo topología conjuntista.
+=======
+	\[f_\#\left(\sum^k_{j=1}n_j\phi_j\right)=\sum^k_{j=1}n_jf_\#(\phi_j)\]
+Esta aplicación recibe el nombre de \textbf{morfismo inducido en homología} por $f$.
+
+\begin{proposition}
+	Todo morfismo inducido por una aplicación continua es una aplicación de cadenas.
+	Como consecuencia, si $f\colon X \to Y$ es continua, $f_\#$ induce una familia de homomorfismos
+	\begin{funcion}
+		f_*: H_n(X) \arrow[r] &H_n(Y)\\
+		\left[x\right] \arrow[maps to,r]    &\left[f_\#(x)\right]
+	\end{funcion}
+	para $n \geq 0$.
+\end{proposition}
+
+Dadas $f\colon X \to Y$ y
+$g\colon Y \to Z$ continuas, deducimos de \refprop{ComposicionAlmohadilla} y de este resultado que
+	\[(g\circ f)_*=g_*\circ f_*\]
+Por tanto, deducimos que los grupos de homología son invariantes topológicos:
+
+\begin{theorem}
+	Sean $X,Y$ espacios topológicos.
+	Si $f\colon X \to Y$ es un homeomorfismo, $f_*\colon H_k(X) \to H_k(Y)$ es un isomorfismo para todo $k \geq 0$.
+	Por tanto, el grupo de homología es un invariante topológico.
+\end{theorem}
+
+\subsection{Interpretación geométrica}
+Sea $X=\mb{R}^2\backslash\{(0,0)\}$ con la topología inducida por $\mb{R}^2$. El
+espacio $\mb{R}^2$ no es homeomorfo a $X$; sin embargo, no es posible probar
+este resultado utilizando sólo topología conjuntista. En esta sección, veremos
+cómo la teoría de homología nos permite probar que no existe un homeomorfismo
+entre $\mb{R}^2$ y $X$.
+>>>>>>> f4da141 (removing conflicts 2)
 
 Definimos un \textbf{camino orientado} en un espacio topológico $X$ como una terna $(\gamma; A,B)$, siendo $\gamma\colon [0,1] \to X$ un camino con $\gamma(0)\neq \gamma(1)$ y $A,B \in \gamma(\{0,1\})$ con $A\neq B$.
 Diremos que $(\gamma; A,B)$ está \textbf{orientado positivamente} (resp. \textbf{negativamente}) si $A=\gamma(0)$ y $B=\gamma(1)$ (resp. $A=\gamma(1)$ y $B=\gamma(0)$).
@@ -457,6 +588,7 @@ En cambio, $\phi$ y $\psi$ siguen siendo homólogas, porque sus orientaciones so
 Como consecuencia del \refthm{homologia invariante}, concluimos que $\mb{R}^2$ no es homeomorfo a $X$.
 
 \subsection{Característica de Euler}
+<<<<<<< HEAD
 \marginnote[-2.2cm]{
 \begin{kaobox}[frametitle=Rango de un grupo]
 	Sea $A$ un grupo abeliano.
@@ -465,6 +597,17 @@ Como consecuencia del \refthm{homologia invariante}, concluimos que $\mb{R}^2$ n
 	Definimos el \textbf{rango} de $A$ como el mínimo número de generadores que posee su subgrupo de torsión.
 \end{kaobox}
 }
+=======
+\begin{definition}
+Sea $A$ un grupo abeliano. Se denomina \textbf{subgrupo de torsión} de $A$ al
+subgrupo $T$ formado por todos los elementos de orden finito de $A$. Decimos que
+$A$ es \textbf{libre de torsión} si $T=0$, y que $A$ es un \textbf{grupo de
+torsión} si $T=A$.
+\end{definition}
+
+Si $T$ es el subgrupo de torsión de un cierto grupo abeliano $A$,
+$A/T$ es un grupo libre de torsión.
+>>>>>>> f4da141 (removing conflicts 2)
 
 \begin{example}
 \begin{enumerate}

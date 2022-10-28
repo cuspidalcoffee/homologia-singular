@@ -31,16 +31,16 @@ Si $c=n_1\phi_1+\dots+n_p\phi_p$,
 Como $\p c$ son los elementos de $B_0(X)$, $B_0(X) \subseteq\ker \beta$.
 
 Recíprocamente, sea $c \in \ker \beta$: identificando $x \in X$ con $\cte_x$, existirán $x_1,\dots,x_k \in X$ tales que $c=n_1x_1+\dots+n_kx_k$.
+
 Como $X$ es arcoconexo, dado un $x \in X$, podemos construir la cadena singular $d=n_1L_{x,x_1}+\dots+n_kL_{x,x_k}$ y
 	\[\p d=
 		\sum^p_{i=1}n_i(L_{x,x_i}(1)-L_{x,x_i}(0))=
 		\sum^k_{i=1}n_ix_i-x\sum^k_{i=1}n_i.\]
 Como $c \in \ker \beta$, se sigue que
 	\[\sum^p_{i=1}n_i=\beta(c)=0 \implies \p d=\sum^p_{i=1}n_ix_i=c.\]
-
 Por tanto, $c \in B_0(X)$ y $B_0(X)=\ker \beta$.
 De aquí se sigue que
-	\[H_0(X)=\frac{Z_0(X)}{B_0(X)}=\frac{S_0(X)}{\ker \beta} \cong \mb{Z}\]
+	\[H_0(X)=\frac{Z_0(X)}{B_0(X)}=\frac{S_0(X)}{\ker \beta} \cong \mb{Z}.\]
 
 \begin{proposition}
 	Si $X$ es arcoconexo, $H_0(X)$ tiene rango $1$.
@@ -48,8 +48,8 @@ De aquí se sigue que
 
 \begin{example}
 	Sea $X=\{\star\}$.
-	Dado un $n \geq 0$, existe un único $n$-símplice singular $\phi_n\colon\sigma_n \to X$, que es la aplicación constante.
-	Las caras de la aplicación constante son la aplicación constante, por lo que
+	Dado un $n \geq 0$, existe un único $n$-símplice singular $\phi_n\colon\sigma_n \to X$, que es una aplicación constante.
+	Las caras de una aplicación constante son aplicaciones constantes, por lo que
 	\begin{align*}
 	\p\phi_n=
 		\begin{cases}
@@ -666,31 +666,32 @@ de conexión,
 \end{theorem}
 
 \begin{proof}
-La demostración consiste en dos pasos: probar que $\im g_*=\ker \Delta$ y que
-$\im \Delta = \ker f_*$. Empecemos por la primera igualdad: dado un $[z] \in \im
-g_*$, existe un $d \in Z_n(D)$ tal que $[g(d)]=[z]$. Dado que $g$ es aplicación
-de cadenas y $z$ es un $n$-ciclo,
-\[0=\p z=g(\p d) \implies \p d \in \ker g_*=\im f_*\]
-Existirá un $c \in C_{n-1}$ de forma que $\p d=f(c)$, por lo que $\Delta([z])=
-[c]$. Por otro lado,
-\[d \in Z_n(D) \implies \p d=0 \implies f(c)=0\]
-pero $f$ es un monomorfismo, así que $c=0$. Esto nos lleva a que $z \in
-\ker \Delta$.
+	La demostración consiste en dos pasos: probar que $\im g_*=\ker \Delta$ y que
+	$\im \Delta = \ker f_*$. Empecemos por la primera igualdad: dado un $[z] \in \im
+	g_*$, existe un $d \in Z_n(D)$ tal que $[g(d)]=[z]$. Dado que $g$ es aplicación
+	de cadenas y $z$ es un $n$-ciclo,
+	\[0=\p z=g(\p d) \implies \p d \in \ker g_*=\im f_*\]
+	Existirá un $c \in C_{n-1}$ de forma que $\p d=f(c)$, por lo que $\Delta([z])=
+	[c]$. Por otro lado,
+	\[d \in Z_n(D) \implies \p d=0 \implies f(c)=0\]
+	pero $f$ es un monomorfismo, así que $c=0$. Esto nos lleva a que $z \in
+	\ker \Delta$.
 
-Sea $[z] \in \ker \Delta$. Existe un $d \in D_n$ de forma que $g(d)=z$ y $f(c)=
-\p d$. En particular, podemos tomar $c=0$, ya que la clase de $c$ será la del 0.
-Esto implica que
-\[\p d=0 \implies d \in Z_n(D) \iff [d] \in H_n(D)\]
-De aquí se sigue que $g_*([d])=[g(d)]=[z]$.
+	Sea $[z] \in \ker \Delta$. Existe un $d \in D_n$ de forma que $g(d)=z$ y $f(c)=
+	\p d$. En particular, podemos tomar $c=0$, ya que la clase de $c$ será la del 0.
+	Esto implica que
+	\[\p d=0 \implies d \in Z_n(D) \iff [d] \in H_n(D)\]
+	De aquí se sigue que $g_*([d])=[g(d)]=[z]$.
 
-Sea $[c] \in \im \Delta$. Existe un $z \in Z_n(E)$ tal que $[c]=\Delta([z])$, luego
-existirá un $d \in D_n$ de forma que $f(c)=d$ y $g(d)=z$. Ahora bien,
-	\[f(c)= \p d \implies f(c) \in B_n(D) \iff [f(c)]=0\]
-Pero $[f(c)]=f_*([c])$, luego $[c] \in \ker f_*$.
+	Sea $[c] \in \im \Delta$. Existe un $z \in Z_n(E)$ tal que $[c]=\Delta([z])$, luego
+	existirá un $d \in D_n$ de forma que $f(c)=d$ y $g(d)=z$. Ahora bien,
+		\[f(c)= \p d \implies f(c) \in B_n(D) \iff [f(c)]=0\]
+	Pero $[f(c)]=f_*([c])$, luego $[c] \in \ker f_*$.
 
-Sea $[c] \in \ker f_*$.
-Sabemos que $f(c) \in B_n(D)$, luego existirá un $d \in D_n$ tal que $f(c)=\p d$. Sea $z=g(d) \in E_n$.
-Como $\ker g=\im f$, $\p z=g(\p d)=(g\circ f)(c)=0$.
-	De aquí se tiene que $z \in Z_n(E)$ y
-\[\Delta([z])=[c] \implies [c] \in \im \Delta\]
+		Sea $[c] \in \ker f_*$.
+	Sabemos que $f(c) \in B_n(D)$, luego existirá un $d \in D_n$ tal que $f(c)=\p d$. Sea $z=g(d) \in E_n$.
+	Como $\ker g=\im f$, $\p z=g(\p d)=(g\circ f)(c)=0$.
+
+	De aquí se sigue que $z \in Z_n(E)$ y
+	\[\Delta([z])=[c] \implies [c] \in \im \Delta\]
 \end{proof}
