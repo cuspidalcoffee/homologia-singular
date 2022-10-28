@@ -10,31 +10,27 @@ Dado que $\cte_x \in S_0(X)$, existirán $x_1,\dots,x_n \in X$ y enteros $\mu_1,
 \[x \equiv \cte_x=\sum^n_{i=1}\mu_i\cte_{x_i} \equiv \sum^n_{i=1}\mu_ix_i\]
 
 Consideremos el último tramo del complejo de cadenas $S_*(X)$:
-\begin{diagram}
+\begin{diagram*}
 	S_1(X) \arrow{r}{\p_1} & S_0(X) \arrow{r}{\p_0} & 0
-\end{diagram}
+\end{diagram*}
 Dado que $\p_0=0$, $S_0(X)=Z_0(X)$ y podemos construir el siguiente homomorfismo entre $S_0(X)$ y $\mb{Z}$:
-\begin{funcion}
+\begin{funcion*}
 	\beta\colon S_0(X) \arrow{r}           & \mb{Z}          \\
 	n_1x_1+\dots+n_px_p \arrow[r, maps to] & n_1+\dots+n_p
-\end{funcion}
+\end{funcion*}
 Como $X\neq\emptyset$, $\beta$ es epimorfismo, ya que $p=\beta(px)$ para todo $x \in X$.
 
 Sea $\phi \in S_1(X)$: como $\p$ es un homomorfismo de grado $-1$, $\p\phi \in S_0(X)$.
-En particular, $\phi$ es una aplicación continua que depende de dos variables no negativas, $t_0$ y $t_1$, cuya suma siempre es 1.
-Si computamos el operador borde,
-\begin{align*}
-	\p\phi			&=\phi(0,t_0)-\phi(t_0,0)=\phi(0,1)-\phi(1,0);\\
-	\beta(\p\phi)	&=\beta(\phi(0,1)-\phi(1,0))=1-1=0,
-\end{align*}
-por lo que $\p\phi \in \ker\beta$.
+En particular, $\phi$ es una aplicación continua que depende de dos variables no negativas cuya suma siempre es 1, luego
+	\[\p\phi=\phi(0,t_0)-\phi(t_0,0)=\phi(0,1)-\phi(1,0)\]
+y $\p \phi\in \ker \beta$.
 Si $c=n_1\phi_1+\dots+n_p\phi_p$,
 	\[\beta(\p c)=
 		\beta(n_1\p\phi_1+\dots+n_p\phi_p)=
 		n_1\beta(\p\phi_1)+\dots+n_p\beta(\p\phi_p)=0\]
-Pero $\p c$ son los elementos de $B_0(X)$, por lo que $B_0(X) \subseteq\ker \beta$.
+Como $\p c$ son los elementos de $B_0(X)$, $B_0(X) \subseteq\ker \beta$.
 
-Recíprocamente, sea $c \in \ker \beta$: identificando cada punto con la aplicación constante que lleva a todo el espacio en ese punto, existirán $x_1,\dots,x_k \in X$ tales que $c=n_1x_1+\dots+n_kx_k$.
+Recíprocamente, sea $c \in \ker \beta$: identificando $x \in X$ con $\cte_x$, existirán $x_1,\dots,x_k \in X$ tales que $c=n_1x_1+\dots+n_kx_k$.
 Como $X$ es arcoconexo, dado un $x \in X$, podemos construir la cadena singular $d=n_1L_{x,x_1}+\dots+n_kL_{x,x_k}$ y
 	\[\p d=
 		\sum^p_{i=1}n_i(L_{x,x_i}(1)-L_{x,x_i}(0))=
@@ -42,284 +38,188 @@ Como $X$ es arcoconexo, dado un $x \in X$, podemos construir la cadena singular 
 Como $c \in \ker \beta$, se sigue que
 	\[\sum^p_{i=1}n_i=\beta(c)=0 \implies \p d=\sum^p_{i=1}n_ix_i=c.\]
 
-\marginnote[-2.2cm]{
-	\begin{kaobox}[frametitle=Teorema de isomorfía]
-		Dado un homomorfismo $f\colon G \to H$,
-			\[\im f\cong \frac{G}{\ker f}\]
-	\end{kaobox}
-}
-
 Por tanto, $c \in B_0(X)$ y $B_0(X)=\ker \beta$.
-Aplicando el teorema de isomorfía,
+De aquí se sigue que
 	\[H_0(X)=\frac{Z_0(X)}{B_0(X)}=\frac{S_0(X)}{\ker \beta} \cong \mb{Z}\]
 
 \begin{proposition}
-	Sea $X$ un espacio topológico arcoconexo.
-	El grupo $H_0(X)$ tiene un único generador.
+	Si $X$ es arcoconexo, $H_0(X)$ tiene rango $1$.
 \end{proposition}
 
 \begin{example}
-Sea $X=\{\star\}$.
-Dado un $n \geq 0$, existe un único $n$-símplice singular $\phi_n\colon\sigma_n \to X$, que es la aplicación constante.
-Las caras de la aplicación constante son la aplicación constante, por lo que
-\begin{align*}
-\p\phi_n=
-	\begin{cases}
-	\phi_{n-1}	&\mbox{ si }n\mbox{ es par}\\
-	0          	&\mbox{ si }n\mbox{ es impar}
-	\end{cases}
-\end{align*}
+	Sea $X=\{\star\}$.
+	Dado un $n \geq 0$, existe un único $n$-símplice singular $\phi_n\colon\sigma_n \to X$, que es la aplicación constante.
+	Las caras de la aplicación constante son la aplicación constante, por lo que
+	\begin{align*}
+	\p\phi_n=
+		\begin{cases}
+		\phi_{n-1}	&\mbox{ si }n\mbox{ es par}\\
+		0          	&\mbox{ si }n\mbox{ es impar}
+		\end{cases}
+	\end{align*}
 
-Dado que $S_n(X)=\la \phi_n\ra$, el operador borde $\p_n\colon S_n(X) \to S_{n-1}(X)$ es un isomorfismo si $n$ es par y cero si $n$ es impar.
-Por tanto, $H_n(X)=0$ para todo $n > 0$ y $H_0(X)\cong \mb{Z}$.
+	Dado que $S_n(X)=\la \phi_n\ra$, el operador borde $\p_n\colon S_n(X) \to S_{n-1}(X)$ es un isomorfismo si $n$ es par y cero si $n$ es impar.
+	Por tanto, $H_n(X)=0$ para todo $n > 0$.
 \end{example}
 
 \subsection{Sumas directas en homología}
-Sea $\{G_\alpha\}_{\alpha \in A}$ una familia de grupos abelianos.
-Se define el \textbf{producto directo} de los grupos $G_\alpha$ como el grupo
-\[G=\prod_{\alpha \in A} G_\alpha:=
-	\left\{\left.f\colon A \to \bigcup_{\alpha \in A}G_\alpha\,\right|f(\alpha) \in G_\alpha \quad \forall \alpha \in A\right\}\]
-Denotaremos a las aplicaciones $f \in G$ como tuplas de la forma $f=(f_\alpha)_{\alpha \in A}=\{f(\alpha)\}_{\alpha \in A}$
-Los elementos $f_\alpha$ reciben el nombre de \textbf{componentes} de $f$.
+\begin{definition}
+	Sea $\{G_\alpha\}_{\alpha \in A}$ una familia de grupos abelianos.
+	Se define la \textbf{suma directa} de los grupos $G_\alpha$ como el grupo $G$ de aplicaciones $f\colon A \to G$ con soporte finito.
 
-\begin{example}\labexample{SumaDirectaZ}
-Sea $A=\{0,\dots, n\}$. El producto directo
-\[G=\prod_{\alpha \in A}\mb{Z}\]
-es isomorfo al subgrupo de $\mb{Z}[x]$ formado por polinomios de grado menor
-o igual que $n$, por lo que podemos identificar $f \in G$ con un polinomio
-\[f(x)=f_0+f_1x+f_2x^2+\dots+f_nx^{n}\]
-
-Tomando $A=\mb{N}$, $G$ es isomorfo al grupo aditivo $\mb{Z}[x]$. Sin embargo,
-también podemos verlo como el grupo de sucesiones en $\mb{Z}$ junto con la suma.
-\end{example}
-
-\begin{definition}\labdef{SumaDirecta}
-Sea $\{G_\alpha\}_{\alpha \in A}$ una familia de grupos abelianos con producto
-directo $G$. Se define la \textbf{suma directa} de $\{G_\alpha\}_{\alpha \in A}$
-como el subgrupo $H$ de $G$ formado por las aplicaciones nulas casi por todas
-partes.
+	Si $A$ es finito, escribiremos $G=G_{\alpha_1}\oplus \dots \oplus G_{\alpha_k}$.
 \end{definition}
 
-Cuando consideramos una familia finita de grupos abelianos, no hace falta
-distinguir entre la suma y el producto directo. La diferencia entre las sumas y
-los productos directos sólo se manifiesta cuando consideramos una familia
-infinita:
+Denotaremos a las aplicaciones $f \in G$ como tuplas de la forma $(f_\alpha)_{\alpha \in A}=\{f(\alpha)\}_{\alpha \in A}$.
+Los elementos $f_\alpha$ reciben el nombre de \textbf{componentes} de $f$.
 
-Una serie de potencias sobre $\mb{Z}$ se define como una suma formal de la forma
-\begin{equation}
-f(x)=\sum^\infty_{j=0}f_jx^j \quad (f_j \in \mb{Z}) \label{SeriePotencias}
-\end{equation}
-La familia de todas las series de potencias sobre $\mb{Z}$ se denota como
-$\mb{Z}[[x]]$.
+Dada una familia de complejos de cadenas $\{C^\alpha\}_{\alpha \in A}$, se define el grupo graduado
+	\[C=\sum_{\alpha \in A}C^\alpha:=\left\{\sum_{\alpha \in A}C^\alpha_p: p \in \mb{Z}\right\}\]
+donde $\sum$ denota suma directa.
 
-Podemos ver $\mb{Z}[[x]]$ como el producto directo de $\mb{Z}$ consigo mismo una
-cantidad numerable de veces. Es claro que $\mb{Z}[x]$ es un subgrupo de
-$\mb{Z}[[x]]$: la suma formal \eqref{SeriePotencias} es un polinomio si y sólo si
-$f_j=0$ para todo $j$ mayor que un cierto $j_0$. Sin embargo, no todas las series
-de potencias son polinomios: no existe ningún polinomio que sea igual a
-\begin{equation}
-\sum^\infty_{n=0}x^n=\frac{1}{1-x} \label{UnoMenosX}
-\end{equation}
-
-Como consecuencia de esta inclusión estricta, $\mb{Z}[x]$ tiene propiedades que
-$\mb{Z}[[x]]$ no cumple. Por ejemplo, todo elemento de $\mb{Z}[x]$ da lugar a una
-función $f\colon \mb{Q} \to \mb{Z}$, pero la suma formal \eqref{UnoMenosX} diverge
-en la topología estándar de $\mb{Q}$ cuando $x \geq 1$.
-
-Dada una familia de complejos de cadenas $\{C^\alpha\}_{\alpha \in A}$, se define
-el grupo graduado
-\[C=\sum_{\alpha \in A}C^\alpha:=
-\left\{\sum_{\alpha \in A}C^\alpha_p:\; p \in \mb{Z}\right\}\]
-
-Dado un $c \in C_p$, existen $\alpha_1,\dots,\alpha_n \in A$ tales que
-$c(\alpha)=0$ para todo $\alpha \in A\backslash \{\alpha_1,\dots,\alpha_n\}$.
-Podemos entonces identificar $c$ con un elemento
-$(c^{\alpha_1},\dots,c^{\alpha_n}) \in
-C^{\alpha_1}_p\oplus\dots\oplus C^{\alpha_n}_p$. Si denotamos al operador borde
-de $C^{\alpha_j}$ como $\p^{\alpha_j}$,
-\[\left(\p^{\alpha_1}_pc^{\alpha_1},\dots,\p^{\alpha_n}_pc^{\alpha_n}\right) \in
-C^{\alpha_1}_{p-1}\oplus\dots\oplus C^{\alpha_n}_{p-1}\]
+Dado un $c \in C_p$, existen $\alpha_1,\dots,\alpha_n \in A$ tales que $c(\alpha)=0$ para todo $\alpha \in A\backslash \{\alpha_1,\dots,\alpha_n\}$.
+Podemos entonces identificar $c$ con un elemento $(c^{\alpha_1},\dots,c^{\alpha_n}) \in C^{\alpha_1}_p\oplus\dots\oplus C^{\alpha_n}_p$.
+Si denotamos al operador borde de $C^{\alpha_j}$ como $\p^{\alpha_j}$,
+	\[\left(\p^{\alpha_1}_pc^{\alpha_1},\dots,\p^{\alpha_n}_pc^{\alpha_n}\right) \in C^{\alpha_1}_{p-1}\oplus\dots\oplus C^{\alpha_n}_{p-1}\]
 Por tanto, definimos la siguiente aplicación:
-\begin{diagram}
-\p_p\colon C_p \arrow[r]             & C_{p-1}                   \\[-8mm]
-c \arrow[r, maps to] &
-(\p^{\alpha_1}_pc^{\alpha_1}_p,\dots,\p^{\alpha_n}c^{\alpha_n}_p)
-\end{diagram}
-Dado que $\p_p$ actúa componente a componente, es inmediato que esta construcción
-da lugar a un operador borde.
+	\begin{funcion*}
+	\p_p\colon C_p \arrow[r]             & C_{p-1}                   \\
+	c \arrow[r, maps to] &
+	(\p^{\alpha_1}_pc^{\alpha_1}_p,\dots,\p^{\alpha_n}c^{\alpha_n}_p)
+	\end{funcion*}
+Dado que $\p_p$ actúa componente a componente, es inmediato que esta construcción da lugar a un operador borde.
 
 \begin{lemma}\lablemma{HomoSumaDir}
-Dada una familia de complejos de cadenas $\{C^\alpha\}_{\alpha \in A}$ con suma
-directa $C$,
-\[H_*(C)\cong\sum_{\alpha \in A}H_*(C^\alpha)\]
+	Dada una familia de complejos de cadenas $\{C^\alpha\}_{\alpha \in A}$ con suma directa $C$,
+	\[H_*(C)\cong\sum_{\alpha \in A}H_*(C^\alpha)\]
 \end{lemma}
 
 \subsection{Descomposición en arcocomponentes}
-Supongamos $\Omega$ es un espacio topológico formado por dos arcocomponentes,
-$\Omega_1$ y $\Omega_2$, como los que se muestran en \reffig{FigPentaHexa}. Si
-$f(x) \in \Omega_1$, por continuidad, $f(\sigma_p) \subseteq \Omega_1$. De esta
-forma, todos los elementos de la base de $H_p(\Omega)$ están en $H_p(\Omega_1)$ o
-en $H_p(\Omega_2)$; es decir,
+Supongamos $\Omega$ es un espacio topológico formado por dos arcocomponentes, $\Omega_1$ y $\Omega_2$, como los que se muestran en \reffig{FigPentaHexa}.
+Si $f(x) \in \Omega_1$, por continuidad, $f(\sigma_p) \subseteq \Omega_1$.
+De esta forma, todos los elementos de la base de $H_p(\Omega)$ están en $H_p(\Omega_1)$ o en $H_p(\Omega_2)$; es decir,
 \[H_p(\Omega)\cong H_p(\Omega_1)\oplus H_p(\Omega_2)\]
 
 \begin{marginfigure}
-\input{figures/HomologiaArcoconexo}
-\caption[Dos espacios arcoconexos, cada uno conteniendo la imagen de un
-símplice singular, junto con una línea discontinua que sale de uno de ellos
-para entrar en el otro.]{\labfig{FigPentaHexa}Los arcos de circunferencia son
-$1$-símplices singulares de $\Omega$, pero la línea discontinua uniéndolos no
-lo es, ya que se sale del espacio.}
+	\input{figures/HomologiaArcoconexo}
+	\caption[Dos espacios arcoconexos.]{\labfig{FigPentaHexa}Los arcos de circunferencia son $1$-símplices singulares de $\Omega$, pero la línea discontinua uniéndolos no lo es, ya que se sale del espacio.}
 \end{marginfigure}
 
 \begin{proposition}
-\labprop{SumaDirArco} Sea $X$ un espacio topológico y $\{X_\alpha\colon \alpha
-\in A\}$ la familia de arcocomponentes de $X$.
-\[H_*(X) \cong \sum_{\alpha \in A} H_*(X_\alpha)\]
+	\labprop{SumaDirArco}
+	Sea $X$ un espacio topológico y $\{X_\alpha\colon \alpha\in A\}$ la familia de arcocomponentes de $X$.
+		\[H_*(X) \cong \sum_{\alpha \in A} H_*(X_\alpha)\]
 \end{proposition}
 
 \begin{proof}
-Considérese la aplicación
-\begin{diagram}
-\Psi_k\colon\sum_\alpha S_k(X_\alpha) \arrow[r] & S_k(X)          \\[-0.8cm]
-(g_\alpha)_\alpha \arrow[r, maps to]            & \sum_\alpha g_\alpha
-\end{diagram}
+	Consideramos la aplicación
+	\begin{funcion*}
+		\Psi_k\colon\sum_\alpha S_k(X_\alpha) \arrow[r] & S_k(X)          \\
+		(g_\alpha)_\alpha \arrow[r, maps to]            & \sum_\alpha g_\alpha
+	\end{funcion*}
+	Toda cadena singular $g \in S_k(X)$ admite una descomposición única como combinación lineal de $k$-símplices singulares.
+	Dado que cada símplice va a parar a una única componente conexa de $X$, se sigue que $\Psi_k(g)=\Psi_k(h)$ implica $g=h$, por lo que $\Psi_k$ es inyectiva.
 
-Toda cadena singular $g \in S_k(X)$ admite una descomposición única como
-combinación lineal de $k$-símplices singulares. Dado que cada símplice va a parar
-a una única componente conexa de $X$, se sigue que
-\[\Psi_k(g)=\Psi_k(h) \implies g=h\]
-por lo que $\Psi_k$ es inyectiva.
+	Sea $\phi\colon \sigma_k \to X$ un $k$-símplice singular.
+	Las aplicaciones continuas preservan la arcoconexión, por lo que $\phi(\sigma_k)$ está en alguna componente arcoconexa $X_\alpha \subseteq X$.
+	Por tanto, podemos hallar un $\phi_\alpha \in S_k(X_\alpha)$ tal que $\Psi_k(\phi_\alpha)=\phi$ y $\Psi_k$ es sobreyectiva.
 
-Sea $\phi\colon \sigma_k \to X$ un $k$-símplice singular. Las aplicaciones
-continuas preservan la arcoconexión, por lo que $\phi(\sigma_k)$ está en alguna
-componente arcoconexa $X_\alpha \subseteq X$. Por tanto, podemos hallar un
-$\phi_\alpha \in S_k(X_\alpha)$ tal que
-\[\Psi_k(\phi_\alpha)=\phi\]
-por lo que $\Psi_k$ es sobreyectiva.
+	Dado $g=(g_\alpha)_\alpha$,
+		\[\Psi_k(\p g)=\Psi_k({\p^\alpha g_\alpha})=\sum_{\alpha \in A}\p^\alpha g_\alpha=\p \sum_{\alpha \in A}g_\alpha=\p \Psi_k(g)\]
+	Se sigue que $\Psi$ es aplicación de cadenas y
+		\[H_*(X)=H_*[S_*(X)]\cong H_*\left[\sum_{\alpha \in A}S_*(X_\alpha)\right]\]
 
-Dado $g=(g_\alpha)_\alpha$,
-\[\Psi_k(\p g)=
-\Psi_k({\p^\alpha g_\alpha})=
-\sum_{\alpha \in A}\p^\alpha g_\alpha=
-\p \sum_{\alpha \in A}g_\alpha=\p \Psi_k(g)\]
-Se sigue que $\Psi$ es aplicación de cadenas y
-\[H_*(X)=H_*[S_*(X)]\cong H_*\left[\sum_{\alpha \in A}S_*(X_\alpha)\right]\]
-
-Finalmente, aplicando \reflemma{HomoSumaDir},
-\[H_*\left[\sum_{\alpha \in A}S_*(X_\alpha)\right]\cong
-\sum_{\alpha \in A}H_*[S_*(X_\alpha)]=
-\sum_{\alpha \in A}H_*\left(X_\alpha\right)\]
+	Finalmente, aplicando \reflemma{HomoSumaDir},
+		\[H_*\left[\sum_{\alpha \in A}S_*(X_\alpha)\right]\cong\sum_{\alpha \in A}H_*[S_*(X_\alpha)]=\sum_{\alpha \in A}H_*\left(X_\alpha\right)\]
 \end{proof}
-Como consecuencia de este resultado, podemos asumir que todo espacio topológico es
-arcoconexo.
 
-Sea $X_\alpha$ una arcocomponente de $X$ y $x,y \in Z_0(X_\alpha)$. Si $a,b \in
-\mb{Z}$, $ax+by \in Z_0(X_\alpha)$. Teniendo en cuenta que
-\[ax+by=ax+ay-ay+by=a(x-y)+y(a+b)\]
-siendo $x-y$ el borde de un 1-símplice y $a+b$ un entero, se tiene que
-\[[ax+by]=[a(x-y)+y(a+b)]=a[x-y]+(a+b)[y]=(a+b)[y]\]
-Es decir,
-\[H_0(X_\alpha)=\la [y]\ra \cong \mb{Z}\]
+Como consecuencia de este resultado, podemos asumir que todo espacio topológico es arcoconexo.
+
+Sea $X_\alpha$ una arcocomponente de $X$ y $x,y \in Z_0(X_\alpha)$.
+Si $a,b \in \mb{Z}$, $ax+by \in Z_0(X_\alpha)$.
+Teniendo en cuenta que $ax+by=a(x-y)+y(a+b)$,
+	\[[ax+by]=a[x-y]+(a+b)[y]=(a+b)[y] \implies H_0(X_\alpha)=\la [y]\ra\]
 Si $X$ tiene $n$ arcocomponentes, existirán $y_i \in H_0(X_i)$ ($1 \leq i \leq n$) tales que
-\[H_0(X)=\sum^n_{\alpha=1}\la [y_\alpha]\ra\cong
-\sum^n_{i=1}\mb{Z} \cong \mb{Z}^n\]
-
-\begin{corollary}
-Si $X$ tiene $n$ arcocomponentes,
-\[H_0(X)\cong \mb{Z}^n\]
-\end{corollary}
+	\[H_0(X)=\sum^n_{\alpha=1}\la [y_\alpha]\ra\cong\sum^n_{i=1}\mb{Z} \cong \mb{Z}^n\]
 
 \subsection{Homología de un conjunto convexo}
-El objetivo de este apartado es probar que todo conjunto convexo tiene el tipo de
-homología de un punto. Es decir: si $X$ es un espacio convexo,
-\begin{align*}
-H_0(X)\cong \mb{Z}; && H_p(X)=0 \quad (p > 0)
-\end{align*}
-Ya sabemos que $H_0(X)$ tiene un único generador. Por tanto, nos queda probar la
-segunda igualdad.
+El objetivo de este apartado es probar el siguiente resultado:
+\begin{theorem}\labthm{Convexo}
+	Sea $X \subset \mb{R}^n$ un conjunto convexo. Dado un $p > 0$, $H_p(X)=0$.
+\end{theorem}
 
 \begin{lemma}\lablemma{ConvexoLema}
-Sea $X$ un conjunto convexo. Dado un símplice singular $\phi\colon \sigma_{p} \to
-X$, la aplicación $T_p(\phi)\colon \sigma_{p+1} \to X$ dada por
-\[(t_0,\dots,t_{p+1})\mapsto
-\begin{cases}
-\displaystyle(1-t_0)
-\phi\left(\frac{t_1}{1-t_0},\dots,\frac{t_{p+1}}{1-t_0}\right)+t_0x
-&\mbox{ si }t_0 < 1\\
-x & \mbox{ si }t_0=1
-\end{cases}\]
-es un símplice singular.
+	Sea $X$ un conjunto convexo.
+	Dado un símplice singular $\phi\colon \sigma_{p} \to X$, la aplicación $T_p(\phi)\colon \sigma_{p+1} \to X$ dada por
+	\[(t_0,\dots,t_{p+1})\mapsto
+		\begin{cases}
+		\displaystyle(1-t_0)
+		\phi\left(\frac{t_1}{1-t_0},\dots,\frac{t_{p+1}}{1-t_0}\right)+t_0x
+		&\mbox{ si }t_0 < 1\\
+		x & \mbox{ si }t_0=1
+		\end{cases}
+	\]
+	es un símplice singular.
 \end{lemma}
 
 \begin{proof}
-Veamos primero que $T_p(\phi)$ está bien definida: si $t_0 < 1$,
-\begin{equation}\label{BienDef}
-\sum^{p+1}_{j=0}t_j=
-1 \iff \sum^{p+1}_{j=1}t_j=
-1-t_0 \iff \sum^{p+1}_{j=1}\frac{t_j}{1-t_0}=1
-\end{equation}
-por lo que los puntos de la forma $\frac{t_j}{1-t_0}$ están en $\sigma_p$ y
-$T_p(\phi)$ está bien definida.
+	Si $t_0 < 1$,
+	\begin{equation}\label{BienDef}
+		\sum^{p+1}_{j=0}t_j=
+		1 \iff \sum^{p+1}_{j=1}t_j=
+		1-t_0 \iff \sum^{p+1}_{j=1}\frac{t_j}{1-t_0}=1
+	\end{equation}
+	por lo que los puntos de la forma $\frac{t_j}{1-t_0}$ están en $\sigma_p$ y $T_p(\phi)$ está bien definida.
 
-Sea $\tau_j=\frac{t_j}{1-t_0}$. La aplicación $T_p(\phi)$ es claramente continua
-en todos los puntos con $t_0 < 1$ por ser composición de funciones continuas.
-Pasemos al caso $t_0=1$:
-\begin{multline*}
-0	\leq \|T_p(\phi)(t_0,\dots,t_{p+1})-x\|=
-\|(1-t_0)\phi(\tau_1,\dots,\tau_{p+1})-(1-t_0)x\|\leq\\
-	\leq (1-t_0)(\|\phi(\tau_1,\dots,\tau_{p+1})\|+\|x\|)
-\end{multline*}
+	Sea $\tau_j=\frac{t_j}{1-t_0}$.
+	La aplicación $T_p(\phi)$ es continua cuando $t_0 < 1$.
+	Si $t_0=1$,
+	\begin{multline*}
+		0	\leq \|T_p(\phi)(t_0,\dots,t_{p+1})-x\|=\|(1-t_0)\phi(\tau_1,\dots,\tau_{p+1})-(1-t_0)x\|\leq\\
+			\leq (1-t_0)(\|\phi(\tau_1,\dots,\tau_{p+1})\|+\|x\|)
+	\end{multline*}
 
-Dado que $\phi$ es continua y $\sigma_p$ es compacto, $\phi(\sigma_p)$ es un
-subconjunto compacto de $\mb{R}^n$, por lo que está acotado. Podemos encontrar un
-$M > 0$ tal que $\|\phi(\tau_1,\dots,\tau_{p+1})\|$, por lo que
-\[0 \leq \|T_p(\phi)(t_0,\dots,t_{p+1})-x\| \leq (1-t_0)(M+\|x\|)\]
-De estas desigualdades, concluimos que
-\[\lim_{t_0 \to 1}T_p(\phi)(t_0,\dots,t_{p+1})=x\]
-y $T_p(\phi)$ es un símplice singular.
+	Dado que $\phi$ es continua y $\sigma_p$ es compacto, $\phi(\sigma_p)$ es un subconjunto compacto de $\mb{R}^n$, por lo que está acotado.
+	Podemos encontrar un $M > 0$ tal que $\|\phi(\tau_1,\dots,\tau_{p+1})\|$, por lo que
+		\[0 \leq \|T_p(\phi)(t_0,\dots,t_{p+1})-x\| \leq (1-t_0)(M+\|x\|)\]
+	De estas desigualdades, concluimos que
+		\[\lim_{t_0 \to 1}T_p(\phi)(t_0,\dots,t_{p+1})=x\]
+	y $T_p(\phi)$ es un símplice singular.
 \end{proof}
 
-\begin{theorem}\labthm{Convexo}
-Sea $X \subset \mb{R}^n$ un conjunto convexo. Dado un $p > 0$,
-\[H_p(X)=0\]
-\end{theorem}
+\begin{proof}[Demostración del teorema]
+	Dado un $p$-símplice singular $\phi$, sea $T_p(\phi)$ el símplice definido en el lema \reflemma{ConvexoLema}.
+	Queremos ver que
+	\begin{equation}
+		\phi=\p T_p(\phi)+T_p(\p \phi) \label{IdTp}
+	\end{equation}
 
-\begin{proof}
-Dado un $p$-símplice singular $\phi$, sea $T_p(\phi)$ el símplice definido en el
-lema \reflemma{ConvexoLema}. Queremos ver que
-\begin{equation}
-\phi=\p T_p(\phi)+T_p(\p \phi) \label{IdTp}
-\end{equation}
+	Por un lado, $\p T_p(\phi)(t_0,\dots,t_p)=\phi(t_0,\dots,t_p)$, por lo que $\p\circ T_p$ es la identidad.
+	Por otro lado, dado $i=1,\dots,p+1$,
+	\begin{align*}
+	T_p(\p_{(i-1)}\phi)(t_0,\dots,t_p)
+		&=(1-t_0)(\p_{(i-1)}\phi)(\tau_1,\dots,\tau_p)+t_0x=\\
+		&=(1-t_0)\,\phi(\tau_1,\dots,\tau_{i-1},0,\tau_{i-1},\dots,\tau_p)+t_0x=\\
+		&=T_p(\phi)(t_0,\dots,t_{i-1},0,t_i,\dots,t_p)=\\
+		&=\p_{(i)}T_p(\phi)(t_0,\dots,t_p)
+	\end{align*}
+	de forma que $\p_{(i)}(T_p\phi)=T_p(\p_{(i-1)}\phi)$.
+	Combinando ambas identidades,
+	\begin{align*}
+	\p T(\phi)
+		&=\p_{(0)}T(\phi)+\sum^{p+1}_{i=1}(-1)^i\partial_{(i)}(T_p\phi)=\\
+		&=\phi+\sum^p_{i=0}(-1)^{i+1}T_p(\p_{(i)}\phi)=\phi-\sum^p_{i=0}(-1)^iT_p(\p_{(i)}\phi)
+	\end{align*}
+	de donde se sigue la igualdad deseada.
 
-Por un lado, $\p T_p(\phi)(t_0,\dots,t_p)=\phi(t_0,\dots,t_p)$ por lo que
-$\p\circ T_p$ es la identidad. Por otro lado, dado $i=1,\dots,p+1$,
-\begin{align*}
-T_p(\p_{(i-1)}\phi)(t_0,\dots,t_p)
-	&=(1-t_0)(\p_{(i-1)}\phi)(\tau_1,\dots,\tau_p)+t_0x=\\
-	&=(1-t_0)\,\phi(\tau_1,\dots,\tau_{i-1},0,\tau_{i-1},\dots,\tau_p)+t_0x=\\
-	&=T_p(\phi)(t_0,\dots,t_{i-1},0,t_i,\dots,t_p)=\\
-	&=\p_{(i)}T_p(\phi)(t_0,\dots,t_p)
-\end{align*}
-de forma que $\p_{(i)}(T_p\phi)=T_p(\p_{(i-1)}\phi)$. Combinando ambas
-identidades,
-\begin{align*}
-\p T(\phi)
-	&=\p_{(0)}T(\phi)+\sum^{p+1}_{i=1}(-1)^i\partial_{(i)}(T_p\phi)=\\
-	&=\phi+\sum^p_{i=0}(-1)^{i+1}T_p(\p_{(i)}\phi)=
-	\phi-\sum^p_{i=0}(-1)^iT_p(\p_{(i)}\phi)
-\end{align*}
-de donde se sigue la identidad deseada.
-
-Sea $z \in Z_p(X)$. Usando \eqref{IdTp}, $z=\p T_p(z)+T_p(\p z)=\p T_p(z)$,
-por lo que $z \in B_p(X)$ y
-\[H_p(X)=\frac{B_p(X)}{B_p(X)}=0\]
+	Sea $z \in Z_p(X)$.
+	Usando \eqref{IdTp}, $z=\p T_p(z)+T_p(\p z)=\p T_p(z)$, por lo que $z \in B_p(X)$ y $H_p(X)=0$.
 \end{proof}
 
 \section{Homotopías en el grupo de homología}\labsec{HomoHomo}
 \begin{definition}
-Sea $X$ un espacio topológico. Decimos que $X$ es \textbf{contráctil} si existe
-un punto $p \in X$ y una homotopía $F_p$ tal que
-\[F_p\colon \id_X \simeq \cte_p\]
+	Decimos que $X$ es \textbf{contráctil} si existe un punto $p \in X$ y una homotopía $F_p$ tal que
+		\[F_p\colon \id_X \simeq \cte_p\]
 \end{definition}
 
 Sea $X$ un espacio contráctil. Por definición, existe un punto $p \in X$ y una
