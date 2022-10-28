@@ -1,0 +1,51 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cattheo}[2022/03/04 Some operators for category theory]
+
+% == Categories ===================
+\DeclareMathOperator{\Ab}{Ab}		% Abelian groups
+\DeclareMathOperator{\CRng}{CRng}	% Commutative rings
+\DeclareMathOperator{\Field}{Fld}	% Fields
+\DeclareMathOperator{\Grp}{Grp}		% Groups
+\DeclareMathOperator{\Hom}{Hom}		% Homomorphisms
+\DeclareMathOperator{\Mat}{Mat}		% Matrices
+\DeclareMathOperator{\PSh}{PSh}		% Presheaves
+\DeclareMathOperator{\Rng}{Rng}		% Rings
+\DeclareMathOperator{\Set}{Set}		% Sets
+\DeclareMathOperator{\Top}{Top}		% Topological spaces
+\DeclareMathOperator{\Vect}{Vect}	% Vector spaces
+
+\DeclareMathOperator{\id}{id}		% Identity
+\DeclareMathOperator{\Ob}{Ob}		% Objects
+\DeclareMathOperator{\op}{op}		% Opposite category («turn arrows around»)
+
+%__ TikZ arrows ___________________________________________
+% The best way to define custom arrows on TikZ seems to be using TeX's \def
+
+\newcommand{\equalizer}{}
+\def\equalizer[#1]{%
+	\arrow[#1, shift left=.75ex]
+	\arrow[#1, shift right=.75ex]
+}
+
+\newcommand{\nequalizer}{}
+\def\nequalizer[#1;#2,#3]{%
+	% (l)abelled equalizer
+	\arrow[#1, shift left=.75ex, "#2"]
+	\arrow[#1, shift right=.75ex, "#3"']
+}
+
+\newcommand{\looparrow}{}
+\def\looparrow[#1]{%
+	\arrow[loop, distance=2em, in=#1-35, out=#1+35]
+}
+
+\newcommand{\nlooparrow}{}
+\def\nlooparrow[#1;#2]{%
+	\arrow[loop, distance=2em, in=#1-35, out=#1+35, "#2"]
+}
+
+\newcommand{\rooparrow}{}
+\def\looparrow[#1]{%
+	% reverse loop
+	\arrow[loop, distance=2em, in=#1+35, out=#1-35]
+}

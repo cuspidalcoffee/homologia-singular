@@ -1,0 +1,22 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{tables}[2022/04/11 Extended functionality for tables]
+
+\RequirePackage{makecell}				% Line break within cells
+\RequirePackage{multirow}
+
+%__ Columns formatted to mathmode ___
+% The `>{...}` syntax is used to insert commands before the array elements in
+% that column.
+
+\RequirePackage{array}
+\newcolumntype{C}{>{\displaystyle}>{$}c<{$}}
+\newcolumntype{L}{>{\displaystyle}>{$}l<{$}}
+\newcolumntype{R}{>{\displaystyle}>{$}r<{$}}
+
+%__ Struts ___________________________
+% Struts are blank space left around the cells on a table for enhanced
+% readability.
+
+\newcommand\T{\rule{0pt}{2.6ex}}		% Top
+\newcommand\B{\rule[-1.2ex]{0pt}{0pt}} 	% Bottom
+\newcommand\M{\T\B} 					% Mixed
